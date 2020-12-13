@@ -1,0 +1,69 @@
+// slick-prev slick-arrow
+.header__slider {
+  position: relative;
+  width: 80%;
+  // Responsive
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+// Slick arrow
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  fill: var(--primary);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+// Slick prev
+.slick-prev {
+  left: 0;
+}
+
+// Slick next
+.slick-next {
+  right: 0;
+}
+
+// Header slider slide
+.header__slider__slide {
+  width: 150px;
+  height: 400px;
+  // Img
+  & > img {
+    width: 700px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  // active and focus
+  &:active,
+  &:focus {
+    user-select: none;
+    outline: none;
+  }
+}
+
+// Slick disabled
+.slick-disabled {
+  fill: var(--gray);
+  cursor: default;
+}
+
+// Slick slide
+.slick-slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+// Slick active
+.slick-slide.slick-current.slick-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}

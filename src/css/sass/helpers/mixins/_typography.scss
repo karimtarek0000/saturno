@@ -1,0 +1,8 @@
+// Render Class Font Weight
+@each $name, $weight in $font-weight {
+  .weight-#{$name} {
+    font-weight: $weight;
+  }
+}
+
+//

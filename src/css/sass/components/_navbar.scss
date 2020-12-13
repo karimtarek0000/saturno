@@ -1,0 +1,37 @@
+// Navbar
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  // Brand
+  &-brand {
+    // Responsive
+    @media (min-width: 992px) {
+      margin-left: 130px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding: 0;
+  }
+}
+// Rest
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--light-2);
+  transition: all 0.3s;
+}
+//
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  background-color: var(--primary);
+  color: var(--light-2);
+}
+// Active link
+.navbar-dark .navbar-nav .nav-link.active-link {
+  background-color: var(--primary);
+  color: white;
+}

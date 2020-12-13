@@ -3,14 +3,21 @@
 //////////////////////////////////////////////
 // HELPERS
 @import "sass/helpers/variables/variables";
-@import "sass/helpers/functions/function";
-@import "sass/helpers/mixins/mixin-brakepoint";
-//////////////////////////////////////////////
-// THEMES
-@import "sass/thems/theme-setting";
+//
+@import "sass/helpers/mixins/typography";
+
+//
+@import "sass/helpers/utilites";
 //////////////////////////////////////////////
 // COMPONENTS
+@import "sass/components/header";
+@import "sass/components/navbar";
+@import "sass/components/slider";
 //////////////////////////////////////////////
 // LAYOUT
 //////////////////////////////////////////////
-// PAGES
+// FONT
+@import "sass/font/font";
+//////////////////////////////////////////////
+// BASE
+@import "sass/base/base";

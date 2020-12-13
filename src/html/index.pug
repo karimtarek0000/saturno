@@ -2,18 +2,17 @@
 extends extend/page.pug
 
 //- CHANGE TITLE
-//- block title
-//-     title
+block title
+    title home page
 
-//- CHNAGE CONTENT
+//- CHANGE CONTENT
 block content
-    h1 testing
-
-
-
-
-
-
+    //- Container
+    div(class="container-fluid no-gutters overflow-hidden")
+        //- Navbar
+        include ./components/navbar
+        //- Header
+        include ./components/header
 
 
 

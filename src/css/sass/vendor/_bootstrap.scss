@@ -1,7 +1,10 @@
 ///////////////////////////////////////////
 // THEME COLORS - CHNAGE - ADD
 $theme-colors: (
-  "primary": blue,
+  "primary": #629fd1,
+  "light-1": white,
+  "light-2": rgba(255, 255, 255, 0.562),
+  "gray": #4f5d66,
 );
 ///////////////////////////////////////////
 // ALL HELPERS BOOSTRAP
@@ -9,5 +12,4 @@ $theme-colors: (
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 // ALL COMPONENTS USE
-@import "node_modules/bootstrap/scss/utilities";
-@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/bootstrap";
