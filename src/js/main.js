@@ -7,6 +7,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: true,
+    rtl: true,
     prevArrow: `<svg class='a-left control-c prev slick-prev'>
     <use xlink:href="../icons/sprite.svg#icon-Angle-Left">
     </svg>`,

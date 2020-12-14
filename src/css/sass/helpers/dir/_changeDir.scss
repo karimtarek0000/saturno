@@ -1,0 +1,11 @@
+//
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+
+  //
+  .choose-us {
+    background-image: url(../img/section-3/2.png);
+    background-position-x: right;
+  }
+}

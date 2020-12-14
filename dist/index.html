@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/library/slick.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
     <title>home page</title>
   </head>
   <body>
     <div class="container-fluid no-gutters overflow-hidden">
-      <nav class="navbar navbar-expand-lg navbar-dark"><a class="navbar-brand text-uppercase weight-bolder" href="/">
-           ark<span class="weight-light ml-2">solutions</span></a>
+      <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-gray"><a class="navbar-brand text-uppercase weight-bolder" href="/">ark<span class="weight-light ml-2">solutions</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse mt-2 mt-lg-0 text-uppercase" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mr-md-2"><a class="nav-link w-100 active-link p-2 p-md-3" href="#">about us</a></li>
+          <ul class="navbar-nav changeDir">
+            <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3 active-link" href="#">about us</a></li>
             <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">services</a></li>
             <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">works</a></li>
             <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">price</a></li>
             <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">blog</a></li>
-            <li class="nav-item mr-lg-5"><a class="nav-link w-100 p-2 p-md-3" href="#">contacts</a></li>
+            <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">contacts</a></li>
           </ul>
         </div>
       </nav>
@@ -38,6 +37,88 @@
           </div>
         </div>
       </header>
+      <section class="about-us row text-light-1 h-100 mb-lg-5">
+        <div class="col-lg-6 about-us__heading position-relative mb-5">
+          <p class="about-us__heading__title position-absolute text-large text-right weight-bolder text-uppercase"><span class="d-block">who</span><span class="d-block">are</span><span class="d-block">we</span>
+          </p>
+          <div class="about-us__heading__img position-relative"><img class="img-fluid img-object" src="./img/section-2/1.jpg" alt="1"/><img class="img-fluid img-object position-absolute" src="./img/section-2/2.jpg" alt="2"/></div>
+        </div>
+        <div class="col-lg-6 about-us__info d-flex flex-column justify-content-center">
+          <h2 class="about-us__info__title text-small text-uppercase text-primary weight-bolder mb-3">saturno</h2>
+          <div class="about-us__info__description bg-third p-3 p-lg-5 rounded">
+            <p class="text-xsmall">The company works on the most effective job organizing principles. saturno employees are qualified service specialists, creative and technical designers, PHP, HTML and CSS programmers, content editors and publicists. Responsibilities are professionally divided between specialists.</p>
+                  <button class="btn btn-primary border-0 rounded-0 mt-3 text-uppercase text-xxsmall py-2 px-4 weight-bolder">about us</button>
+          </div>
+        </div>
+      </section>
+      <section class="choose-us row text-light-1 p-4 p-md-0">
+        <div class="col-lg-6 choose-us__heading position-relative mb-5 d-flex flex-column align-items-center justify-content-center">
+          <div class="width-70">
+            <p class="choose-us__heading__title text-large weight-bolder text-uppercase"><span class="d-block">why</span><span class="d-block">choose</span><span class="d-block">us?</span>
+            </p>
+            <p class="choose-us__heading__description width-70 text-capitalize mt-5 text-xsmall">digital Score offers customers 12 years of experience and knowledge about how to sell more, providing fast and high-quality project management</p>
+          </div>
+        </div>
+        <div class="col-lg-6 choose-us__features d-flex align-items-center justify-items-center">
+          <div class="row no-gutters flex-column align-items-center justify-items-center mx-auto width-60">
+            <div class="col d-flex mb-4">
+                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                      <use xlink:href="./icons/sprite.svg#icon-experiance">
+                        <title>experiance</title>
+                      </use>
+                    </svg>
+              <div class="choose-us__features__content">
+                <h4 class="text-uppercase">experience</h4>
+                <p class="text-light-2 text-capitalize weight-bold text-xsmall">12 year sof experience on the market</p>
+              </div>
+            </div>
+            <div class="col d-flex mb-4">
+                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                      <use xlink:href="./icons/sprite.svg#icon-professional">
+                        <title>professional</title>
+                      </use>
+                    </svg>
+              <div class="choose-us__features__content">
+                <h4 class="text-uppercase">professional</h4>
+                <p class="text-light-2 text-capitalize weight-bold text-xsmall">our system of tasks distribution allows us to offer quick solutions that are necessary for Your business.</p>
+              </div>
+            </div>
+            <div class="col d-flex mb-4">
+                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                      <use xlink:href="./icons/sprite.svg#icon-quality">
+                        <title>quality</title>
+                      </use>
+                    </svg>
+              <div class="choose-us__features__content">
+                <h4 class="text-uppercase">high quality</h4>
+                <p class="text-light-2 text-capitalize weight-bold text-xsmall">the most qualified specialists will be working with You to ensure high quality on each stage of project.</p>
+              </div>
+            </div>
+            <div class="col d-flex mb-4">
+                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                      <use xlink:href="./icons/sprite.svg#icon-speed">
+                        <title>speed</title>
+                      </use>
+                    </svg>
+              <div class="choose-us__features__content">
+                <h4 class="text-uppercase">speed</h4>
+                <p class="text-light-2 text-capitalize weight-bold text-xsmall">you don’t have to wait until someone will be free from another project. Tasks can be done much faster!.</p>
+              </div>
+            </div>
+            <div class="col d-flex">
+                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                      <use xlink:href="./icons/sprite.svg#icon-lower-cost">
+                        <title>lower-cost</title>
+                      </use>
+                    </svg>
+              <div class="choose-us__features__content">
+                <h4 class="text-uppercase">Lower costs</h4>
+                <p class="text-light-2 text-capitalize weight-bold text-xsmall">you don’t have to sign long-term contracts. We offer flexible payment terms.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="./js/library/jquery.3.5.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

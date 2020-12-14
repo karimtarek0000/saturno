@@ -4,5 +4,19 @@
     font-weight: $weight;
   }
 }
+// Font manger
+@each $type, $size in $heading {
+  .text-#{$type} {
+    font-size: #{$size}px;
+    line-height: #{$size * 1.5}px;
 
-//
+    //
+    @if $type == "large" {
+      //
+      @media only screen and (max-width: 600px) {
+        font-size: #{$size - 20}px;
+        line-height: #{$size * 1.5}px;
+      }
+    }
+  }
+}
