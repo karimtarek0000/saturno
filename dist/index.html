@@ -13,21 +13,22 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse mt-2 mt-lg-0 text-uppercase" id="navbarSupportedContent">
           <ul class="navbar-nav changeDir">
-            <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3 active-link" href="#">about us</a></li>
-            <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">services</a></li>
-            <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">works</a></li>
-            <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">price</a></li>
-            <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">blog</a></li>
-            <li class="nav-item mr-md-2"><a class="nav-link w-100 p-2 p-md-3" href="#">contacts</a></li>
+            <li class="nav-item cursor mr-md-2"><a class="nav-link w-100 p-2 p-md-3 active-link" data-section="home">home</a></li>
+            <li class="nav-item cursor mr-md-2"><a class="nav-link w-100 p-2 p-md-3" data-section="about-us">about us</a></li>
+            <li class="nav-item cursor mr-md-2"><a class="nav-link w-100 p-2 p-md-3" data-section="services">services</a></li>
+            <li class="nav-item cursor mr-md-2"><a class="nav-link w-100 p-2 p-md-3" data-section="works">works</a></li>
+            <li class="nav-item cursor mr-md-2"><a class="nav-link w-100 p-2 p-md-3" data-section="price">price</a></li>
+            <li class="nav-item cursor mr-md-2"><a class="nav-link w-100 p-2 p-md-3" data-section="blog">blog</a></li>
+            <li class="nav-item cursor mr-md-2"><a class="nav-link w-100 p-2 p-md-3" data-section="contacts">contacts</a></li>
           </ul>
         </div>
       </nav>
       <header class="header row flex-column align-items-center justify-content-center overflow-hidden bg-primary">
         <div class="col header__contains d-flex align-items-center justify-content-center flex-grow-0 py-4">
-          <div class="header__contains__info text-center text-uppercase">
+          <section class="header__contains__info text-center text-uppercase" id="home">
             <h1 class="weight-bolder text-primary">Effective solutions</h1>
             <p>for your business</p>
-          </div>
+          </section>
         </div>
         <div class="col d-flex align-items-end">
           <div class="row header__slider mx-auto">
@@ -37,88 +38,247 @@
           </div>
         </div>
       </header>
-      <section class="about-us row text-light-1 h-100 mb-lg-5">
-        <div class="col-lg-6 about-us__heading position-relative mb-5">
-          <p class="about-us__heading__title position-absolute text-large text-right weight-bolder text-uppercase"><span class="d-block">who</span><span class="d-block">are</span><span class="d-block">we</span>
-          </p>
-          <div class="about-us__heading__img position-relative"><img class="img-fluid img-object" src="./img/section-2/1.jpg" alt="1"/><img class="img-fluid img-object position-absolute" src="./img/section-2/2.jpg" alt="2"/></div>
-        </div>
-        <div class="col-lg-6 about-us__info d-flex flex-column justify-content-center">
-          <h2 class="about-us__info__title text-small text-uppercase text-primary weight-bolder mb-3">saturno</h2>
-          <div class="about-us__info__description bg-third p-3 p-lg-5 rounded">
-            <p class="text-xsmall">The company works on the most effective job organizing principles. saturno employees are qualified service specialists, creative and technical designers, PHP, HTML and CSS programmers, content editors and publicists. Responsibilities are professionally divided between specialists.</p>
-                  <button class="btn btn-primary border-0 rounded-0 mt-3 text-uppercase text-xxsmall py-2 px-4 weight-bolder">about us</button>
+      <main>
+        <section class="about-us row text-light-1 h-100 mb-lg-5" id="about-us">
+          <div class="col-lg-6 about-us__heading position-relative mb-5">
+            <h2 class="about-us__heading__title position-absolute text-large text-right weight-bolder text-uppercase"><span class="d-block line-height">who</span><span class="d-block line-height">are</span><span class="d-block line-height">we</span>
+            </h2>
+            <div class="about-us__heading__img position-relative"><img class="img-fluid img-object" src="./img/section-2/1.jpg" alt="1"/><img class="img-fluid img-object position-absolute" src="./img/section-2/2.jpg" alt="2"/></div>
           </div>
-        </div>
-      </section>
-      <section class="choose-us row text-light-1 p-4 p-md-0">
-        <div class="col-lg-6 choose-us__heading position-relative mb-5 d-flex flex-column align-items-center justify-content-center">
-          <div class="width-70">
-            <p class="choose-us__heading__title text-large weight-bolder text-uppercase"><span class="d-block">why</span><span class="d-block">choose</span><span class="d-block">us?</span>
-            </p>
-            <p class="choose-us__heading__description width-70 text-capitalize mt-5 text-xsmall">digital Score offers customers 12 years of experience and knowledge about how to sell more, providing fast and high-quality project management</p>
-          </div>
-        </div>
-        <div class="col-lg-6 choose-us__features d-flex align-items-center justify-items-center">
-          <div class="row no-gutters flex-column align-items-center justify-items-center mx-auto width-60">
-            <div class="col d-flex mb-4">
-                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
-                      <use xlink:href="./icons/sprite.svg#icon-experiance">
-                        <title>experiance</title>
-                      </use>
-                    </svg>
-              <div class="choose-us__features__content">
-                <h4 class="text-uppercase">experience</h4>
-                <p class="text-light-2 text-capitalize weight-bold text-xsmall">12 year sof experience on the market</p>
-              </div>
-            </div>
-            <div class="col d-flex mb-4">
-                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
-                      <use xlink:href="./icons/sprite.svg#icon-professional">
-                        <title>professional</title>
-                      </use>
-                    </svg>
-              <div class="choose-us__features__content">
-                <h4 class="text-uppercase">professional</h4>
-                <p class="text-light-2 text-capitalize weight-bold text-xsmall">our system of tasks distribution allows us to offer quick solutions that are necessary for Your business.</p>
-              </div>
-            </div>
-            <div class="col d-flex mb-4">
-                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
-                      <use xlink:href="./icons/sprite.svg#icon-quality">
-                        <title>quality</title>
-                      </use>
-                    </svg>
-              <div class="choose-us__features__content">
-                <h4 class="text-uppercase">high quality</h4>
-                <p class="text-light-2 text-capitalize weight-bold text-xsmall">the most qualified specialists will be working with You to ensure high quality on each stage of project.</p>
-              </div>
-            </div>
-            <div class="col d-flex mb-4">
-                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
-                      <use xlink:href="./icons/sprite.svg#icon-speed">
-                        <title>speed</title>
-                      </use>
-                    </svg>
-              <div class="choose-us__features__content">
-                <h4 class="text-uppercase">speed</h4>
-                <p class="text-light-2 text-capitalize weight-bold text-xsmall">you don’t have to wait until someone will be free from another project. Tasks can be done much faster!.</p>
-              </div>
-            </div>
-            <div class="col d-flex">
-                    <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
-                      <use xlink:href="./icons/sprite.svg#icon-lower-cost">
-                        <title>lower-cost</title>
-                      </use>
-                    </svg>
-              <div class="choose-us__features__content">
-                <h4 class="text-uppercase">Lower costs</h4>
-                <p class="text-light-2 text-capitalize weight-bold text-xsmall">you don’t have to sign long-term contracts. We offer flexible payment terms.</p>
-              </div>
+          <div class="col-lg-6 about-us__info d-flex flex-column justify-content-center">
+            <h2 class="about-us__info__title text-small text-uppercase text-primary weight-bolder mb-3">saturno</h2>
+            <div class="about-us__info__description bg-third p-3 p-lg-5 rounded">
+              <p class="text-xsmall">The company works on the most effective job organizing principles. saturno employees are qualified service specialists, creative and technical designers, PHP, HTML and CSS programmers, content editors and publicists. Responsibilities are professionally divided between specialists.</p>
+                      <button class="btn btn-primary border-0 rounded-0 mt-3 text-uppercase text-xxsmall py-2 px-4 weight-bolder">about us</button>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="choose-us row text-light-1 p-4 p-md-0" id="choose-us">
+          <div class="col-lg-6 choose-us__heading position-relative mb-5 d-flex flex-column align-items-center justify-content-center">
+            <div class="width-70">
+              <h2 class="choose-us__heading__title text-large weight-bolder text-uppercase"><span class="d-block line-height">why</span><span class="d-block line-height">choose</span><span class="d-block line-height">us?</span>
+              </h2>
+              <p class="choose-us__heading__description width-70 text-capitalize mt-5 text-xsmall">digital Score offers customers 12 years of experience and knowledge about how to sell more, providing fast and high-quality project management</p>
+            </div>
+          </div>
+          <div class="col-lg-6 choose-us__features d-flex align-items-center justify-items-center">
+            <div class="row no-gutters flex-column align-items-center justify-items-center mx-auto width-60">
+              <div class="col d-flex mb-4">
+                        <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-experiance">
+                            <title>experiance</title>
+                          </use>
+                        </svg>
+                <div class="choose-us__features__content">
+                  <h4 class="text-uppercase">experience</h4>
+                  <p class="text-light-2 text-capitalize weight-bold text-xsmall">12 year sof experience on the market</p>
+                </div>
+              </div>
+              <div class="col d-flex mb-4">
+                        <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-professional">
+                            <title>professional</title>
+                          </use>
+                        </svg>
+                <div class="choose-us__features__content">
+                  <h4 class="text-uppercase">professional</h4>
+                  <p class="text-light-2 text-capitalize weight-bold text-xsmall">our system of tasks distribution allows us to offer quick solutions that are necessary for Your business.</p>
+                </div>
+              </div>
+              <div class="col d-flex mb-4">
+                        <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-quality">
+                            <title>quality</title>
+                          </use>
+                        </svg>
+                <div class="choose-us__features__content">
+                  <h4 class="text-uppercase">high quality</h4>
+                  <p class="text-light-2 text-capitalize weight-bold text-xsmall">the most qualified specialists will be working with You to ensure high quality on each stage of project.</p>
+                </div>
+              </div>
+              <div class="col d-flex mb-4">
+                        <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-speed">
+                            <title>speed</title>
+                          </use>
+                        </svg>
+                <div class="choose-us__features__content">
+                  <h4 class="text-uppercase">speed</h4>
+                  <p class="text-light-2 text-capitalize weight-bold text-xsmall">you don’t have to wait until someone will be free from another project. Tasks can be done much faster!.</p>
+                </div>
+              </div>
+              <div class="col d-flex">
+                        <svg class="choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-lower-cost">
+                            <title>lower-cost</title>
+                          </use>
+                        </svg>
+                <div class="choose-us__features__content">
+                  <h4 class="text-uppercase">Lower costs</h4>
+                  <p class="text-light-2 text-capitalize weight-bold text-xsmall">you don’t have to sign long-term contracts. We offer flexible payment terms.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="our-works" id="our-works">
+          <div class="our-works__heading text-center p-2 p-lg-3">
+            <h3 class="text-mid text-light-1 weight-bolder text-uppercase">our works</h3>
+            <p class="text-xsmall text-light-2 width-30 mx-auto">check out our featured projects, a quick showcase on work in progress and our previous work timeline.</p>
+          </div>
+          <div class="btn-group our-works__btn-gallery d-flex justify-content-center" role="group" aria-label="gallery">
+            <button class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase active shrink-0.grow-0" data-select="all">all works</button>
+            <button class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase shrink-0.grow-0" data-select="sites">sites</button>
+            <button class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase shrink-0.grow-0" data-select="logos">logos</button>
+            <button class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase shrink-0.grow-0" data-select="other">other</button>
+          </div>
+          <div class="row no-gutters our-works__gallery mt-5 flex-column flex-lg-row">
+            <div class="col-12 col-lg-5 our-works__gallery__image all logos position-relative"><a href="#"><img class="img-fluid img-object" src="./img/gallery/1.jpg" alt="gallery-1"/>
+                <div class="our-works__gallery__overlay position-absolute d-flex align-items-center justify-content-center text-center">
+                  <div class="our-works__gallery__content">
+                            <svg class="our-works__gallery__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                              <use xlink:href="./icons/sprite.svg#icon-visit">
+                                <title>visit</title>
+                              </use>
+                            </svg>
+                    <p class="text-light-1 text-xsmall weight-bold text-capitalize mt-4">sport nutritions online shop development</p>
+                  </div>
+                </div></a></div>
+            <div class="col-12 col-lg-7 d-flex flex-column">
+              <div class="row no-gutters h-100">
+                <div class="col-md-4 our-works__gallery__image all other position-relative"><a href="#"><img class="img-fluid img-object" src="./img/gallery/2.jpg" alt="gallery-2"/>
+                    <div class="our-works__gallery__overlay position-absolute d-flex align-items-center justify-content-center text-center">
+                      <div class="our-works__gallery__content">
+                                <svg class="our-works__gallery__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                                  <use xlink:href="./icons/sprite.svg#icon-visit">
+                                    <title>visit</title>
+                                  </use>
+                                </svg>
+                        <p class="text-light-1 text-xsmall weight-bold text-capitalize mt-4">sport nutritions online shop development</p>
+                      </div>
+                    </div></a></div>
+                <div class="col-md-4 our-works__gallery__image all sites position-relative"><a href="#"><img class="img-fluid img-object" src="./img/gallery/3.jpg" alt="gallery-3"/>
+                    <div class="our-works__gallery__overlay position-absolute d-flex align-items-center justify-content-center text-center">
+                      <div class="our-works__gallery__content">
+                                <svg class="our-works__gallery__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                                  <use xlink:href="./icons/sprite.svg#icon-visit">
+                                    <title>visit</title>
+                                  </use>
+                                </svg>
+                        <p class="text-light-1 text-xsmall weight-bold text-capitalize mt-4">sport nutritions online shop development</p>
+                      </div>
+                    </div></a></div>
+                <div class="col-md-4 our-works__gallery__image all logos position-relative"><a href="#"><img class="img-fluid img-object" src="./img/gallery/4.jpg" alt="gallery-4"/>
+                    <div class="our-works__gallery__overlay position-absolute d-flex align-items-center justify-content-center text-center">
+                      <div class="our-works__gallery__content">
+                                <svg class="our-works__gallery__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                                  <use xlink:href="./icons/sprite.svg#icon-visit">
+                                    <title>visit</title>
+                                  </use>
+                                </svg>
+                        <p class="text-light-1 text-xsmall weight-bold text-capitalize mt-4">sport nutritions online shop development</p>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-md-4 our-works__gallery__image all other position-relative"><a href="#"><img class="img-fluid img-object" src="./img/gallery/5.jpg" alt="gallery-5"/>
+                    <div class="our-works__gallery__overlay position-absolute d-flex align-items-center justify-content-center text-center">
+                      <div class="our-works__gallery__content">
+                                <svg class="our-works__gallery__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                                  <use xlink:href="./icons/sprite.svg#icon-visit">
+                                    <title>visit</title>
+                                  </use>
+                                </svg>
+                        <p class="text-light-1 text-xsmall weight-bold text-capitalize mt-4">sport nutritions online shop development</p>
+                      </div>
+                    </div></a></div>
+                <div class="col-md-4 our-works__gallery__image all logos position-relative"><a href="#"><img class="img-fluid img-object" src="./img/gallery/6.jpg" alt="gallery-6"/>
+                    <div class="our-works__gallery__overlay position-absolute d-flex align-items-center justify-content-center text-center">
+                      <div class="our-works__gallery__content">
+                                <svg class="our-works__gallery__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                                  <use xlink:href="./icons/sprite.svg#icon-visit">
+                                    <title>visit</title>
+                                  </use>
+                                </svg>
+                        <p class="text-light-1 text-xsmall weight-bold text-capitalize mt-4">sport nutritions online shop development</p>
+                      </div>
+                    </div></a></div>
+                <div class="col-md-4 our-works__gallery__image all sites position-relative"><a href="#"><img class="img-fluid img-object" src="./img/gallery/7.jpg" alt="gallery-7"/>
+                    <div class="our-works__gallery__overlay position-absolute d-flex align-items-center justify-content-center text-center">
+                      <div class="our-works__gallery__content">
+                                <svg class="our-works__gallery__icon resize-svg mt-2 mx-3 grow-0 shrink-0">
+                                  <use xlink:href="./icons/sprite.svg#icon-visit">
+                                    <title>visit</title>
+                                  </use>
+                                </svg>
+                        <p class="text-light-1 text-xsmall weight-bold text-capitalize mt-4">sport nutritions online shop development</p>
+                      </div>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="services row no-gutters" id="services">
+          <div class="col-lg-5 services__heading d-flex flex-column align-items-end justify-content-center">
+            <div class="position-relative">
+              <h2 class="text-large text-light-1 weight-bolder text-uppercase text-right"><span class="d-block line-height">our</span><span class="d-block line-height">services</span></h2>
+              <p class="text-xsmall width-30 text-light-1 ml-auto">Or human resources allow us to finish tasks quickly and in time.</p>
+            </div>
+          </div>
+          <div class="col-lg-6 services__all-services p-3 p-md-5">
+            <div class="row no-gutters flex-wrap flex-row align-content-center justify-content-between h-100">
+              <div class="col services__all-services__item text basis-3 py-2 px-2 d-flex flex-column justify-content-around align-items-center text-center grow-0 shrink-0 mb-3 text-uppercase">
+                        <svg class="grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-solutions">
+                            <title>solutions</title>
+                          </use>
+                        </svg>
+                <p class="text-light-1 m-0">internet solution development</p>
+              </div>
+              <div class="col services__all-services__item text basis-3 py-2 px-2 d-flex flex-column justify-content-around align-items-center text-center grow-0 shrink-0 mb-3 text-uppercase">
+                        <svg class="grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-commercial">
+                            <title>commercial</title>
+                          </use>
+                        </svg>
+                <p class="text-light-1 m-0">internet commercial and marketing</p>
+              </div>
+              <div class="col services__all-services__item text basis-3 py-2 px-2 d-flex flex-column justify-content-around align-items-center text-center grow-0 shrink-0 mb-3 text-uppercase">
+                        <svg class="grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-seo">
+                            <title>seo</title>
+                          </use>
+                        </svg>
+                <p class="text-light-1 m-0">seo services</p>
+              </div>
+              <div class="col services__all-services__item text basis-3 py-2 px-2 d-flex flex-column justify-content-around align-items-center text-center grow-0 shrink-0 mb-3 text-uppercase">
+                        <svg class="grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-content">
+                            <title>content</title>
+                          </use>
+                        </svg>
+                <p class="text-light-1 m-0">web sites content preparation</p>
+              </div>
+              <div class="col services__all-services__item text basis-3 py-2 px-2 d-flex flex-column justify-content-around align-items-center text-center grow-0 shrink-0 mb-3 text-uppercase">
+                        <svg class="grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-design">
+                            <title>design</title>
+                          </use>
+                        </svg>
+                <p class="text-light-1 m-0">design and polygraphy</p>
+              </div>
+              <div class="col services__all-services__item text basis-3 py-2 px-2 d-flex flex-column justify-content-around align-items-center text-center grow-0 shrink-0 mb-3 text-uppercase">
+                        <svg class="grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-outside">
+                            <title>outside</title>
+                          </use>
+                        </svg>
+                <p class="text-light-1 m-0">outside adverts</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="./js/library/jquery.3.5.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

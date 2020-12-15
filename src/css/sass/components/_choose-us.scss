@@ -4,8 +4,8 @@
   background-repeat: no-repeat;
   background-size: 70%;
   background-position-x: left;
-  // background-origin: bottom;
 
+  //
   @media (max-width: 992px) {
     background-position: top center;
   }
@@ -13,34 +13,11 @@
   //
   &__heading {
     //
-    &__title {
-      //
-      span {
-        line-height: 72px;
-        //
-        @media (max-width: 600px) {
-          line-height: 60px;
-        }
-      }
-    }
-    &__img {
-    }
-
-    //
     &__description {
       //
       @media (max-width: 992px) {
         width: 80%;
       }
-    }
-  }
-  //
-  &__features {
-    //
-    &__icon {
-    }
-
-    &__content {
     }
   }
 }

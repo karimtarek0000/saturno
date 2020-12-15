@@ -5,7 +5,7 @@
   }
 }
 // Font manger
-@each $type, $size in $heading {
+@each $type, $size in $textSize {
   .text-#{$type} {
     font-size: #{$size}px;
     line-height: #{$size * 1.5}px;
@@ -14,7 +14,7 @@
     @if $type == "large" {
       //
       @media only screen and (max-width: 600px) {
-        font-size: #{$size - 20}px;
+        font-size: #{$size - 30}px;
         line-height: #{$size * 1.5}px;
       }
     }

@@ -2,18 +2,18 @@
 include ../mixins/svg
 
 //- 
-section.choose-us.row.text-light-1.p-4.p-md-0
+section.choose-us.row.text-light-1.p-4.p-md-0#choose-us
     //- 
     .col-lg-6.choose-us__heading.position-relative.mb-5.d-flex.flex-column.align-items-center.justify-content-center
         div.width-70
-            p.choose-us__heading__title.text-large.weight-bolder.text-uppercase
+            h2.choose-us__heading__title.text-large.weight-bolder.text-uppercase
                 if changeDir == 'ltr'
-                    span.d-block why
-                    span.d-block choose
-                    span.d-block us?
+                    span.d-block.line-height why
+                    span.d-block.line-height choose
+                    span.d-block.line-height us?
                 else
-                    span.d-block لماذا
-                    span.d-block تختارنا؟
+                    span.d-block.line-height لماذا
+                    span.d-block.line-height تختارنا؟
             
             p.choose-us__heading__description.width-70.text-capitalize.mt-5.text-xsmall digital Score offers customers 12 years of experience and knowledge about how to sell more, providing fast and high-quality project management
 

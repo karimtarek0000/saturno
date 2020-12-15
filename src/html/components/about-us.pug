@@ -2,14 +2,14 @@
 include ../mixins/button
 
 //- 
-section.about-us.row.text-light-1.h-100.mb-lg-5
+section.about-us.row.text-light-1.h-100.mb-lg-5#about-us
     //- 
     .col-lg-6.about-us__heading.position-relative.mb-5
-        p.about-us__heading__title.position-absolute.text-large.text-right.weight-bolder.text-uppercase
+        h2.about-us__heading__title.position-absolute.text-large.text-right.weight-bolder.text-uppercase
                 if changeDir == 'ltr'
-                    span.d-block who
-                    span.d-block are
-                    span.d-block we
+                    span.d-block.line-height who
+                    span.d-block.line-height are
+                    span.d-block.line-height we
                 else
                     span.d-block من
                     span.d-block نحن

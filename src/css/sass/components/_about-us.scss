@@ -9,11 +9,6 @@
       transform: translate(-50%, -50%);
       //
       span {
-        line-height: 72px;
-        //
-        @media (max-width: 600px) {
-          line-height: 60px;
-        }
       }
     }
 

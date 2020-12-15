@@ -10,6 +10,7 @@
 // HTML
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 // BODY
@@ -26,4 +27,9 @@ body {
 .container,
 .container-fluid {
   padding: 0;
+}
+
+.btn-group > .btn,
+.btn-group-vertical > .btn {
+  flex: 0 0 auto;
 }

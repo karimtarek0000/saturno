@@ -9,6 +9,17 @@
   line-height: 0;
 }
 
+.line-height {
+  line-height: 72px;
+  //
+  @media (max-width: 600px) {
+    line-height: 50px;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
 //
 .resize-svg {
   height: 40px;
@@ -24,10 +35,30 @@
 .grow-0 {
   flex-grow: 0;
 }
+
 .shrink-0 {
   flex-shrink: 0;
 }
 
+.btn-change {
+  font-size: map-get($textSize, xsmall) + px;
+
+  @media (max-width: 400px) {
+    font-size: map-get($textSize, xxsmall) + px;
+  }
+}
+
 .changeDir {
   margin-inline-start: auto;
+}
+
+//
+.min-height {
+  // height: 550px;
+  min-height: 550px;
+}
+
+.opacity {
+  opacity: 0.2;
+  pointer-events: none;
 }
