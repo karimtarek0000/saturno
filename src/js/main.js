@@ -16,7 +16,6 @@ jQuery(function () {
 
   //
   let getDirPage = $("html").attr("dir");
-  const statusDir = getDirPage === "ltr" ? false : true;
 
   // Header slider
   $(".header__slider, .testimonial").slick({
@@ -111,10 +110,50 @@ jQuery(function () {
     const getLang = $(this).val().replace("#", "");
     // 2)
     if (getLang === "ar") {
-      $(document).attr({ dir: "rtl", lang: "ar" });
+      $("html").attr({ dir: "rtl", lang: "ar" });
     } else {
-      $(document).attr({ dir: "ltr", lang: "en" });
+      $("html").attr({ dir: "ltr", lang: "en" });
     }
+    //
     $(".slick-slider").addClass("direction-ltr");
   });
+
+  //
+  // All images
+  const allImages = $("[data-src]");
+
+  // Preload image
+  function preloadImages(img) {
+    const src = $(img).data("src");
+
+    if (!src) return;
+
+    img.src = src;
+
+    $(img).removeAttr("data-src");
+  }
+
+  //
+  const ImageObServer = new IntersectionObserver(
+    (entries, ImageObServer) => {
+      $(entries).each((i, cur) => {
+        if (!cur.isIntersecting) {
+          cur.target.classList.add("fadeOut");
+          return;
+        } else {
+          //
+          preloadImages(cur.target);
+          cur.target.classList.remove("fadeOut");
+          cur.target.classList.add("fadeIn");
+          ImageObServer.unobserve(cur.target);
+        }
+      });
+    },
+    {
+      threshold: 0,
+    }
+  );
+
+  //
+  allImages.each((i, cur) => ImageObServer.observe(cur));
 });

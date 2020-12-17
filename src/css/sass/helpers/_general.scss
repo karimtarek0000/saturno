@@ -28,7 +28,7 @@
 
     //
     @media (max-width: 600px) {
-      top: 400px;
+      top: 200px;
     }
   }
 }
@@ -95,6 +95,7 @@ a:hover {
   text-decoration: none;
 }
 
+//
 .change-lang {
   //
   &__icon {
@@ -119,4 +120,11 @@ a:hover {
     appearance: none;
     padding-inline-end: 50px;
   }
+}
+
+//
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: none;
 }
