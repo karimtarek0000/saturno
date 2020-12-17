@@ -1,0 +1,33 @@
+// btn scroll
+.btn-scroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 9999;
+  background-color: rgba(map-get($theme-colors, secondary), 0.3);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  //
+  &::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background-color: var(--primary);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    transform: translateX(1px) rotate(90deg);
+    fill: white;
+  }
+}

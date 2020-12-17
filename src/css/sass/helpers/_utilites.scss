@@ -1,3 +1,4 @@
+// img object
 .img-object {
   width: 100%;
   height: 100%;
@@ -17,10 +18,17 @@
   }
 }
 
+// fill svg white
+.fill-svg-white {
+  fill: var(--light-2);
+}
+
+// cursor
 .cursor {
   cursor: pointer;
 }
-//
+
+// resize svg
 .resize-svg {
   height: 40px;
   width: 40px;
@@ -32,33 +40,62 @@
   }
 }
 
+// grow 0
 .grow-0 {
   flex-grow: 0;
 }
 
+// shrink 0
 .shrink-0 {
   flex-shrink: 0;
 }
 
+// btn change
 .btn-change {
   font-size: map-get($textSize, xsmall) + px;
 
+  //
   @media (max-width: 400px) {
     font-size: map-get($textSize, xxsmall) + px;
   }
 }
 
+// change dir
 .changeDir {
   margin-inline-start: auto;
 }
 
-//
+// min height
 .min-height {
-  // height: 550px;
   min-height: 550px;
 }
 
+// opacity
 .opacity {
   opacity: 0.2;
   pointer-events: none;
+}
+
+// fade in
+.fadeIn {
+  opacity: 1;
+}
+
+// first letter
+.first-letter {
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+.direction-ltr {
+  direction: ltr;
+}
+
+.row:before,
+.row:after {
+  display: none;
 }

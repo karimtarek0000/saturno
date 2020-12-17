@@ -1,0 +1,23 @@
+//- 
+include ../mixins/blog-box
+
+
+//- 
+section.blog.text-light-1.d-flex.flex-column.justify-content-center#blog
+
+        .row.no-gutters.blog__heading.align-items-center.mb-4
+            .col.d-none.d-md-block.placeholder
+            .col.d-flex.justify-content-start.justify-content-md-center
+                h3.weight-bolder.text-uppercase.text-mid.mb-0.px-2.px-md-0 blog
+            .col.d-flex.justify-content-end
+                a(class="btn blog__btn btn-outline-primary text-light-1 rounded-0 text-uppercase" href="#") all articles
+
+
+
+
+        //- 
+        .row.no-gutters.blog__article.position-relative
+            -var n = 21
+            while n <= 28
+                +blogBox(n++, 'feb 2020')
+            

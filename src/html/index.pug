@@ -2,12 +2,14 @@
 extends extend/page.pug
 //- CHANGE TITLE
 block title
-    title home page
+    title page
 
 //- CHANGE CONTENT
 block content
     //- Container
     div(class="container-fluid no-gutters overflow-hidden")
+        //- 
+        include ./components/btnScrollUp
         //- Navbar
         include ./components/navbar
         //- Header
@@ -21,6 +23,15 @@ block content
             include ./components/our-works
             //- Services
             include ./components/services
+            article.position-relative.addBackground
+                //- Blog
+                include ./components/blog
+                //- Testimonial
+                include ./components/testimonial
+            //- Trusted
+            include ./components/trusted
+            //- Footer
+            include ./components/footer
 
 
 

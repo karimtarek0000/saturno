@@ -1,0 +1,69 @@
+//- 
+include ../mixins/svg
+
+
+//- 
+footer.footer.bg-fourth.text-light#contacts
+
+    .row.align-items-start.justify-content-around.px-4.px-md-0.py-5.border-bottom.border-gray
+
+        .col-md-5.col-lg-3.footer__info
+            a(class="text-uppercase text-decoration-none text-light-1 text-small weight-bolder" href="#home")
+                | ark
+                span.weight-light.ml-2 solutions
+            p.mt-4 &copy; copyright 2017 saturno development and implementation of sites of any complexity
+
+        .col-md-5.col-lg-2.footer__home
+            p.text-uppercase.weight-bold home
+            ul.list-unstyled.text-capitalize
+                li
+                    a(class="text-decoration-none text-light-2" href="#") about us
+                li
+                    a(class="text-decoration-none text-light-2" href="#") price
+                li
+                    a(class="text-decoration-none text-light-2" href="#") blog
+                li
+                    a(class="text-decoration-none text-light-2" href="#") contact us
+
+        .col-md-5.col-lg-2.footer__services
+            p.text-uppercase.weight-bold services
+            ul.list-unstyled.text-capitalize
+                li
+                    a(class="text-decoration-none text-light-2" href="#") internet solution development
+                li
+                    a(class="text-decoration-none text-light-2" href="#") internet commercials
+                li
+                    a(class="text-decoration-none text-light-2" href="#") seo
+                li
+                    a(class="text-decoration-none text-light-2" href="#") website content
+                li
+                    a(class="text-decoration-none text-light-2" href="#") design and polygraphy
+
+        .col-md-5.col-lg-3.footer__contacts
+            p.text-uppercase.weight-bold contacts
+            ul.list-unstyled.text-light-2
+                li.d-flex.align-items-start
+                    +getSvgIcon('map-marker', 'fill-svg-white resize-footer-svg grow-0 shrink-0')
+                    p.first-letter Kr. Barona iela 130 / K10 Rīga, LV,  LV-1012
+                li.d-flex.align-items-start
+                    +getSvgIcon('ic-phone-24px', 'fill-svg-white resize-footer-svg grow-0 shrink-0')
+                    p.first-letter +7 495 999 00 99
+                li.d-flex.align-items-start
+                    +getSvgIcon('ic-email-24px', 'fill-svg-white resize-footer-svg grow-0 shrink-0')
+                    p.first-letter info@domain.com
+                li.d-flex.align-items-start
+                    +getSvgIcon('clock', 'fill-svg-white resize-footer-svg grow-0 shrink-0')
+                    p.first-letter every day from 10:00 to 18:00
+        
+    .row.py-3.justify-content-center.align-items-center.text-uppercase.weight-bold.text-center
+        .col-md-2.col-lg-2.d-flex.justify-content-center.justify-content-lg-end
+            p.mb-2.mb-md-0 follow us
+        .col-lg-2.d-flex.d-flex.justify-content-center.justify-content-lg-start
+            a(href="https://www.google.com", target="_blank")
+                +getSvgIcon('Facebook', 'text-decoration-none text-light resize-footer-svg grow-0 shrink-0')
+            a(href="https://www.google.com", target="_blank")
+                +getSvgIcon('Twitter', 'text-decoration-none text-light resize-footer-svg grow-0 shrink-0')
+            a(href="https://www.google.com", target="_blank")
+                +getSvgIcon('Instagram', 'text-decoration-none text-light resize-footer-svg grow-0 shrink-0')
+            a(href="https://www.google.com", target="_blank")
+                +getSvgIcon('Linkedin', 'text-decoration-none text-light resize-footer-svg grow-0 shrink-0')

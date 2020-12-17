@@ -1,0 +1,42 @@
+//
+.blog {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  //
+  &__btn {
+    margin-inline-end: 15px;
+  }
+
+  //
+  &__article {
+  }
+
+  //
+  &__date {
+    padding: 0 30px;
+    bottom: 0;
+    left: 0;
+    display: block;
+
+    span:nth-of-type(2) {
+      margin-top: -22px;
+    }
+  }
+
+  //
+  &__description {
+    margin-inline-start: 130px;
+
+    //
+    @media (max-width: 768px) {
+      margin-inline-start: 0;
+    }
+  }
+}
+
+//
+.slick-dots button {
+  color: transparent !important;
+}

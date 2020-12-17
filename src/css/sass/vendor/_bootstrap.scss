@@ -5,6 +5,7 @@ $theme-colors: (
   secondary: #061727,
   third: #081e34,
   third-light: #09273e,
+  fourth: #020c16,
   light-1: white,
   light-2: rgba(255, 255, 255, 0.562),
   gray: #4f5d66,
@@ -15,4 +16,5 @@ $theme-colors: (
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 // ALL COMPONENTS USE
+
 @import "node_modules/bootstrap/scss/bootstrap";

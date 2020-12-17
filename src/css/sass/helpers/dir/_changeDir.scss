@@ -2,6 +2,13 @@
 html[dir="rtl"] body {
   direction: rtl;
   text-align: right;
+  font-family: Cairo, sans-serif;
+
+  //
+  h2,
+  h3 {
+    line-height: 85px;
+  }
 
   //
   .choose-us {
@@ -10,7 +17,57 @@ html[dir="rtl"] body {
   }
 
   //
-  .services__heading {
-    background-image: url(../img/our-services/2.jpg);
+  .services {
+    //
+    &__heading {
+      background-image: url(../img/our-services/2.jpg);
+
+      //
+      & > div {
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+        @media (min-width: 992px) {
+          right: auto;
+          left: -5vw;
+          inset-inline-start: 7vw;
+        }
+      }
+    }
+  }
+
+  //
+  .about-us {
+    //
+    &__heading {
+      //
+      &__img {
+        //
+        img {
+          //
+          &:nth-of-type(2) {
+            left: -50px;
+            right: auto;
+          }
+        }
+      }
+    }
+  }
+
+  //
+  .blog__heading {
+    //
+    @media (min-width: 992px) {
+      direction: ltr;
+    }
+  }
+
+  //
+  .change-lang {
+    //
+    &__icon {
+      right: auto;
+      left: 10px;
+    }
   }
 }

@@ -1,0 +1,30 @@
+.testimonial {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20vw;
+  transform: translateY(35px);
+  box-shadow: 0 20px 20px darken(map-get($theme-colors, secondary), 3%);
+
+  //
+  @media (max-width: 600px) {
+    transform: translateY(0);
+  }
+
+  //
+  svg {
+    fill: white;
+  }
+
+  //
+  &__card {
+    //
+    &__quote {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    //
+    &__name {
+      font-size: 18px;
+    }
+  }
+}

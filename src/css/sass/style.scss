@@ -6,9 +6,6 @@
 //
 @import "sass/helpers/mixins/typography";
 
-//
-@import "sass/helpers/utilites";
-@import "sass/helpers/dir/changeDir";
 //////////////////////////////////////////////
 // COMPONENTS
 @import "sass/components/header";
@@ -18,6 +15,14 @@
 @import "sass/components/choose-us";
 @import "sass/components/gallery";
 @import "sass/components/services";
+@import "sass/components/trusted";
+@import "sass/components/blog";
+@import "sass/components/testimonial";
+@import "sass/components/btn-scroll";
+//
+@import "sass/helpers/utilites";
+@import "sass/helpers/dir/changeDir";
+@import "sass/helpers/general";
 //////////////////////////////////////////////
 // LAYOUT
 //////////////////////////////////////////////

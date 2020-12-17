@@ -1,0 +1,14 @@
+.trusted {
+  //
+  @media (min-width: 992px) {
+    padding: 140px 0;
+  }
+  //
+  img {
+    max-width: 15vw;
+
+    @media (max-width: 600px) {
+      min-width: 30vw;
+    }
+  }
+}

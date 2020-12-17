@@ -1,4 +1,4 @@
-$(function () {
+jQuery(function () {
   //// Navbar
   $(".nav-link").on("click", function () {
     // 1) Remove class show when click link
@@ -6,28 +6,56 @@ $(function () {
     // 2) Get name id section
     const getIdSection = $(this).data("section");
     // 3) Got to section
-    $("html, body").scrollTop($(`#${getIdSection}`).offset().top);
+    $("html, body").animate(
+      {
+        scrollTop: $(`#${getIdSection}`).offset().top,
+      },
+      1000
+    );
   });
 
   //
-  const getDirPage = $("html").attr("dir");
+  let getDirPage = $("html").attr("dir");
   const statusDir = getDirPage === "ltr" ? false : true;
 
   // Header slider
-  $(".header__slider").slick({
+  $(".header__slider, .testimonial").slick({
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: true,
-    rtl: statusDir,
+    rtl: $("html").attr("dir") === "rtl" ? true : false,
     prevArrow: `<svg class='a-left control-c prev slick-prev'>
     <use xlink:href="../icons/sprite.svg#icon-Angle-Left">
     </svg>`,
     nextArrow: `<svg class='a-right control-c next slick-next'>
     <use xlink:href="../icons/sprite.svg#icon-Angle-Right">
     </svg>`,
+  });
+
+  // Blog slider
+  $(".blog__article").slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    arrows: false,
+    appendDots: $(".placeholder"),
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
+    rtl: $("html").attr("dir") === "rtl" ? true : false,
   });
 
   // Section gallery
@@ -50,7 +78,7 @@ $(function () {
       const idSection = $(this).attr("id");
       // 2) Check if scroll top greather than or equal this section
       if ($(document).scrollTop() >= $(this).offset().top) {
-        // 3) Finaly filter on all nav link and check if this section data section equal sectiom above scroll top
+        // 3) Finaly filter on all nav link and check if this section data section equal section above scroll top
         $(".nav-link").filter(function () {
           $(this).data("section") == idSection
             ? $(this).addClass("active-link")
@@ -58,5 +86,35 @@ $(function () {
         });
       }
     });
+
+    //
+    const getSectionAbout = $("#about-us").offset().top;
+    //
+    $(document).scrollTop() >= getSectionAbout
+      ? $("#scrollUp").addClass("fadeIn")
+      : $("#scrollUp").removeClass("fadeIn");
+  });
+
+  // Scroll up document
+  $("#scrollUp").on("click", () => {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
+
+  // Change direction page
+  $(".change_lang").on("change", function () {
+    // 1) Get lang when change lang
+    const getLang = $(this).val().replace("#", "");
+    // 2)
+    if (getLang === "ar") {
+      $(document).attr({ dir: "rtl", lang: "ar" });
+    } else {
+      $(document).attr({ dir: "ltr", lang: "en" });
+    }
+    $(".slick-slider").addClass("direction-ltr");
   });
 });
