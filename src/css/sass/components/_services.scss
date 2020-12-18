@@ -42,8 +42,8 @@
         transform: scale(1.05);
         will-change: transform;
         //
-        @media (hover: none) {
-          box-shadow: 0;
+        @media (hover: hover) {
+          box-shadow: none;
           transform: scale(1);
           background-color: var(--third);
         }
