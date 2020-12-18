@@ -12,7 +12,9 @@
 
   &__features {
     .row {
-      height: 95vh;
+      .col {
+        min-height: 130px;
+      }
     }
   }
 
