@@ -14,16 +14,13 @@
       transition: transform 0.5s ease;
     }
 
-    // Hover
+    //
     &__image:hover &__overlay {
       transform: scale(1);
-    }
 
-    &__image {
+      //
       @media (hover: hover) {
-        &__overlay {
-          transform: scale(1);
-        }
+        transform: scale(1);
       }
     }
   }
