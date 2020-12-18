@@ -15,12 +15,13 @@
     }
 
     //
-    &__image:hover &__overlay {
-      transform: scale(1);
-
+    &__image:hover {
       //
       @media (hover: hover) {
-        transform: scale(1);
+        //
+        .our-works__gallery__overlay {
+          transform: scale(1);
+        }
       }
     }
   }
