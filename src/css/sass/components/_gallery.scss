@@ -19,10 +19,11 @@
       transform: scale(1);
     }
 
-    &__image &__overlay {
-      //
-      @media (hover: none) and (pointer: fine) {
-        transform: scale(1);
+    &__image {
+      @media (hover: hover) {
+        &__overlay {
+          transform: scale(1);
+        }
       }
     }
   }
