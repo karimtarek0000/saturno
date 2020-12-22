@@ -1,5 +1,5 @@
 // Add background
-.addBackground {
+.addBackground-home {
   //
   &::after,
   &::before {
@@ -30,6 +30,41 @@
     @media (max-width: 817px) {
       top: 300px;
     }
+  }
+}
+
+//
+.addBackground-aboutUs {
+  //
+  &::after {
+    content: "";
+    background-image: url("../img/make-website/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    top: -500px;
+    right: 0;
+    left: -200px;
+    width: 100%;
+    background-position: center center;
+    z-index: -2;
+    display: block;
+    animation: moveMan 15s ease-in-out infinite alternate forwards;
+
+    //
+    @media (max-width: 992px) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(map-get($theme-colors, secondary), 0.4) 30%,
+          rgba(map-get($theme-colors, secondary), 0.9)
+        ),
+        url("../img/make-website/1.png");
+      right: 0;
+      left: 0;
+    }
+
+    // transform: scaleX(-1);
   }
 }
 
@@ -127,4 +162,8 @@ a:hover {
 .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: none;
+}
+
+a:focus {
+  outline: none;
 }

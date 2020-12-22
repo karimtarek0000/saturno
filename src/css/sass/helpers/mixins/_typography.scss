@@ -18,5 +18,17 @@
         line-height: #{$size * 1.5}px;
       }
     }
+
+    @if $type == "xlarge" {
+      //
+      @media only screen and (max-width: 768px) {
+        font-size: #{$size - 50}px;
+        line-height: #{$size * 1.5}px;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: #{$size - 75}px;
+        line-height: #{$size * 1.5}px;
+      }
+    }
   }
 }

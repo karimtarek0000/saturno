@@ -1,0 +1,42 @@
+//- EXTENDS 
+extends extend/page.pug
+
+//- CHANGE TITLE
+block title
+    -var title = 'about-us'
+    title #{title}
+
+//- CHANGE CONTENT
+block content
+    //- Container
+    div(class="container-fluid no-gutters overflow-hidden")
+        //- Btn scroll up 
+        include ./components/btnScrollUp
+        //- Navbar
+        include ./components/navbar
+        //- Main
+        main
+            //- Header
+            include ./components/headerAboutus
+            //- Features about us
+            include ./components/features-about-us
+            //- Our history
+            include ./components/our-history
+            //- Map
+            include ./components/map
+            //- Our team
+            include ./components/our-team
+            //- 
+            article.position-relative.addBackground-aboutUs
+                //- 
+                include ./components/make-website
+                //- Testimonial
+                include ./components/testimonial
+            //- Trusted
+            include ./components/trusted
+            //- Footer
+            include ./components/footer
+
+
+
+

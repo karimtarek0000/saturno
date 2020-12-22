@@ -70,4 +70,14 @@ html[dir="rtl"] body {
       left: 10px;
     }
   }
+
+  //
+  .header-about-us__info p {
+    text-align: right;
+  }
+
+  //
+  .our-history__line-date__box::after {
+    right: 0;
+  }
 }

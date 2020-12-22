@@ -1,0 +1,360 @@
+// Section header about us
+.header-about-us {
+  padding: 20px 30px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(map-get($theme-colors, secondary), 0.5) 60%,
+      rgba(map-get($theme-colors, secondary), 0.8)
+    ),
+    url("../img/header/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  margin-top: 65px;
+
+  //
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/other/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    width: 385px;
+    height: 316px;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: overlay;
+  }
+
+  //
+  &__heading {
+    //
+    h1 {
+      background-image: linear-gradient(
+          rgba(map-get($theme-colors, primary), 0.5),
+          rgba(map-get($theme-colors, primary), 0.5)
+        ),
+        url(../img/other/4.png);
+      color: transparent;
+      background-position: center right;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: cover;
+      mix-blend-mode: screen;
+      line-height: 177px;
+    }
+  }
+
+  &__info {
+    //
+    p {
+      text-align: left;
+    }
+
+    &__description {
+      &--1 {
+        font-size: 22px;
+      }
+      &--2 {
+      }
+    }
+  }
+}
+
+// Section features about us
+.our-features {
+  &__features {
+    background-color: transparent;
+    //
+    p {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Section our history
+.our-history {
+  padding-top: 13vw;
+  padding-bottom: 5vw;
+
+  //
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
+
+  h3 {
+    width: 50%;
+
+    //
+    @media (max-width: 768px) {
+      width: 70%;
+    }
+  }
+
+  &::after {
+    content: "";
+    background-image: url(../img/our-history/1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: fit;
+    width: 1155px;
+    max-width: 1155px;
+    height: 300px;
+    z-index: 1;
+
+    //
+    @media (max-width: 768px) {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 1)),
+        url(../img/our-history/1.jpg);
+    }
+  }
+
+  //
+  &__heading {
+    z-index: 2;
+  }
+
+  //
+  &__line-date {
+    //
+    &__box {
+      //
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        top: 33px;
+        left: 0;
+        background-color: var(--secondary);
+        border: 2px solid var(--sixth);
+      }
+
+      //
+      &--active {
+        &::after {
+          border-color: var(--seventh);
+        }
+      }
+    }
+  }
+}
+
+// Section map
+%sudoElemntAfter {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 80px;
+  border-right: 1px dotted var(--light-2);
+  left: 50%;
+  transform: translateX(-50%);
+
+  //
+  @media (max-width: 1230px) {
+    display: none;
+  }
+}
+
+//
+%sudoElemntBefore {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--light-1);
+  border: 3px solid var(--eighth);
+  box-shadow: 0px 0px 0px 1px var(--light-1);
+  border-radius: 50%;
+
+  //
+  @media (max-width: 1230px) {
+    display: none;
+  }
+}
+
+// Section map
+.map {
+  padding: 70px 0;
+  background-color: var(--eighth);
+
+  //
+  @media (max-width: 600px) {
+    padding: 30px 0;
+  }
+
+  //
+  h4 {
+    //
+    &::after {
+      @extend %sudoElemntAfter;
+      top: -106px;
+    }
+    //
+    &::before {
+      @extend %sudoElemntBefore;
+      top: -26px;
+    }
+
+    //
+    @media (max-width: 600px) {
+      font-size: 25px;
+      line-height: 37.5px;
+    }
+  }
+
+  p {
+    //
+    &::after {
+      @extend %sudoElemntAfter;
+      bottom: -105px;
+    }
+
+    //
+    &::before {
+      @extend %sudoElemntBefore;
+      bottom: -116px;
+    }
+  }
+
+  //
+  img {
+    width: 50%;
+
+    @media (max-width: 600px) {
+      width: 80%;
+    }
+  }
+}
+
+// Section our team
+.our-team {
+  //
+  .slick-dots {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  //
+  &__box {
+    //
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      border: 2px solid white;
+      top: 25px;
+      bottom: 25px;
+      right: 30px;
+      left: 30px;
+      transform: scale(0);
+      opacity: 0;
+      transition: all 0.5s ease;
+      z-index: 3;
+      will-change: transform;
+
+      //
+      @media (max-width: 822px) {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  //
+  &__info {
+    top: 0;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    background-color: rgba(map-get($theme-colors, primary), 0.7);
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    z-index: 5;
+    will-change: transform;
+
+    //
+    @media (max-width: 822px) {
+      right: 15px;
+      transform: translateY(0);
+    }
+
+    //
+    &__icons {
+      //
+      svg {
+        transition: all 0.5s ease;
+      }
+      //
+      svg:hover {
+        //
+        @media (hover: hover) {
+          transform: scale(1.5);
+          cursor: pointer;
+        }
+
+        @media (max-width: 822px) {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  //
+  &__box:hover::after {
+    //
+    @media (hover: hover) {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  //
+  &__box:hover &__info {
+    //
+    @media (hover: hover) {
+      transform: translateY(0);
+    }
+  }
+}
+
+//
+.make-website {
+  height: 220px;
+
+  //
+  > div {
+    margin-left: auto;
+
+    //
+    @media (max-width: 982px) {
+      margin: 0 auto;
+    }
+  }
+
+  //
+  h2 {
+    span:nth-of-type(1) {
+      line-height: 72px;
+    }
+    span:nth-of-type(2) {
+      font-size: 35px;
+    }
+  }
+}

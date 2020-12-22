@@ -1,19 +1,21 @@
 //- EXTENDS 
 extends extend/page.pug
+
 //- CHANGE TITLE
 block title
-    title page
+    -var title = 'home'
+    title #{title}
 
 //- CHANGE CONTENT
 block content
     //- Container
     div(class="container-fluid no-gutters overflow-hidden")
-        //- 
+        //- Btn scroll up
         include ./components/btnScrollUp
         //- Navbar
         include ./components/navbar
         //- Header
-        include ./components/header
+        include ./components/headerHome
         main
             //- About us
             include ./components/about-us
@@ -23,7 +25,7 @@ block content
             include ./components/our-works
             //- Services
             include ./components/services
-            article.position-relative.addBackground
+            article.position-relative.addBackground-home
                 //- Blog
                 include ./components/blog
                 //- Testimonial
@@ -32,12 +34,6 @@ block content
             include ./components/trusted
             //- Footer
             include ./components/footer
-
-
-
-
-
-
 
 
 

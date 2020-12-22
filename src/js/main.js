@@ -3,15 +3,6 @@ jQuery(function () {
   $(".nav-link").on("click", function () {
     // 1) Remove class show when click link
     $(this).parentsUntil("navbar-collapse").removeClass("show");
-    // 2) Get name id section
-    const getIdSection = $(this).data("section");
-    // 3) Got to section
-    $("html, body").animate(
-      {
-        scrollTop: $(`#${getIdSection}`).offset().top,
-      },
-      1000
-    );
   });
 
   //
@@ -57,6 +48,35 @@ jQuery(function () {
     rtl: $("html").attr("dir") === "rtl" ? true : false,
   });
 
+  // Our team slider
+  $(".our-team__wrapper").slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
+  });
+
   // Section gallery
   $(".our-works__btn-gallery .btn").on("click", function () {
     // 1) Get id when click the button
@@ -71,25 +91,8 @@ jQuery(function () {
 
   // Scroll document
   $(document).on("scroll", function () {
-    // Each for all sections
-    $("body section").each(function () {
-      // 1) Get id section
-      const idSection = $(this).attr("id");
-      // 2) Check if scroll top greather than or equal this section
-      if ($(document).scrollTop() >= $(this).offset().top) {
-        // 3) Finaly filter on all nav link and check if this section data section equal section above scroll top
-        $(".nav-link").filter(function () {
-          $(this).data("section") == idSection
-            ? $(this).addClass("active-link")
-            : $(this).removeClass("active-link");
-        });
-      }
-    });
-
     //
-    const getSectionAbout = $("#about-us").offset().top;
-    //
-    $(document).scrollTop() >= getSectionAbout
+    $(document).scrollTop() >= 1000
       ? $("#scrollUp").addClass("fadeIn")
       : $("#scrollUp").removeClass("fadeIn");
   });

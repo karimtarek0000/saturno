@@ -8,17 +8,10 @@
 
 //////////////////////////////////////////////
 // COMPONENTS
-@import "sass/components/header";
 @import "sass/components/navbar";
 @import "sass/components/slider";
-@import "sass/components/about-us";
-@import "sass/components/choose-us";
-@import "sass/components/gallery";
-@import "sass/components/services";
-@import "sass/components/trusted";
-@import "sass/components/blog";
-@import "sass/components/testimonial";
 @import "sass/components/btn-scroll";
+@import "sass/components/animation";
 //
 @import "sass/helpers/utilites";
 @import "sass/helpers/dir/changeDir";
@@ -31,3 +24,7 @@
 //////////////////////////////////////////////
 // BASE
 @import "sass/base/base";
+//////////////////////////////////////////////
+// PAGES
+@import "sass/pages/about-us";
+@import "sass/pages/home";
