@@ -16,7 +16,6 @@ jQuery(function () {
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: true,
-    rtl: $("html").attr("dir") === "rtl" ? true : false,
     prevArrow: `<svg class='a-left control-c prev slick-prev'>
     <use xlink:href="../icons/sprite.svg#icon-Angle-Left">
     </svg>`,
@@ -27,7 +26,7 @@ jQuery(function () {
 
   // Blog slider
   $(".blog__article").slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 2,
     slidesToScroll: 2,
     autoplay: true,
@@ -45,12 +44,11 @@ jQuery(function () {
         },
       },
     ],
-    rtl: $("html").attr("dir") === "rtl" ? true : false,
   });
 
   // Our team slider
   $(".our-team__wrapper").slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
