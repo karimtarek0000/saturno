@@ -80,4 +80,21 @@ html[dir="rtl"] body {
   .our-history__line-date__box::after {
     right: 0;
   }
+
+  .make-website > div {
+    margin-left: 0;
+    margin-right: auto;
+
+    //
+    @media (max-width: 982px) {
+      margin: 0 auto;
+    }
+  }
+
+  //
+  .addBackground-aboutUs::after {
+    animation-name: moveManAr;
+    left: 0;
+    right: -200px;
+  }
 }
