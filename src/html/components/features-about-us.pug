@@ -1,20 +1,7 @@
 //- 
-include ../mixins/svg
+include ../mixins/our-features
 
 //- 
-section.our-features.row.no-gutters.bg-primary.py-2.py-lg-5
-    .col.our-features__features.row.no-gutters.justify-content-center.py-5.text-center.text-light-1.container-section
-        .col-lg-4.mb-4.mb-lg-0
-            +getSvgIcon('professional', 'resize-svg mb-3 grow-0 shrink-0')
-            h4.text-uppercase.text-other.weight-bolder professional
-            p.first-letter our system of tasks distribution allows us to offer quick solutions that are necessary for Your business
-
-        .col-lg-4.mb-4.mb-lg-0
-            +getSvgIcon('quality', 'resize-svg mb-3 grow-0 shrink-0')
-            h4.text-uppercase.text-other.weight-bolder high quality
-            p.first-letter the most qualified specialists will be working with You to ensure high quality on each stage of project.
-
-        .col-lg-4.mb-4.mb-lg-0
-            +getSvgIcon('speed', 'resize-svg mb-3 grow-0 shrink-0')
-            h4.text-uppercase.text-other.weight-bolder speed
-            p.first-letter you don’t have to wait until someone will be free from another project. Tasks can be done much faster!.
+section.our-features-about-us.row.no-gutters.bg-primary.py-2.py-lg-5
+    //- 
+    +features('text-light-1')

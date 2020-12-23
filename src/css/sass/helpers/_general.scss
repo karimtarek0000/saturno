@@ -1,4 +1,4 @@
-// Add background
+// Background page home
 .addBackground-home {
   //
   &::after,
@@ -33,7 +33,7 @@
   }
 }
 
-//
+// Background page about us
 .addBackground-aboutUs {
   //
   &::after {
@@ -131,6 +131,21 @@ a:hover {
 }
 
 //
+%afterImageHeader {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../img/other/3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  width: 385px;
+  height: 316px;
+  transform: translateX(-50%);
+  mix-blend-mode: overlay;
+}
+//
 .change-lang {
   //
   &__icon {
@@ -164,6 +179,70 @@ a:hover {
   box-shadow: none;
 }
 
+// will remove outline when focus anchor
 a:focus {
   outline: none;
+}
+
+// Services
+.services {
+  //
+  &__info {
+    padding: 50px 50px 0 100px;
+
+    @media (max-width: 992px) {
+      padding: 30px;
+    }
+
+    //
+    &__title {
+      line-height: 27px;
+    }
+    //
+    &__description {
+      width: 80%;
+      //
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Section features about us
+.our-features-about-us {
+  //
+  &__features {
+    background-color: transparent;
+    //
+    p {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Features services
+.our-features-services {
+  //
+  .our-features__icon {
+    width: 90px;
+    height: 90px;
+    border: 3px solid;
+
+    @media (max-width: 600px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    &--1 {
+      border-color: var(--yellow);
+    }
+    &--2 {
+      border-color: var(--sixth);
+    }
+    &--3 {
+      border-color: var(--primary);
+    }
+  }
 }

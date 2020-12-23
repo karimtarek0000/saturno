@@ -12,6 +12,7 @@ $theme-colors: (
   light-1: white,
   light-2: rgba(255, 255, 255, 0.562),
   gray: #4f5d66,
+  yellow: #c19130,
 );
 ///////////////////////////////////////////
 // ALL HELPERS BOOSTRAP
@@ -32,6 +33,7 @@ $theme-colors: (
 @import "node_modules/bootstrap/scss/transitions";
 @import "node_modules/bootstrap/scss/nav";
 @import "node_modules/bootstrap/scss/media";
+@import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/navbar";
 @import "node_modules/bootstrap/scss/type";
 @import "node_modules/bootstrap/scss/root";

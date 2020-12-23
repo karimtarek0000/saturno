@@ -1,0 +1,44 @@
+// Section header services
+.header-services {
+  padding: 20px 30px;
+  width: 100%;
+  margin-top: 65px;
+
+  //
+  &::after {
+    @extend %afterImageHeader;
+  }
+
+  //
+  &__heading {
+    //
+    h1 {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(127, 67, 154, 0.2)),
+        url(../img/other/6.png);
+      color: transparent;
+      background-position: center;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 200%;
+      mix-blend-mode: hard-light;
+      line-height: 177px;
+    }
+  }
+
+  &__info {
+    //
+    p {
+      text-align: left;
+    }
+
+    &__description {
+      &--1 {
+        font-size: 22px;
+      }
+      &--2 {
+      }
+    }
+  }
+}
+
+//

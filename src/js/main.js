@@ -119,7 +119,7 @@ jQuery(function () {
     $(".slick-slider").addClass("direction-ltr");
   });
 
-  //
+  // Lazy loading image
   // All images
   const allImages = $("[data-src]");
 

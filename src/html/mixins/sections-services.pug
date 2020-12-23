@@ -1,0 +1,18 @@
+//- 
+include ../mixins/button
+
+//- 
+mixin sectionServices(srcImg, altImg, title, description, titleBtn, hrefBtn, dir, width)
+
+    div(class="col-lg-6" class=dir == 'right' ? 'order-1' : 'order-0')
+
+        img(class="img-fluid img-object" src=srcImg, alt=altImg)
+
+    div(class="col-lg-6 services__info d-flex flex-column justify-content-end" class=dir == 'right' ? 'align-items-end order-0' : 'align-items-start order-1')
+
+        h2(class="services__info__title text-small text-uppercase text-primary weight-bolder mb-3 mx-auto px-2" class=width) #{title}
+        .services__info__description.bg-third.p-3.p-lg-5.rounded
+            p.text-xsmall.first-letter #{description}
+
+            //- 
+            +createBtn('btn btn-primary border-0 rounded-0 mt-3 text-uppercase text-xxsmall py-2 px-4 weight-bolder', titleBtn, hrefBtn)

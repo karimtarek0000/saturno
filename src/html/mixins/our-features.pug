@@ -1,0 +1,25 @@
+//- 
+include ../mixins/svg
+
+//- 
+mixin features(colorParagraph)
+
+    .col.our-features.row.no-gutters.justify-content-center.py-5.text-center.text-light-1.container-section
+
+        .col-lg-4.mb-4.mb-lg-0
+            div.our-features__icon.our-features__icon--1.d-flex.align-items-center.justify-content-center.rounded-circle.mb-4.mx-auto
+                +getSvgIcon('professional', 'resize-svg grow-0 shrink-0')
+            h4.text-uppercase.text-other.weight-bolder professional
+            p(class="first-letter px-2" class=colorParagraph) our system of tasks distribution allows us to offer quick solutions that are necessary for Your business
+
+        .col-lg-4.mb-4.mb-lg-0
+            div.our-features__icon.our-features__icon--2.d-flex.align-items-center.justify-content-center.rounded-circle.mb-4.mx-auto
+                +getSvgIcon('quality', 'resize-svg grow-0 shrink-0')
+            h4.text-uppercase.text-other.weight-bolder high quality
+            p(class="first-letter px-2" class=colorParagraph) our system of tasks distribution allows us to offer quick solutions that are necessary for Your business
+
+        .col-lg-4.mb-4.mb-lg-0
+            div.our-features__icon.our-features__icon--3.d-flex.align-items-center.justify-content-center.rounded-circle.mb-4.mx-auto
+                +getSvgIcon('speed', 'resize-svg grow-0 shrink-0')
+            h4.text-uppercase.text-other.weight-bolder speed
+            p(class="first-letter px-2" class=colorParagraph) our system of tasks distribution allows us to offer quick solutions that are necessary for Your business
