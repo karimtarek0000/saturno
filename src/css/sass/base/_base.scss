@@ -10,6 +10,8 @@
 // HTML
 html {
   box-sizing: border-box;
+  scrollbar-color: var(--primary) var(--secondary);
+  scrollbar-width: 5px;
 }
 
 // BODY
