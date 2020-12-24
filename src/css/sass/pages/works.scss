@@ -1,0 +1,78 @@
+// Header works
+.header-works {
+  padding: 20px 30px;
+  width: 100%;
+  margin-top: 65px;
+
+  //
+  &::after {
+    @extend %afterImageHeader;
+  }
+
+  //
+  &__heading {
+    //
+    h1 {
+      background-image: linear-gradient(rgba(126, 48, 72, 0.5), rgba(193, 145, 48, 0.9)),
+        url(../img/other/11.jpg);
+      color: transparent;
+      background-position: left;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100%;
+      line-height: 177px;
+      height: 200px;
+
+      //
+      @media (max-width: 600px) {
+        height: 150px;
+      }
+    }
+  }
+
+  &__info {
+    //
+    p {
+      text-align: left;
+    }
+
+    &__description {
+      &--1 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+// All works
+.all-works {
+  //
+  &__box {
+    height: 50vh;
+
+    //
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to right,
+        rgba(map-get($theme-colors, secondary), 0.8) 40%,
+        rgba(map-get($theme-colors, secondary), 0.1)
+      );
+      display: block;
+    }
+
+    //
+    h4 {
+      display: block;
+      left: 15%;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+    }
+  }
+}

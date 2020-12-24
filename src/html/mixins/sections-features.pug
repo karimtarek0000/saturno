@@ -8,10 +8,10 @@ mixin sectionServices(srcImg, altImg, title, description, titleBtn, hrefBtn, dir
 
         img(class="img-fluid img-object" src=srcImg, alt=altImg)
 
-    div(class="col-lg-6 services__info d-flex flex-column justify-content-end" class=dir == 'right' ? 'align-items-end order-0' : 'align-items-start order-1')
+    div(class="col-lg-6 features__info d-flex flex-column justify-content-end" class=dir == 'right' ? 'align-items-end order-0' : 'align-items-start order-1')
 
-        h2(class="services__info__title text-small text-uppercase text-primary weight-bolder mb-3 mx-auto px-2" class=width) #{title}
-        .services__info__description.bg-third.p-3.p-lg-5.rounded
+        h2(class="features__info__title text-small text-uppercase text-primary weight-bolder mb-3 mx-auto px-2" class=width) #{title}
+        .features__info__description.bg-third.p-3.p-lg-5.rounded
             p.text-xsmall.first-letter #{description}
 
             //- 

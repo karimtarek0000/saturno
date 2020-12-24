@@ -1,0 +1,10 @@
+//- 
+include ../mixins/svg
+
+//- 
+mixin chooseBox(heading, title, iconName)
+    .col.d-flex.mb-4.align-items-start.grow-0
+        +getSvgIcon(iconName, 'choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0')
+        .choose-us__features__content
+            h4.text-uppercase #{heading}
+            p.text-light-2.text-capitalize.weight-bold.text-xsmall #{title}

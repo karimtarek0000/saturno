@@ -3,7 +3,7 @@ extends extend/page.pug
 
 //- CHANGE TITLE
 block title
-    -var title = 'services'
+    -var title = 'works'
     title #{title}
 
 //- CHANGE CONTENT
@@ -14,18 +14,16 @@ block content
         include ./components/btnScrollUp
         //- Navbar
         include ./components/navbar
-        //- Main
+         //- Main
         main
             //- Header
-            include ./components/headerServices
-            //-  All features
-            include ./components/allFeatures
-            //- 
+            include ./components/headerWorks
+            //- All works
+            include ./components/allWorks
+            //- Features services
             include ./components/features-services
             //- Trusted
             include ./components/trusted
             //- Footer
             include ./components/footer
-
-
 

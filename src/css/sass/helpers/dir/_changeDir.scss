@@ -98,4 +98,24 @@ html[dir="rtl"] body {
     left: 0;
     right: -200px;
   }
+
+  //
+  .all-works__box h4 {
+    right: 10%;
+    line-height: 110px;
+
+    //
+    @media (max-width: 600px) {
+      line-height: 85px;
+    }
+  }
+
+  //
+  .all-works__box::after {
+    background-image: linear-gradient(
+      to left,
+      rgba(map-get($theme-colors, secondary), 0.8) 40%,
+      rgba(map-get($theme-colors, secondary), 0.1)
+    );
+  }
 }

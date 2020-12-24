@@ -1,0 +1,30 @@
+//- 
+include ../mixins/services-box
+
+//- 
+section.services.services--home.row.no-gutters#services
+
+    .col-lg-5.services__heading.d-flex.flex-column.align-items-end.justify-content-center
+
+        .position-relative.px-3
+            h2.text-large.text-light-1.weight-bolder.text-uppercase.text-right
+                span.d-block.line-height our
+                span.d-block.line-height services
+            p.text-xsmall.width-30.text-light-1.ml-auto Or human resources allow us to finish tasks quickly and in time.
+
+    .col-lg-6.services__all-services.p-3.p-md-5
+
+        .row.no-gutters.flex-wrap.flex-row.align-content-center.justify-content-between.h-100
+
+            //- 
+            +servicesBox('solutions', 'internet solution development')
+            //- 
+            +servicesBox('commercial', 'internet commercial and marketing')
+            //- 
+            +servicesBox('seo', 'seo services')
+            //- 
+            +servicesBox('content', 'web sites content preparation')
+            //- 
+            +servicesBox('design', 'design and polygraphy')
+            //- 
+            +servicesBox('outside', 'outside adverts')

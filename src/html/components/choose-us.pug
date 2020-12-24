@@ -1,11 +1,14 @@
 //- 
-include ../mixins/svg
+include ../mixins/choose-us-box
 
 //- 
 section.choose-us.row.text-light-1.p-4.p-md-0#choose-us
+
     //- 
     .col-lg-6.choose-us__heading.position-relative.mb-5.d-flex.flex-column.align-items-center.justify-content-center
-        div.width-70
+
+        //- 
+        .width-70
             h2.choose-us__heading__title.text-large.weight-bolder.text-uppercase
                 if changeDir == 'ltr'
                     span.d-block.line-height why
@@ -17,37 +20,23 @@ section.choose-us.row.text-light-1.p-4.p-md-0#choose-us
             
             p.choose-us__heading__description.width-70.text-capitalize.mt-5.text-xsmall digital Score offers customers 12 years of experience and knowledge about how to sell more, providing fast and high-quality project management
 
-        //- 
+    //- 
     .col-lg-6.choose-us__features.d-flex.align-items-center.justify-items-center
 
+        //- 
         .row.no-gutters.flex-column.align-items-center.justify-content-center.mx-auto.width-60.h-100
+            
+            //- 
+            +chooseBox('experiance', '12 year sof experience on the market', 'experiance')
 
-            .col.d-flex.mb-4.align-items-start.grow-0
-                +getSvgIcon('experiance', 'choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0')
-                .choose-us__features__content
-                    h4.text-uppercase experience
-                    p.text-light-2.text-capitalize.weight-bold.text-xsmall 12 year sof experience on the market
+            //- 
+            +chooseBox('professional', 'our system of tasks distribution allows us to offer quick solutions that are necessary for Your business.', 'professional')
 
-            .col.d-flex.mb-4.align-items-start.grow-0
-                +getSvgIcon('professional', 'choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0')
-                .choose-us__features__content
-                    h4.text-uppercase professional
-                    p.text-light-2.text-capitalize.weight-bold.text-xsmall our system of tasks distribution allows us to offer quick solutions that are necessary for Your business.
+            //- 
+            +chooseBox('high quality', 'the most qualified specialists will be working with You to ensure high quality on each stage of project.', 'quality')
 
-            .col.d-flex.mb-4.align-items-start.grow-0
-                +getSvgIcon('quality', 'choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0')
-                .choose-us__features__content
-                    h4.text-uppercase high quality
-                    p.text-light-2.text-capitalize.weight-bold.text-xsmall the most qualified specialists will be working with You to ensure high quality on each stage of project.
+            //- 
+            +chooseBox('speed', 'you don’t have to wait until someone will be free from another project. Tasks can be done much faster!.', 'speed')
 
-            .col.d-flex.mb-4.align-items-start.grow-0
-                +getSvgIcon('speed', 'choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0')
-                .choose-us__features__content
-                    h4.text-uppercase speed
-                    p.text-light-2.text-capitalize.weight-bold.text-xsmall you don’t have to wait until someone will be free from another project. Tasks can be done much faster!.
-
-            .col.d-flex.align-items-start.grow-0
-                +getSvgIcon('lower-cost', 'choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0')
-                .choose-us__features__content
-                    h4.text-uppercase Lower costs
-                    p.text-light-2.text-capitalize.weight-bold.text-xsmall you don’t have to sign long-term contracts. We offer flexible payment terms.
+            //- 
+            +chooseBox('lower-cost', 'you don’t have to sign long-term contracts. We offer flexible payment terms.', 'lower-cost')

@@ -105,7 +105,6 @@
 
 // Section services
 .services {
-  min-height: 100vh;
   //
   &__heading {
     background-image: url(../img/our-services/1.jpg);
@@ -152,6 +151,10 @@
         }
       }
     }
+  }
+
+  &--home {
+    min-height: 100vh;
   }
 }
 
