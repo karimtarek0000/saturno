@@ -1,16 +1,11 @@
 // Header works
-.header-works {
-  padding: 20px 30px;
-  width: 100%;
-  margin-top: 65px;
-
+.header-section {
   //
-  &::after {
-    @extend %afterImageHeader;
-  }
+  &--works {
+    padding: 20px 30px;
+    width: 100%;
+    margin-top: 65px;
 
-  //
-  &__heading {
     //
     h1 {
       background-image: linear-gradient(rgba(126, 48, 72, 0.5), rgba(193, 145, 48, 0.9)),
@@ -26,19 +21,6 @@
       //
       @media (max-width: 600px) {
         height: 150px;
-      }
-    }
-  }
-
-  &__info {
-    //
-    p {
-      text-align: left;
-    }
-
-    &__description {
-      &--1 {
-        font-size: 22px;
       }
     }
   }

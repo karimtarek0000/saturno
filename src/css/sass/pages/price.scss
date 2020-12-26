@@ -1,0 +1,67 @@
+// Section header about us
+.header-section {
+  //
+  &--price {
+    padding: 20px 30px;
+    width: 100%;
+    margin-top: 65px;
+
+    //
+    h1 {
+      background-image: linear-gradient(
+          rgba(126, 48, 72, 0.8),
+          rgba(193, 145, 48, 0.5),
+          rgba(126, 48, 72, 0.8)
+        ),
+        url(../img/other/16.jpg);
+      color: transparent;
+      background-position-y: 50%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: cover;
+      line-height: 177px;
+    }
+  }
+}
+
+// Section plans
+.plans {
+  //
+  .row {
+    > div:nth-of-type(even) {
+      border-width: 0 1px 0 1px;
+      border-color: var(--gray);
+      border-style: solid;
+    }
+  }
+  &__info {
+    &__type {
+    }
+    &__user {
+      height: 60px;
+      max-height: 60px;
+    }
+  }
+
+  &__features {
+    &__storage {
+    }
+    &__products {
+    }
+    &__sms {
+    }
+  }
+
+  &__price {
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+  }
+  svg {
+    max-width: 100%;
+    width: 80%;
+    height: 80%;
+  }
+}

@@ -1,0 +1,30 @@
+//- EXTENDS 
+extends extend/page.pug
+
+//- CHANGE TITLE
+block title
+    -var title = 'price'
+    title #{title}
+
+//- CHANGE CONTENT
+block content
+    //- Container
+    div(class="container-fluid no-gutters overflow-hidden")
+        //- Btn scroll up 
+        //- include ./components/btnScrollUp
+        //- Navbar
+        include ./components/navbar
+        //- Main
+        main
+            //- Header price
+            include ./components/headerPrice
+            //- Plans one
+            include ./components/plans-one
+            //- Trusted
+            //- include ./components/trusted
+            //- Footer
+            //- include ./components/footer
+
+
+
+

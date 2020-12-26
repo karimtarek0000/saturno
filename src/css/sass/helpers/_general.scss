@@ -184,31 +184,6 @@ a:focus {
   outline: none;
 }
 
-// Services
-.services {
-  //
-  &__info {
-    padding: 50px 50px 0 100px;
-
-    @media (max-width: 992px) {
-      padding: 30px;
-    }
-
-    //
-    &__title {
-      line-height: 27px;
-    }
-    //
-    &__description {
-      width: 80%;
-      //
-      @media (max-width: 992px) {
-        width: 100%;
-      }
-    }
-  }
-}
-
 // Section features about us
 .our-features-about-us {
   //
@@ -243,6 +218,28 @@ a:focus {
     }
     &--3 {
       border-color: var(--primary);
+    }
+  }
+}
+
+// Header Sections
+.header-section {
+  //
+  &::after {
+    @extend %afterImageHeader;
+  }
+
+  // Info
+  &__info {
+    //
+    p {
+      text-align: left;
+    }
+    //
+    &__description {
+      &--1 {
+        font-size: 22px;
+      }
     }
   }
 }
