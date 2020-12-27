@@ -45,7 +45,11 @@ $width: (
     flex-basis: #{100 / $size - 2}#{"%"};
 
     //
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 992px) {
+      flex-basis: 49%;
+    }
+
+    @media only screen and (max-width: 600px) {
       flex-basis: auto;
     }
   }

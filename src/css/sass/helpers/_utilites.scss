@@ -10,12 +10,18 @@
   line-height: 0;
 }
 
+// Line height
 .line-height {
   line-height: 72px;
   //
   @media (max-width: 600px) {
     line-height: 50px;
   }
+}
+
+// Letter spacing
+.letter-spacing {
+  letter-spacing: 1px;
 }
 
 // fill svg white

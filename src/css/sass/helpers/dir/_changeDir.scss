@@ -81,6 +81,7 @@ html[dir="rtl"] body {
     right: 0;
   }
 
+  //
   .make-website > div {
     margin-left: 0;
     margin-right: auto;
@@ -116,5 +117,27 @@ html[dir="rtl"] body {
       rgba(map-get($theme-colors, secondary), 0.8) 40%,
       rgba(map-get($theme-colors, secondary), 0.1)
     );
+  }
+
+  //
+  .plans-two__features {
+    padding: 0 20px 0 55px;
+    text-align: right;
+  }
+
+  //
+  .plans-two .select::after {
+    left: -32px;
+    right: auto;
+  }
+
+  //
+  .plans-one__card:nth-of-type(1):hover {
+    box-shadow: -12px 0px 15px 0px #05121e;
+  }
+
+  //
+  .plans-one__card:nth-of-type(3):hover {
+    box-shadow: 12px 0px 15px 0px rgb(5, 18, 30);
   }
 }

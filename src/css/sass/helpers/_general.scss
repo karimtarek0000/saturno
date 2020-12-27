@@ -243,3 +243,27 @@ a:focus {
     }
   }
 }
+
+//
+.select {
+  //
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 33px;
+    left: 0;
+    background-color: var(--secondary);
+    border: 2px solid var(--sixth);
+  }
+
+  //
+  &--active {
+    &::after {
+      border-color: var(--seventh);
+    }
+  }
+}

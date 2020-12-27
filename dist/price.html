@@ -10,6 +10,13 @@
   </head>
   <body>
     <div class="container-fluid no-gutters overflow-hidden">
+      <div class="btn-scroll rounded-circle d-flex align-items-center justify-content-center cursor" id="scrollUp">
+              <svg class="resize-svg grow-0 shrink-0">
+                <use xlink:href="./icons/sprite.svg#icon-Angle-Left">
+                  <title>Angle-Left</title>
+                </use>
+              </svg>
+      </div>
       <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-gray"><a class="navbar-brand text-uppercase weight-bolder" href="/">ark<span class="weight-light ml-2">solutions</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse mt-2 mt-lg-0 text-uppercase" id="navbarSupportedContent">
@@ -59,67 +66,224 @@
                     </div>
                   </div>
         </header>
-        <section class="plans bg-eighth py-5">
+        <section class="plans-one bg-eighth py-3 py-lg-5">
+          <h3 class="text-small text-light-1 weight-bold text-uppercase text-center mb-3 mb-lg-5">tariff plans</h3>
           <div class="container-section row no-gutters">
-                    <div class="col-md-4 bg-secondary text-light-1 text-center py-4 px-5">
-                      <div class="plans__info">
-                        <p class="plans__info__type text-uppercase mb-2 weight-bold text-other">start</p>
-                        <p class="plans__info__user text-light-2 first-letter mb-0 mx-auto text-capitalize width-80">ideal for novice users</p>
+                    <div class="col-sm-6 col-md-4 plans-one__card text-light-1 text-center py-4 px-2 px-md-3 px-lg-5 mb-3 mb-md-0">
+                      <div class="plans-one__info">
+                        <p class="plans-one__info__type text-uppercase mb-2 weight-bold text-xsmall">start</p>
+                        <p class="plans-one__info__user text-light-2 first-letter mb-0 mx-auto text-capitalize width-80">ideal for novice users</p>
                       </div>
-                      <div class="plans__icon d-flex align-items-center justify-content-center my-3 mx-auto">
+                      <div class="plans-one__icon d-flex align-items-center justify-content-center my-3 mx-auto">
                                 <svg class="grow-0 shrink-0">
                                   <use xlink:href="./icons/sprite.svg#icon-solutions">
                                     <title>solutions</title>
                                   </use>
                                 </svg>
                       </div>
-                      <div class="plans__features mb-2 border-bottom border-gray">
-                        <p class="plans__features__storage"><span class="weight-bold">512 </span><span class="text-uppercase weight-bold">gb </span><span class="text-light-2">on disk</span></p>
-                        <p class="plans__features__products"> <span class="weight-bold">1000</span><span class="text-light-2"> products</span></p>
-                        <p class="plans__features__sms"><span class="text-uppercase weight-bold">sms </span><span class="text-light-2">distribution</span></p>
+                      <div class="plans-one__features mb-2 border-bottom border-gray">
+                        <p class="plans-one__features__storage"><span class="weight-bold">512 </span><span class="text-uppercase weight-bold">gb </span><span class="text-light-2">on disk</span></p>
+                        <p class="plans-one__features__products"> <span class="weight-bold">1000</span><span class="text-light-2"> products</span></p>
+                        <p class="plans-one__features__sms"><span class="text-uppercase weight-bold">sms </span><span class="text-light-2">distribution</span></p>
                       </div>
-                      <p class="plans__price"> <span class="d-block weight-bolder text-mid">&dollar; 12.5</span><span class="d-block text-capitalize text-light-2">per month</span></p><a class="btn btn-primary border-0 mt-3 py-3 px-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">send an application</a>
+                      <p class="plans-one__price"> <span class="d-block weight-bolder text-small">&dollar; 12.5</span><span class="d-block text-capitalize text-light-2">per month</span></p><a class="btn btn-primary plans-one__button letter-spacing border-0 mt-3 py-3 py-lg-3 px-3 px-lg-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">send an application</a>
                     </div>
-                    <div class="col-md-4 bg-secondary text-light-1 text-center py-4 px-5">
-                      <div class="plans__info">
-                        <p class="plans__info__type text-uppercase mb-2 weight-bold text-other">advanced</p>
-                        <p class="plans__info__user text-light-2 first-letter mb-0 mx-auto text-capitalize width-80">suitable for users with basic skills</p>
+                    <div class="col-sm-6 col-md-4 plans-one__card text-light-1 text-center py-4 px-2 px-md-3 px-lg-5 mb-3 mb-md-0">
+                      <div class="plans-one__info">
+                        <p class="plans-one__info__type text-uppercase mb-2 weight-bold text-xsmall">advanced</p>
+                        <p class="plans-one__info__user text-light-2 first-letter mb-0 mx-auto text-capitalize width-80">suitable for users with basic skills</p>
                       </div>
-                      <div class="plans__icon d-flex align-items-center justify-content-center my-3 mx-auto">
+                      <div class="plans-one__icon d-flex align-items-center justify-content-center my-3 mx-auto">
                                 <svg class="grow-0 shrink-0">
                                   <use xlink:href="./icons/sprite.svg#icon-commercial">
                                     <title>commercial</title>
                                   </use>
                                 </svg>
                       </div>
-                      <div class="plans__features mb-2 border-bottom border-gray">
-                        <p class="plans__features__storage"><span class="weight-bold">512 </span><span class="text-uppercase weight-bold">gb </span><span class="text-light-2">on disk</span></p>
-                        <p class="plans__features__products"> <span class="weight-bold">1000</span><span class="text-light-2"> products</span></p>
-                        <p class="plans__features__sms"><span class="text-uppercase weight-bold">sms </span><span class="text-light-2">distribution</span></p>
+                      <div class="plans-one__features mb-2 border-bottom border-gray">
+                        <p class="plans-one__features__storage"><span class="weight-bold">512 </span><span class="text-uppercase weight-bold">gb </span><span class="text-light-2">on disk</span></p>
+                        <p class="plans-one__features__products"> <span class="weight-bold">1000</span><span class="text-light-2"> products</span></p>
+                        <p class="plans-one__features__sms"><span class="text-uppercase weight-bold">sms </span><span class="text-light-2">distribution</span></p>
                       </div>
-                      <p class="plans__price"> <span class="d-block weight-bolder text-mid">&dollar; 20</span><span class="d-block text-capitalize text-light-2">per month</span></p><a class="btn btn-primary border-0 mt-3 py-3 px-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">send an application</a>
+                      <p class="plans-one__price"> <span class="d-block weight-bolder text-small">&dollar; 20</span><span class="d-block text-capitalize text-light-2">per month</span></p><a class="btn btn-primary plans-one__button letter-spacing border-0 mt-3 py-3 py-lg-3 px-3 px-lg-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">send an application</a>
                     </div>
-                    <div class="col-md-4 bg-secondary text-light-1 text-center py-4 px-5">
-                      <div class="plans__info">
-                        <p class="plans__info__type text-uppercase mb-2 weight-bold text-other">premium</p>
-                        <p class="plans__info__user text-light-2 first-letter mb-0 mx-auto text-capitalize width-80">opens all the features of an advanced user</p>
+                    <div class="col-sm-6 col-md-4 plans-one__card text-light-1 text-center py-4 px-2 px-md-3 px-lg-5 mb-3 mb-md-0">
+                      <div class="plans-one__info">
+                        <p class="plans-one__info__type text-uppercase mb-2 weight-bold text-xsmall">premium</p>
+                        <p class="plans-one__info__user text-light-2 first-letter mb-0 mx-auto text-capitalize width-80">opens all the features of an advanced user</p>
                       </div>
-                      <div class="plans__icon d-flex align-items-center justify-content-center my-3 mx-auto">
+                      <div class="plans-one__icon d-flex align-items-center justify-content-center my-3 mx-auto">
                                 <svg class="grow-0 shrink-0">
                                   <use xlink:href="./icons/sprite.svg#icon-seo">
                                     <title>seo</title>
                                   </use>
                                 </svg>
                       </div>
-                      <div class="plans__features mb-2 border-bottom border-gray">
-                        <p class="plans__features__storage"><span class="weight-bold">512 </span><span class="text-uppercase weight-bold">gb </span><span class="text-light-2">on disk</span></p>
-                        <p class="plans__features__products"> <span class="weight-bold">1000</span><span class="text-light-2"> products</span></p>
-                        <p class="plans__features__sms"><span class="text-uppercase weight-bold">sms </span><span class="text-light-2">distribution</span></p>
+                      <div class="plans-one__features mb-2 border-bottom border-gray">
+                        <p class="plans-one__features__storage"><span class="weight-bold">512 </span><span class="text-uppercase weight-bold">gb </span><span class="text-light-2">on disk</span></p>
+                        <p class="plans-one__features__products"> <span class="weight-bold">1000</span><span class="text-light-2"> products</span></p>
+                        <p class="plans-one__features__sms"><span class="text-uppercase weight-bold">sms </span><span class="text-light-2">distribution</span></p>
                       </div>
-                      <p class="plans__price"> <span class="d-block weight-bolder text-mid">&dollar; 30.5</span><span class="d-block text-capitalize text-light-2">per month</span></p><a class="btn btn-primary border-0 mt-3 py-3 px-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">send an application</a>
+                      <p class="plans-one__price"> <span class="d-block weight-bolder text-small">&dollar; 30.5</span><span class="d-block text-capitalize text-light-2">per month</span></p><a class="btn btn-primary plans-one__button letter-spacing border-0 mt-3 py-3 py-lg-3 px-3 px-lg-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">send an application</a>
                     </div>
           </div>
         </section>
+        <section class="plans-two bg-secondary py-3 py-lg-5">
+          <h3 class="text-small text-light-1 weight-bold text-uppercase text-center mb-3 mb-lg-5">tariff plans</h3>
+          <div class="container-section row no-gutters justify-content-between">
+                    <div class="col plans-two__card text-light-1 text-center pb-2 pb-lg-4 pt-2 pt-lg-0 basis-4 grow-0 mb-3 mb-lg-0 px-2 px-lg-0">
+                      <div class="plans-two__info py-4">
+                        <p class="plans-two__info__type text-uppercase mb-0 text-xsmall weight-bold">newbie</p>
+                      </div>
+                      <p class="plans-two__price border-bottom border-gray py-4"><span class="d-block weight-bolder text-small">&dollar; 7.5</span><span class="d-block text-capitalize text-light-2">per month</span></p>
+                      <ul class="plans-two__features list-unstyled text-light-2">
+                        <li class="plans-two__features__item py-2 position-relative select select--active">1000 orders</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">5 domain</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">120 minutes</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">500 GB on disk</li>
+                        <li class="plans-two__features__item py-2 position-relative select text-capitalize">premium layouts</li>
+                        <li class="plans-two__features__item py-2 position-relative select text-capitalize">online chat</li>
+                      </ul><a class="btn plans-two__button btn-primary letter-spacing border-0 mt-3 py-3 py-lg-3 px-3 px-lg-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">to order</a>
+                    </div>
+                    <div class="col plans-two__card text-light-1 text-center pb-2 pb-lg-4 pt-2 pt-lg-0 basis-4 grow-0 mb-3 mb-lg-0 px-2 px-lg-0">
+                      <div class="plans-two__info py-4">
+                        <p class="plans-two__info__type text-uppercase mb-0 text-xsmall weight-bold">basic</p>
+                      </div>
+                      <p class="plans-two__price border-bottom border-gray py-4"><span class="d-block weight-bolder text-small">&dollar; 12.5</span><span class="d-block text-capitalize text-light-2">per month</span></p>
+                      <ul class="plans-two__features list-unstyled text-light-2">
+                        <li class="plans-two__features__item py-2 position-relative select select--active">1000 orders</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">5 domain</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">120 minutes</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">500 GB on disk</li>
+                        <li class="plans-two__features__item py-2 position-relative select text-capitalize">premium layouts</li>
+                        <li class="plans-two__features__item py-2 position-relative select text-capitalize">online chat</li>
+                      </ul><a class="btn plans-two__button btn-primary letter-spacing border-0 mt-3 py-3 py-lg-3 px-3 px-lg-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">to order</a>
+                    </div>
+                    <div class="col plans-two__card text-light-1 text-center pb-2 pb-lg-4 pt-2 pt-lg-0 basis-4 grow-0 mb-3 mb-lg-0 px-2 px-lg-0">
+                      <div class="plans-two__info py-4">
+                        <p class="plans-two__info__type text-uppercase mb-0 text-xsmall weight-bold">advanced</p>
+                      </div>
+                      <p class="plans-two__price border-bottom border-gray py-4"><span class="d-block weight-bolder text-small">&dollar; 15</span><span class="d-block text-capitalize text-light-2">per month</span></p>
+                      <ul class="plans-two__features list-unstyled text-light-2">
+                        <li class="plans-two__features__item py-2 position-relative select select--active">1000 orders</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">5 domain</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">120 minutes</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">500 GB on disk</li>
+                        <li class="plans-two__features__item py-2 position-relative select text-capitalize select--active">premium layouts</li>
+                        <li class="plans-two__features__item py-2 position-relative select text-capitalize">online chat</li>
+                      </ul><a class="btn plans-two__button btn-primary letter-spacing border-0 mt-3 py-3 py-lg-3 px-3 px-lg-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">to order</a>
+                    </div>
+                    <div class="col plans-two__card text-light-1 text-center pb-2 pb-lg-4 pt-2 pt-lg-0 basis-4 grow-0 mb-3 mb-lg-0 px-2 px-lg-0">
+                      <div class="plans-two__info py-4">
+                        <p class="plans-two__info__type text-uppercase mb-0 text-xsmall weight-bold">premium</p>
+                      </div>
+                      <p class="plans-two__price border-bottom border-gray py-4"><span class="d-block weight-bolder text-small">&dollar; 20</span><span class="d-block text-capitalize text-light-2">per month</span></p>
+                      <ul class="plans-two__features list-unstyled text-light-2">
+                        <li class="plans-two__features__item py-2 position-relative select select--active">1000 orders</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">5 domain</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">120 minutes</li>
+                        <li class="plans-two__features__item py-2 position-relative select select--active">500 GB on disk</li>
+                        <li class="plans-two__features__item py-2 position-relative select text-capitalize select--active">premium layouts</li>
+                        <li class="plans-two__features__item py-2 position-relative select text-capitalize select--active">online chat</li>
+                      </ul><a class="btn plans-two__button btn-primary letter-spacing border-0 mt-3 py-3 py-lg-3 px-3 px-lg-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder" href="https://www.google.com" target="_blank">to order</a>
+                    </div>
+          </div>
+        </section>
+        <section class="row no-gutters trusted bg-third justify-content-around">
+          <div class="col-md-2 text-center py-5"><img class="img-fluid" src="./img/trusted/1.png" alt="1"/></div>
+          <div class="col-md-2 text-center py-5"><img class="img-fluid" src="./img/trusted/1.png" alt="1"/></div>
+          <div class="col-md-2 text-center py-5"><img class="img-fluid" src="./img/trusted/1.png" alt="1"/></div>
+          <div class="col-md-2 text-center py-5"><img class="img-fluid" src="./img/trusted/1.png" alt="1"/></div>
+        </section>
+        <footer class="footer bg-fourth text-light" id="contacts">
+          <div class="row align-items-start justify-content-around px-4 px-md-0 py-5 border-bottom border-gray">
+            <div class="col-md-5 col-lg-3 footer__info"><a class="text-uppercase text-decoration-none text-light-1 text-small weight-bolder" href="#home">ark<span class="weight-light ml-2">solutions</span></a>
+              <p class="mt-4">&copy; copyright 2017 saturno development and implementation of sites of any complexity</p>
+            </div>
+            <div class="col-md-5 col-lg-2 footer__home">
+              <p class="text-uppercase weight-bold">home</p>
+              <ul class="list-unstyled text-capitalize">
+                <li><a class="text-decoration-none text-light-2" href="#">about us</a></li>
+                <li><a class="text-decoration-none text-light-2" href="#">price</a></li>
+                <li><a class="text-decoration-none text-light-2" href="#">blog</a></li>
+                <li><a class="text-decoration-none text-light-2" href="#">contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-5 col-lg-2 footer__services">
+              <p class="text-uppercase weight-bold">services</p>
+              <ul class="list-unstyled text-capitalize">
+                <li><a class="text-decoration-none text-light-2" href="#">internet solution development</a></li>
+                <li><a class="text-decoration-none text-light-2" href="#">internet commercials</a></li>
+                <li><a class="text-decoration-none text-light-2" href="#">seo</a></li>
+                <li><a class="text-decoration-none text-light-2" href="#">website content</a></li>
+                <li><a class="text-decoration-none text-light-2" href="#">design and polygraphy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-5 col-lg-3 footer__contacts">
+              <p class="text-uppercase weight-bold">contacts</p>
+              <ul class="list-unstyled text-light-2">
+                <li class="d-flex align-items-start">
+                          <svg class="fill-svg-white resize-footer-svg grow-0 shrink-0">
+                            <use xlink:href="./icons/sprite.svg#icon-map-marker">
+                              <title>map-marker</title>
+                            </use>
+                          </svg>
+                  <p class="first-letter">Kr. Barona iela 130 / K10 Rīga, LV,  LV-1012</p>
+                </li>
+                <li class="d-flex align-items-start">
+                          <svg class="fill-svg-white resize-footer-svg grow-0 shrink-0">
+                            <use xlink:href="./icons/sprite.svg#icon-ic-phone-24px">
+                              <title>ic-phone-24px</title>
+                            </use>
+                          </svg>
+                  <p class="first-letter">+7 495 999 00 99</p>
+                </li>
+                <li class="d-flex align-items-start">
+                          <svg class="fill-svg-white resize-footer-svg grow-0 shrink-0">
+                            <use xlink:href="./icons/sprite.svg#icon-ic-email-24px">
+                              <title>ic-email-24px</title>
+                            </use>
+                          </svg>
+                  <p class="first-letter">info@domain.com</p>
+                </li>
+                <li class="d-flex align-items-start">
+                          <svg class="fill-svg-white resize-footer-svg grow-0 shrink-0">
+                            <use xlink:href="./icons/sprite.svg#icon-clock">
+                              <title>clock</title>
+                            </use>
+                          </svg>
+                  <p class="first-letter">every day from 10:00 to 18:00</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row py-3 justify-content-center align-items-center text-uppercase weight-bold text-center">
+            <div class="col-md-2 col-lg-2 d-flex justify-content-center justify-content-lg-end">
+              <p class="mb-2 mb-md-0">follow us</p>
+            </div>
+            <div class="col-lg-2 d-flex d-flex justify-content-center justify-content-lg-start"><a href="https://www.google.com" target="_blank">
+                        <svg class="text-decoration-none text-light resize-footer-svg grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-Facebook">
+                            <title>Facebook</title>
+                          </use>
+                        </svg></a><a href="https://www.google.com" target="_blank">
+                        <svg class="text-decoration-none text-light resize-footer-svg grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-Twitter">
+                            <title>Twitter</title>
+                          </use>
+                        </svg></a><a href="https://www.google.com" target="_blank">
+                        <svg class="text-decoration-none text-light resize-footer-svg grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-Instagram">
+                            <title>Instagram</title>
+                          </use>
+                        </svg></a><a href="https://www.google.com" target="_blank">
+                        <svg class="text-decoration-none text-light resize-footer-svg grow-0 shrink-0">
+                          <use xlink:href="./icons/sprite.svg#icon-Linkedin">
+                            <title>Linkedin</title>
+                          </use>
+                        </svg></a></div>
+          </div>
+        </footer>
       </main>
     </div>
     <script src="./js/library/jquery.3.5.1.js"></script>

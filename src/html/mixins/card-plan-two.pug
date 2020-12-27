@@ -1,0 +1,37 @@
+//- 
+include ../mixins/button
+
+//- 
+mixin cardPlan(head, price, type = 'basic')
+
+    .col.plans-two__card.text-light-1.text-center.pb-2.pb-lg-4.pt-2.pt-lg-0.basis-4.grow-0.mb-3.mb-lg-0.px-2.px-lg-0
+
+        .plans-two__info.py-4
+            p.plans-two__info__type.text-uppercase.mb-0.text-xsmall.weight-bold #{head}
+
+        p.plans-two__price.border-bottom.border-gray.py-4
+            span.d-block.weight-bolder.text-small &dollar; #{price}
+            span.d-block.text-capitalize.text-light-2 per month
+
+        ul.plans-two__features.list-unstyled.text-light-2
+
+            li(class='plans-two__features__item py-2 position-relative select select--active') 1000 orders
+            li(class='plans-two__features__item py-2 position-relative select select--active') 5 domain
+            li(class='plans-two__features__item py-2 position-relative select select--active') 120 minutes
+            if type == 'basic' || type == 'advanced' || type == 'premium'
+                li(class='plans-two__features__item py-2 position-relative select select--active') 500 GB on disk
+            else
+                li(class='plans-two__features__item py-2 position-relative select') 500 GB on disk
+
+            if type == 'advanced' || type == 'premium'
+                li(class='plans-two__features__item py-2 position-relative select text-capitalize select--active') premium layouts
+            else
+                li(class='plans-two__features__item py-2 position-relative select text-capitalize') premium layouts
+
+            if type == 'premium'
+                li(class='plans-two__features__item py-2 position-relative select text-capitalize select--active') online chat
+            else
+                li(class='plans-two__features__item py-2 position-relative select text-capitalize') online chat
+
+
+        +createBtn('btn plans-two__button btn-primary letter-spacing border-0 mt-3 py-3 py-lg-3 px-3 px-lg-5 text-uppercase text-xxsmall py-2 px-4 weight-bolder', 'to order', 'https://www.google.com')

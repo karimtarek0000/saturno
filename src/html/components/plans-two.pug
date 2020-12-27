@@ -1,0 +1,21 @@
+//- 
+include ../mixins/card-plan-two
+
+//- 
+section.plans-two.bg-secondary.py-3.py-lg-5
+
+    h3.text-small.text-light-1.weight-bold.text-uppercase.text-center.mb-3.mb-lg-5 tariff plans
+
+    .container-section.row.no-gutters.justify-content-between
+
+        //- 
+        +cardPlan('newbie', 7.50)
+
+        //- 
+        +cardPlan('basic', 12.50, 'basic')
+
+        //- 
+        +cardPlan('advanced', 15.00, 'advanced')
+
+        //- 
+        +cardPlan('premium', 20.00, 'premium')

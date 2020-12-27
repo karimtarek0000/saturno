@@ -1,3 +1,7 @@
+//- 
+include ../mixins/history-box
+
+//- 
 section.our-history.bg-secondary.text-light-1.position-relative
 
     .container-section
@@ -8,17 +12,8 @@ section.our-history.bg-secondary.text-light-1.position-relative
 
         .our-history__line-date.row.no-gutters.mt-5
 
-            .col-lg-4.our-history__line-date__box.position-relative
-                p.pb-3.border-bottom.border-light-2.text-light-2 2014
-                h4.text-uppercase foundation of the company
-                p.first-line.text-light-2 According to surveys, people often sing in the car than in the bathroom.
+            +historyBox(2014, 'foundation of the company', 'According to surveys, people often sing in the car than in the bathroom.')
 
-            .col-lg-4.our-history__line-date__box.position-relative
-                p.pb-3.border-bottom.border-light-2.text-light-2 2015
-                h4.text-uppercase foundation of the company
-                p.first-line.text-light-2 According to surveys, people often sing in the car than in the bathroom.
+            +historyBox(2015, 'foundation of the company', 'According to surveys, people often sing in the car than in the bathroom.')
 
-            .col-lg-4.our-history__line-date__box.position-relative.our-history__line-date__box--active
-                p.pb-3.border-bottom.border-light-2.text-light-2 2016
-                h4.text-uppercase foundation of the company
-                p.first-line.text-light-2 According to surveys, people often sing in the car than in the bathroom.
+            +historyBox(2016, 'foundation of the company', 'According to surveys, people often sing in the car than in the bathroom.', 'select--active')

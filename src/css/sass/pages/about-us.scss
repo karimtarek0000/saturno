@@ -43,6 +43,7 @@
     padding-top: 0;
   }
 
+  //
   h3 {
     width: 50%;
 
@@ -52,6 +53,7 @@
     }
   }
 
+  //
   &::after {
     content: "";
     background-image: url(../img/our-history/1.jpg);
@@ -77,33 +79,6 @@
   //
   &__heading {
     z-index: 2;
-  }
-
-  //
-  &__line-date {
-    //
-    &__box {
-      //
-      &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        top: 33px;
-        left: 0;
-        background-color: var(--secondary);
-        border: 2px solid var(--sixth);
-      }
-
-      //
-      &--active {
-        &::after {
-          border-color: var(--seventh);
-        }
-      }
-    }
   }
 }
 
