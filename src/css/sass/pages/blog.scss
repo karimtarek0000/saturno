@@ -1,0 +1,27 @@
+// Header section
+.header-section {
+  //
+  &--blog {
+    padding: 20px 30px;
+    width: 100%;
+    margin-top: 65px;
+
+    //
+    h1 {
+      background-image: linear-gradient(
+          rgba(193, 145, 48, 0.8),
+          rgba(193, 145, 48, 0.8),
+          rgba(193, 145, 48, 0.8)
+        ),
+        url(../img/other/16.jpg);
+      color: transparent;
+      background-position-y: 50%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: cover;
+      line-height: 177px;
+    }
+  }
+}
+
+//

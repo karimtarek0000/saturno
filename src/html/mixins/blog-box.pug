@@ -1,5 +1,5 @@
-mixin blogBox (day, date)
-    .col.blog__box
+mixin blogBox (day, date, changeGrid = false)
+    div(class="col blog__box" class=changeGrid)
         div.blog__image.position-relative
             img(src="./img/blog/1.jpg", class="img-fluid img-object" alt="1")
             p.blog__date.position-absolute.bg-secondary.mb-0.text-primary

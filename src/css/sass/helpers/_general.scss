@@ -75,6 +75,13 @@
   margin-inline-end: 10px;
 }
 
+//
+.footer {
+  .navbar-brand {
+    margin-left: 0;
+  }
+}
+
 // Rest Container
 .container,
 .container-fluid {

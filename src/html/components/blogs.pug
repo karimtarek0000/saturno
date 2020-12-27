@@ -1,0 +1,11 @@
+//- 
+include ../mixins/blog-box
+
+//- 
+section.text-light-1.d-flex.flex-column.justify-content-start.justify-content-lg-center.py-3.bg-secondary
+
+        //- 
+        .row.no-gutters.container-section.position-relative.justify-content-between
+            -var n = 1
+            while n <= 2
+                +blogBox(n++, 'feb 2020', 'basis-2 grow-0')

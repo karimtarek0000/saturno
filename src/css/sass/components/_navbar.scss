@@ -15,6 +15,10 @@
 
   // Brand
   &-brand {
+    //
+    img {
+      width: 80%;
+    }
     // Responsive
     @media (min-width: 992px) {
       margin-left: 130px;
