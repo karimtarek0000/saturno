@@ -34,9 +34,9 @@ $width: (
   .width-#{$type} {
     width: $setWidth;
     //
-    // @media (max-width: 600px) {
-    //   width: 100%;
-    // }
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 }
 
