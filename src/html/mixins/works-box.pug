@@ -1,4 +1,4 @@
-mixin addWorks(title, srcImg, altImg, width)
+mixin addWorks(title, srcImg, altImg)
     .col.all-works__box.all-works__box--1.position-relative.text-light-1.position-relative
         img(class="img-fluid img-object" src=srcImg, alt=altImg)
-        h4(class="text-uppercase text-large weight-bolder position-absolute line-height" class=width) #{title}
+        h4.text-uppercase.text-large.weight-bolder.position-absolute.line-height #{title}

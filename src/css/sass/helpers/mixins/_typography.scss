@@ -14,8 +14,9 @@
     @if $type == "large" {
       //
       @media only screen and (max-width: 600px) {
-        font-size: #{$size - 30}px;
-        line-height: #{$size * 1.5}px;
+        $restSize: $size - 40;
+        font-size: #{$restSize}px;
+        line-height: #{$restSize * 1.5}px;
       }
     }
 
@@ -26,7 +27,7 @@
         line-height: #{$size * 1.5}px;
       }
       @media only screen and (max-width: 600px) {
-        font-size: #{$size - 75}px;
+        font-size: #{$size - 90}px;
         line-height: #{$size * 1.5}px;
       }
     }

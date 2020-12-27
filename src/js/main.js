@@ -22,6 +22,17 @@ jQuery(function () {
     nextArrow: `<svg class='a-right control-c next slick-next'>
     <use xlink:href="../icons/sprite.svg#icon-Angle-Right">
     </svg>`,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   // Blog slider
