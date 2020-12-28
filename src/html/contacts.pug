@@ -1,0 +1,24 @@
+//- EXTENDS 
+extends extend/page.pug
+
+//- CHANGE TITLE
+block title
+    -var title = 'contacts'
+    title #{title}
+
+//- CHANGE CONTENT
+block content
+    //- Container
+    div(class="container-fluid no-gutters overflow-hidden")
+        //- Btn scroll up
+        //- include ./components/btnScrollUp
+        //- Navbar
+        include ./components/navbar
+        //- Header Blog
+        include ./components/headerContacts
+        main
+            //- How can help
+            include ./components/how-can-help
+            //- Footer
+            //- include ./components/footer
+

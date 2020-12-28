@@ -154,12 +154,6 @@ html[dir="rtl"] body {
   }
 
   //
-  .blog__description {
-    margin-inline-start: 0;
-    margin-inline-end: 130px;
-  }
-
-  //
   .page-link span:not(.sr-only)::after {
     content: "←";
   }

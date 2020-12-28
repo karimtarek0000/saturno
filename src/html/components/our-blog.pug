@@ -12,12 +12,8 @@ section.blog.text-light-1.d-flex.flex-column.justify-content-start.justify-conte
             .col.d-flex.justify-content-end
                 a(class="btn blog__btn btn-outline-primary text-light-1 rounded-0 text-uppercase" href="#") all articles
 
-
-
-
         //- 
-        .row.no-gutters.blog__article.position-relative
+        .row.no-gutters.blog__article.position-relative.justify-content-between
             -var n = 21
             while n <= 28
-                +blogBox(n++, 'feb 2020')
-            
+                +blogBox(n++, 'feb 2020', 'px-2 grow-0')

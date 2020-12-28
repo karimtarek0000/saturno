@@ -1,12 +1,13 @@
-mixin header(heading, title1, title2)
+mixin header(heading, title1 = false, title2 = false)
 
     .col.grow-0.shrink-0.position-relative
         h1.text-uppercase.text-xlarge.weight-bolder #{heading}
 
-    .col.header-section__info.grow-0.shrink-0
-        .row.no-gutters.h-100.justify-content-center
-            .col-lg-4.weight-bold.header-section__info__description.header-section__info__description--1.first-letter.mx-md-2
-                p #{title1}
+    if title1
+        .col.header-section__info.grow-0.shrink-0
+            .row.no-gutters.h-100.justify-content-center
+                .col-lg-4.weight-bold.header-section__info__description.header-section__info__description--1.first-letter.mx-md-2
+                        p #{title1}
 
-            .col-lg-4.header-section__info__description.header-section__info__description--2.weight-light.first-letter.text-light-2
-                p #{title2}
+                .col-lg-4.header-section__info__description.header-section__info__description--2.weight-light.first-letter.text-light-2
+                    p #{title2}

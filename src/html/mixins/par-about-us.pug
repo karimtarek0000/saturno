@@ -1,0 +1,5 @@
+mixin parAboutUs(title, par, addClassPar = false, addClassTitle = false)
+    div(class=addClassPar)
+        h3(class="text-small text-center text-uppercase text-primary weight-bolder mb-3" class=addClassTitle) #{title}
+        .bg-third.p-3.p-lg-5.rounded.text-light
+            p.text-xsmall.first-letter #{par}

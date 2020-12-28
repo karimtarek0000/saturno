@@ -111,7 +111,7 @@
 
     //
     &:nth-of-type(1) {
-      margin-inline-start: 15px;
+      margin-inline-start: 6px;
     }
 
     //
@@ -291,16 +291,62 @@ a:active,
   background-color: transparent;
 }
 
+//
 .page-link:hover {
   color: white;
   background-color: var(--primary);
   border-color: var(--primary);
 }
 
+//
 .page-link {
   span:not(.sr-only) {
     &::after {
       content: "→";
     }
   }
+}
+
+//
+.about-us {
+  //
+  &__heading {
+    //
+    &__title {
+      top: 50%;
+      left: 55%;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      //
+      span {
+      }
+    }
+  }
+  //
+  &__info {
+    padding: 50px 50px 0 100px;
+
+    @media (max-width: 992px) {
+      padding: 30px;
+    }
+
+    //
+    &__title {
+    }
+    //
+    &__description {
+      width: 90%;
+      //
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//
+ol,
+ul,
+dl {
+  margin: 0;
 }

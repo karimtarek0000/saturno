@@ -1,0 +1,21 @@
+//- 
+include ../mixins/img
+include ../mixins/heading-h2
+include ../mixins/par-about-us
+
+//- 
+section.how-help
+
+    .row.no-gutters.h-100
+
+        .col-md-5.how-help__box.d-flex.justify-content-center.align-items-center.position-relative
+
+            +getImage('section-can-help/1.jpg', '1')
+
+            +headingH2('how we can help you?')
+
+            +getImage('section-can-help/2.jpg', '2', 'position-absolute')
+
+
+        .col-md-7.how-help__box.d-flex.flex-column.justify-content-center
+            +parAboutUs('let’s work together!', 'We like to talk and on the strength of that you are invited for a coffee at our head office', 'width-50 mx-auto', 'letter-spacing')

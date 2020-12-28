@@ -43,3 +43,10 @@
     }
   }
 }
+
+// Text indentaion
+@each $type, $size in $text-indent {
+  .indent-#{$type} {
+    text-indent: #{$size}px;
+  }
+}
