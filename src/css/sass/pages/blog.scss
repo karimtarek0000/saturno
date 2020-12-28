@@ -24,4 +24,46 @@
   }
 }
 
-//
+// First blog
+.first-blog {
+  // Info
+  &__info {
+    padding-left: 15px;
+  }
+
+  .blog__image {
+    height: 500px;
+  }
+
+  // Blog date
+  .blog__date {
+    top: 0;
+    right: 0px;
+    bottom: auto;
+    left: auto;
+  }
+
+  // btn
+  .btn {
+    position: relative;
+
+    //
+    &::after {
+      content: "→";
+      position: absolute;
+      top: 0;
+      right: -25px;
+      color: var(--primary);
+      display: block;
+      transition: all 0.5s;
+    }
+
+    //
+    &:hover::after {
+      //
+      @media (hover: hover) {
+        right: -33px;
+      }
+    }
+  }
+}

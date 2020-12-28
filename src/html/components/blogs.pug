@@ -1,11 +1,56 @@
 //- 
 include ../mixins/blog-box
 
-//- 
-section.text-light-1.d-flex.flex-column.justify-content-start.justify-content-lg-center.py-3.bg-secondary
+//- Blog 1
+section.text-light-1.d-flex.flex-column.justify-content-start.justify-content-lg-center.bg-secondary.my-3.my-md-5
 
         //- 
         .row.no-gutters.container-section.position-relative.justify-content-between
             -var n = 1
             while n <= 2
                 +blogBox(n++, 'feb 2020', 'basis-2 grow-0')
+
+//- Blog 2
+section.first-blog.text-light-1
+
+        .row.container-section.p-0
+            
+            //- 
+            +blogBox(17, 'feb 2020', 'col-md-8 p-0', './img/other/12.jpg', text = false)
+
+            .col-md-4.first-blog__info
+
+                h5.first-blog__title.first-letter.mt-3.mt-md-0 the development of an online clothing and accessories store has been completed. Want to see?
+
+                p.first-blog__description.first-letter.text-light-2.text-xsmall.mt-3.mb-3.mt-md-4.mb-md-5.letter-spacing-5 the company works on the most effective job organizing principles. SATURNO employees are qualified service specialists, creative and technical designers, PHP, HTML and CSS programmers, content editors and publicists. responsibilities are professionally divided between specialists.
+
+                a(class="btn text-primary text-uppercase p-0 letter-spacing" href="https://www.google.com" target="_blank") read more
+
+
+//- Blog 3
+section.text-light-1.d-flex.flex-column.justify-content-start.justify-content-lg-center.py-3.bg-secondary.my-3.my-md-5
+
+        //- 
+        .row.no-gutters.container-section.position-relative.justify-content-between
+
+            +blogBox(23, 'feb 2020', 'basis-2 grow-0', './img/other/15.jpg')
+
+            +blogBox(24, 'feb 2020', 'basis-2 grow-0', './img/other/17.jpg')
+
+
+//- Blog 4
+section.first-blog.text-light-1
+
+        .row.container-section.p-0
+            
+            //- 
+            +blogBox(17, 'feb 2020', 'col-md-8 p-0', './img/other/14.jpg', text = false)
+
+
+            .col-md-4.first-blog__info
+
+                h5.first-blog__title.first-letter.mt-3.mt-md-0 the development of an online clothing and accessories store has been completed. Want to see?
+
+                p.first-blog__description.first-letter.text-light-2.text-xsmall.mt-3.mb-3.mt-md-4.mb-md-5.letter-spacing-5 the company works on the most effective job organizing principles. SATURNO employees are qualified service specialists, creative and technical designers, PHP, HTML and CSS programmers, content editors and publicists. responsibilities are professionally divided between specialists.
+
+                a(class="btn text-primary text-uppercase p-0 letter-spacing" href="https://www.google.com" target="_blank") read more

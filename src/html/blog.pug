@@ -11,7 +11,7 @@ block content
     //- Container
     div(class="container-fluid no-gutters overflow-hidden")
         //- Btn scroll up
-        //- include ./components/btnScrollUp
+        include ./components/btnScrollUp
         //- Navbar
         include ./components/navbar
         //- Header Blog
@@ -19,10 +19,12 @@ block content
         main
             //- Blogs
             include ./components/blogs
+            //- Paginate
+            include ./components/paginate
             //- Trusted
-            //- include ./components/trusted
+            include ./components/trusted
             //- Footer
-            //- include ./components/footer
+            include ./components/footer
 
 
 

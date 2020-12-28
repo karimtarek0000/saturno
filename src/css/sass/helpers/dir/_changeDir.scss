@@ -140,4 +140,27 @@ html[dir="rtl"] body {
   .plans-one__card:nth-of-type(3):hover {
     box-shadow: 12px 0px 15px 0px rgb(5, 18, 30);
   }
+
+  //
+  .first-blog .btn::after {
+    content: "←";
+    left: -25px;
+    right: auto;
+  }
+
+  //
+  .first-blog .btn:hover::after {
+    left: -33px;
+  }
+
+  //
+  .blog__description {
+    margin-inline-start: 0;
+    margin-inline-end: 130px;
+  }
+
+  //
+  .page-link span:not(.sr-only)::after {
+    content: "←";
+  }
 }

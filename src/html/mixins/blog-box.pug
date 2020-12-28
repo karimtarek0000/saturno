@@ -1,8 +1,13 @@
-mixin blogBox (day, date, changeGrid = false)
-    div(class="col blog__box" class=changeGrid)
+//- 
+-var setSrcImg = './img/blog/1.jpg';
+
+//- 
+mixin blogBox (day, date, changeGrid = col, srcImg = setSrcImg, text = true)
+    div(class="blog__box overflow-hidden" class=changeGrid)
         div.blog__image.position-relative
-            img(src="./img/blog/1.jpg", class="img-fluid img-object" alt="1")
+            img(src=srcImg, class="img-fluid img-object" alt="1")
             p.blog__date.position-absolute.bg-secondary.mb-0.text-primary
-                span.d-block.weight-bolder.text-mid #{day}
+                span.d-block.weight-bolder.text-mid.mb-2 #{day}
                 span.d-block.text-uppercase #{date}
-        p.blog__description.mt-4 The development of an online clothing and accessories store has been completed. Want to see?
+        if text
+            p.blog__description.mt-4 The development of an online clothing and accessories store has been completed. Want to see?

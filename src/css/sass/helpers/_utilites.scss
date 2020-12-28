@@ -24,6 +24,10 @@
   letter-spacing: 1px;
 }
 
+.letter-spacing-5 {
+  letter-spacing: 0.5px;
+}
+
 // fill svg white
 .fill-svg-white {
   fill: var(--light-2);
@@ -100,20 +104,28 @@
   }
 }
 
+//
 .direction-rtl {
   direction: rtl;
 }
+
+//
 .direction-ltr {
   direction: ltr;
 }
 
+//
 .row:before,
 .row:after {
   display: none;
 }
 
+// Container section
 .container-section {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 10px;
+  //
+  @media (max-width: 1200px) {
+    padding: 0 10px;
+  }
 }

@@ -187,8 +187,13 @@ a:hover {
 }
 
 // will remove outline when focus anchor
-a:focus {
+a:focus,
+a:link,
+a:visited,
+a:active,
+.btn:focus {
   outline: none;
+  box-shadow: none;
 }
 
 // Section features about us
@@ -271,6 +276,27 @@ a:focus {
   &--active {
     &::after {
       border-color: var(--seventh);
+    }
+  }
+}
+
+/////////////////////
+// Pagination
+.page-link {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+}
+
+.page-link:hover {
+  color: white;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.page-link {
+  span:not(.sr-only) {
+    &::after {
+      content: "→";
     }
   }
 }

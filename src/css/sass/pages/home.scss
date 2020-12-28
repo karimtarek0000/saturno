@@ -211,10 +211,6 @@
   }
 
   //
-  &__article {
-  }
-
-  //
   &__date {
     padding: 0 30px;
     bottom: 0;
@@ -235,6 +231,13 @@
     @media (max-width: 768px) {
       margin-inline-start: 0;
     }
+  }
+
+  //
+  &__image {
+    height: 300px;
+    min-height: 300px;
+    max-height: 400px;
   }
 }
 
