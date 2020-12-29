@@ -4,18 +4,41 @@ html[dir="rtl"] body {
   text-align: right;
   font-family: Cairo, sans-serif;
 
+  ////////////////////////////////
+  //// Other
   //
-  h2,
-  h3 {
-    line-height: 45px;
+  .page-link span:not(.sr-only)::after {
+    content: "←";
   }
 
   //
+  .change-lang {
+    //
+    &__icon {
+      right: auto;
+      left: 10px;
+    }
+  }
+
+  //
+  h2 {
+    line-height: 125px;
+
+    //
+    @media (max-width: 600px) {
+      line-height: 75px;
+    }
+  }
+
+  ////////////////////////////////
+  //// Choose us
   .choose-us {
     background-image: url(../img/section-3/2.png);
     background-position-x: right;
   }
 
+  ////////////////////////////////
+  //// Services
   //
   .services {
     //
@@ -36,6 +59,8 @@ html[dir="rtl"] body {
     }
   }
 
+  ////////////////////////////////
+  //// About us
   //
   .about-us {
     //
@@ -55,40 +80,14 @@ html[dir="rtl"] body {
   }
 
   //
-  .blog__heading {
-    //
-    @media (min-width: 992px) {
-      direction: ltr;
-    }
-  }
-
-  //
-  .change-lang {
-    //
-    &__icon {
-      right: auto;
-      left: 10px;
-    }
-  }
-
-  //
-  .header-section__info p {
-    text-align: right;
-  }
-
-  //
-  .our-history__line-date__box::after {
-    right: 0;
-  }
-
-  //
-  .make-website > div {
-    margin-left: 0;
-    margin-right: auto;
+  .about-us__heading h2 {
+    width: 30%;
+    right: 47%;
 
     //
-    @media (max-width: 982px) {
-      margin: 0 auto;
+    @media (max-width: 984px) {
+      right: 10%;
+      // left: auto;
     }
   }
 
@@ -99,6 +98,34 @@ html[dir="rtl"] body {
     right: -200px;
   }
 
+  ////////////////////////////////
+  //// Header section
+  //
+  .header-section__info p {
+    text-align: right;
+  }
+
+  ////////////////////////////////
+  //// Our history
+  //
+  .our-history__line-date__box::after {
+    right: 0;
+  }
+
+  ////////////////////////////////
+  //// Make website
+  .make-website > div {
+    margin-left: 0;
+    margin-right: auto;
+
+    //
+    @media (max-width: 982px) {
+      margin: 0 auto;
+    }
+  }
+
+  ////////////////////////////////
+  //// All works
   //
   .all-works__box h4 {
     right: 10%;
@@ -119,6 +146,8 @@ html[dir="rtl"] body {
     );
   }
 
+  ////////////////////////////////
+  //// Plans
   //
   .plans-two__features {
     padding: 0 20px 0 55px;
@@ -141,6 +170,8 @@ html[dir="rtl"] body {
     box-shadow: 12px 0px 15px 0px rgb(5, 18, 30);
   }
 
+  ////////////////////////////////
+  //// Blog
   //
   .first-blog .btn::after {
     content: "←";
@@ -154,7 +185,50 @@ html[dir="rtl"] body {
   }
 
   //
-  .page-link span:not(.sr-only)::after {
-    content: "←";
+  .blog__heading {
+    //
+    @media (min-width: 992px) {
+      direction: ltr;
+    }
+  }
+
+  ////////////////////////////////
+  //// Contacts
+  //
+  .how-help__box img:nth-of-type(2) {
+    left: -25%;
+    right: auto;
+  }
+
+  //
+  .how-help__box:nth-of-type(2) > div {
+    transform: translateX(70px);
+
+    //
+    @media (max-width: 992px) {
+      transform: translateX(0px);
+    }
+  }
+
+  //
+  .how-help__box img:nth-of-type(2) {
+    box-shadow: -30px 25px 40px 0px rgba(map-get($theme-colors, secondary), 0.9);
+  }
+
+  //
+  .how-help h2 {
+    left: 8%;
+    right: auto;
+
+    @media (max-width: 984px) {
+      right: 2%;
+      left: auto;
+    }
+  }
+
+  //
+  .how-help h3 {
+    margin-left: 0;
+    margin-right: 20px;
   }
 }

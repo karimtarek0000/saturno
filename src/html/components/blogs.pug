@@ -1,5 +1,6 @@
 //- 
 include ../mixins/blog-box
+include ../mixins/button-secondary
 
 //- Blog 1
 section.text-light-1.d-flex.flex-column.justify-content-start.justify-content-lg-center.bg-secondary.my-3.my-md-5
@@ -24,7 +25,7 @@ section.first-blog.text-light-1
 
                 p.first-blog__description.first-letter.text-light-2.text-xsmall.mt-3.mb-3.mt-md-4.mb-md-5.letter-spacing-5 the company works on the most effective job organizing principles. SATURNO employees are qualified service specialists, creative and technical designers, PHP, HTML and CSS programmers, content editors and publicists. responsibilities are professionally divided between specialists.
 
-                a(class="btn text-primary text-uppercase p-0 letter-spacing" href="https://www.google.com" target="_blank") read more
+                +btnSecondary('read more', 'https://www.google.com')
 
 
 //- Blog 3
@@ -53,4 +54,4 @@ section.first-blog.text-light-1
 
                 p.first-blog__description.first-letter.text-light-2.text-xsmall.mt-3.mb-3.mt-md-4.mb-md-5.letter-spacing-5 the company works on the most effective job organizing principles. SATURNO employees are qualified service specialists, creative and technical designers, PHP, HTML and CSS programmers, content editors and publicists. responsibilities are professionally divided between specialists.
 
-                a(class="btn text-primary text-uppercase p-0 letter-spacing" href="https://www.google.com" target="_blank") read more
+                +btnSecondary('read more', 'https://www.google.com')

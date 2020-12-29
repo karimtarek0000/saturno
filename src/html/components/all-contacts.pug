@@ -1,0 +1,17 @@
+//- 
+include ../mixins/contacts-box
+
+//- 
+section.all-contacts.my-5.container-section
+
+    .row.no-gutters.justify-content-around
+
+        +contactsBox('phone', '+7 495 999 00 99')
+
+        +contactsBox('mail', 'info@domain.com')
+
+        +contactsBox('clock', '9:00 - 18:00 every day')
+
+    .row.no-gutters.justify-content-center
+        .col-md-4.text-center
+            p.text-light-2 A-318/319, Siddhi Vinayak Towers, b/h. DCP Office and Adani CNG, S. G. Highway, Makarba, Ahmedabad 380051, Gujarat, India

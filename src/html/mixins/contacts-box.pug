@@ -1,0 +1,8 @@
+//- 
+include ../mixins/svg
+
+//- 
+mixin contactsBox(icon, title)
+    .col-md-4.text-light.text-center.weight-bold.text-uppercase.mb-2.mb-lg-0.py-2.py-lg-5
+        +getSvgIcon(icon, 'resize-svg mb-2 mb-lg-4 grow-0 shrink-0')
+        p.text-xsmall #{title}

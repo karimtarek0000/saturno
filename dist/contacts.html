@@ -9,7 +9,7 @@
     <title>contacts</title>
   </head>
   <body>
-    <div class="container-fluid no-gutters overflow-hidden">
+    <div class="container-fluid no-gutters overflow-hidden"><!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark border-bottom border-gray"><a class="navbar-brand text-uppercase weight-bolder" href="/"><img class="img-fluid img-object" src="./img/other/logo.png" alt="logo"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse mt-2 mt-lg-0 text-uppercase" id="navbarSupportedContent">
@@ -43,25 +43,91 @@
             </div>
           </ul>
         </div>
-      </nav>
+      </nav><!-- Header -->
       <header class="header-section header-section--contacts row no-gutters flex-column align-items-center justify-content-center text-light-1 text-center px-4 position-relative">
               <div class="col grow-0 shrink-0 position-relative">
                 <h1 class="text-uppercase text-xlarge weight-bolder">contacts</h1>
               </div>
-      </header>
-      <main>
+      </header><!-- Main -->
+      <main><!-- Section How Can Help Contacts -->
         <section class="how-help">
           <div class="row no-gutters h-100">
-            <div class="col-md-5 how-help__box d-flex justify-content-center align-items-center position-relative"><img class="img-fluid img-object" src="./img/section-can-help/1.jpg" alt="1"/>
-                      <h2 class="position-absolute text-large text-light text-right weight-bolder text-uppercase line-height width-50 zindex-over">how we can help you?</h2><img class="img-fluid img-object position-absolute" src="./img/section-can-help/2.jpg" alt="2"/>
+            <div class="col-lg-5 how-help__box d-flex justify-content-center align-items-center position-relative mb-2 mb-lg-0"><img class="img-fluid img-object" src="./img/section-can-help/1.jpg" alt="1"/>
+                      <h2 class="position-absolute text-large text-light text-right weight-bolder text-uppercase line-height zindex-over">how we can help?</h2><img class="img-fluid img-object position-absolute" src="./img/section-can-help/2.jpg" alt="2"/>
             </div>
-            <div class="col-md-7 how-help__box d-flex flex-column justify-content-center">
-                      <div class="width-50 mx-auto">
-                        <h3 class="text-small text-center text-uppercase text-primary weight-bolder mb-3 letter-spacing">let’s work together!</h3>
+            <div class="col-lg-7 how-help__box d-flex flex-column justify-content-center">
+                      <div class="mx-auto how-help__info">
+                        <h3 class="text-small text-uppercase text-primary weight-bolder mb-3 letter-spacing text-center">let’s work together!</h3>
                         <div class="bg-third p-3 p-lg-5 rounded text-light">
                           <p class="text-xsmall first-letter">We like to talk and on the strength of that you are invited for a coffee at our head office</p>
                         </div>
                       </div>
+            </div>
+          </div>
+        </section><!-- All Contacts -->
+        <section class="all-contacts my-5 container-section">
+          <div class="row no-gutters justify-content-around">
+                    <div class="col-md-4 text-light text-center weight-bold text-uppercase mb-2 mb-lg-0 py-2 py-lg-5">
+                              <svg class="resize-svg mb-2 mb-lg-4 grow-0 shrink-0">
+                                <use xlink:href="./icons/sprite.svg#icon-phone">
+                                  <title>phone</title>
+                                </use>
+                              </svg>
+                      <p class="text-xsmall">+7 495 999 00 99</p>
+                    </div>
+                    <div class="col-md-4 text-light text-center weight-bold text-uppercase mb-2 mb-lg-0 py-2 py-lg-5">
+                              <svg class="resize-svg mb-2 mb-lg-4 grow-0 shrink-0">
+                                <use xlink:href="./icons/sprite.svg#icon-mail">
+                                  <title>mail</title>
+                                </use>
+                              </svg>
+                      <p class="text-xsmall">info@domain.com</p>
+                    </div>
+                    <div class="col-md-4 text-light text-center weight-bold text-uppercase mb-2 mb-lg-0 py-2 py-lg-5">
+                              <svg class="resize-svg mb-2 mb-lg-4 grow-0 shrink-0">
+                                <use xlink:href="./icons/sprite.svg#icon-clock">
+                                  <title>clock</title>
+                                </use>
+                              </svg>
+                      <p class="text-xsmall">9:00 - 18:00 every day</p>
+                    </div>
+          </div>
+          <div class="row no-gutters justify-content-center">
+            <div class="col-md-4 text-center">
+              <p class="text-light-2">A-318/319, Siddhi Vinayak Towers, b/h. DCP Office and Adani CNG, S. G. Highway, Makarba, Ahmedabad 380051, Gujarat, India</p>
+            </div>
+          </div>
+        </section><!-- Form Contacts -->
+        <section class="form-contacts bg-eighth">
+          <div class="row no-gutters justify-content-center align-items-center h-100 container-section">
+            <div class="col-lg-6 form-contacts__heading d-flex flex-column align-items-start justify-content-center h-100">
+              <h2 class="text-large text-light-1 weight-bolder text-uppercase line-height width-90">ready to request a quote?</h2>
+              <p class="first-letter text-xsmall width-60 text-light-1 mt-4">We would love to work with you to cook up your next idea take the first step by choosing a project type and filing in the form we look forward to hearing from you.</p>
+            </div>
+            <div class="col-lg-6 form-contacts__form-group">
+              <form class="row no-gutters flex-column h-100 py-5">
+                <div class="col form-contacts__form-group__one">
+                  <label class="text-primary text-uppercase weight-bold">fill out the form and we'll be in touch soon!</label>
+                  <div class="input-group">
+                    <input class="form-control py-4 pl-4 border-light-2 rounded mr-sm-3" type="text" placeholder="phone number"/>
+                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="email" placeholder="E-mail address"/>
+                  </div>
+                </div>
+                <div class="col mt-4 form-contacts__form-group__two">
+                  <label class="text-primary text-uppercase weight-bold">what are you interested in?</label>
+                  <div>
+                            <button class="btn py-2 px-4 text-uppercase text-light-1 btn-outline-primary" type="button">website</button>
+                            <button class="btn py-2 px-4 text-uppercase text-light-1 btn-outline-primary" type="button">mobile app</button>
+                            <button class="btn py-2 px-4 text-uppercase text-light-1 btn-outline-primary" type="button">branding</button>
+                  </div>
+                </div>
+                <div class="col mt-4 form-contacts__form-group__three">
+                  <textarea class="form-control border-light-2 rest-textarea" placeholder="Tell us about the project"></textarea>
+                </div>
+                <div class="col mt-4 form-contacts__form-group__four">
+                          <button class="btn py-3 px-5 text-uppercase text-light-1 btn-primary" type="submit">send an application</button>
+                </div>
+              </form>
             </div>
           </div>
         </section>

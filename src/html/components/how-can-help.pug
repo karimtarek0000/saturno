@@ -8,14 +8,14 @@ section.how-help
 
     .row.no-gutters.h-100
 
-        .col-md-5.how-help__box.d-flex.justify-content-center.align-items-center.position-relative
+        .col-lg-5.how-help__box.d-flex.justify-content-center.align-items-center.position-relative.mb-2.mb-lg-0
 
             +getImage('section-can-help/1.jpg', '1')
 
-            +headingH2('how we can help you?')
+            +headingH2('how we can help?')
 
             +getImage('section-can-help/2.jpg', '2', 'position-absolute')
 
 
-        .col-md-7.how-help__box.d-flex.flex-column.justify-content-center
-            +parAboutUs('let’s work together!', 'We like to talk and on the strength of that you are invited for a coffee at our head office', 'width-50 mx-auto', 'letter-spacing')
+        .col-lg-7.how-help__box.d-flex.flex-column.justify-content-center
+            +parAboutUs('let’s work together!', 'We like to talk and on the strength of that you are invited for a coffee at our head office', 'mx-auto how-help__info', 'letter-spacing text-center', btn = false)

@@ -1,0 +1,40 @@
+//- 
+include ../mixins/img
+include ../mixins/button-form
+
+
+//- 
+section.form-contacts.bg-eighth
+
+    .row.no-gutters.justify-content-center.align-items-center.h-100.container-section
+
+        .col-lg-6.form-contacts__heading.d-flex.flex-column.align-items-start.justify-content-center.h-100
+            h2.text-large.text-light-1.weight-bolder.text-uppercase.line-height.width-90 ready to request a quote?
+            p.first-letter.text-xsmall.width-60.text-light-1.mt-4 We would love to work with you to cook up your next idea take the first step by choosing a project type and filing in the form we look forward to hearing from you.
+
+        .col-lg-6.form-contacts__form-group
+
+            form.row.no-gutters.flex-column.h-100.py-5
+
+                .col.form-contacts__form-group__one
+                    label.text-primary.text-uppercase.weight-bold fill out the form and we'll be in touch soon!
+                    div.input-group
+                        input(class="form-control py-4 pl-4 border-light-2 rounded mr-sm-3" type="text" placeholder="phone number")
+                        input(class="form-control py-4 pl-4 border-light-2 rounded" type="email" placeholder="E-mail address")
+
+                .col.mt-4.form-contacts__form-group__two
+                    label.text-primary.text-uppercase.weight-bold what are you interested in?
+                    div
+                        +btnForm('button', 'website', 'py-2 px-4 text-uppercase text-light-1 btn-outline-primary')
+
+                        +btnForm('button', 'mobile app', 'py-2 px-4 text-uppercase text-light-1 btn-outline-primary')
+
+                        +btnForm('button', 'branding', 'py-2 px-4 text-uppercase text-light-1 btn-outline-primary')
+
+                .col.mt-4.form-contacts__form-group__three
+                    textarea(class='form-control border-light-2 rest-textarea' placeholder="Tell us about the project")
+
+                .col.mt-4.form-contacts__form-group__four
+                    +btnForm('submit', 'send an application', 'py-3 px-5 text-uppercase text-light-1 btn-primary')
+
+
