@@ -30,6 +30,14 @@ html[dir="rtl"] body {
     }
   }
 
+  //
+  .navbar .navbar-brand {
+    @media (min-width: 992px) {
+      margin-right: 130px;
+      margin-left: 0;
+    }
+  }
+
   ////////////////////////////////
   //// Choose us
   .choose-us {
@@ -212,7 +220,7 @@ html[dir="rtl"] body {
 
   //
   .how-help__box img:nth-of-type(2) {
-    box-shadow: -30px 25px 40px 0px rgba(map-get($theme-colors, secondary), 0.9);
+    box-shadow: -30px 35px 30px 0px darken(map-get($theme-colors, secondary), 4%);
   }
 
   //

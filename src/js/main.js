@@ -236,7 +236,7 @@ jQuery(function () {
     },
     chooseIntersted: {
       en: `You must choose some one ❌`,
-      ar: "❌ يحب اختيار علي الاقل اختيار واحد",
+      ar: "❌ يجب اختيار واحد علي الاقل",
     },
     aboutProject: {
       en: `You must write message ❌`,
