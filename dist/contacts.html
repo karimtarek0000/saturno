@@ -105,32 +105,36 @@
               <p class="first-letter text-xsmall width-60 text-light-1 mt-4">We would love to work with you to cook up your next idea take the first step by choosing a project type and filing in the form we look forward to hearing from you.</p>
             </div>
             <div class="col-lg-6 form-contacts__form-group">
-              <form class="row no-gutters flex-column h-100 py-5">
+              <form class="row no-gutters flex-column h-100 py-5" id="form">
                 <div class="col form-contacts__form-group__one">
-                  <label class="text-primary text-uppercase weight-bold">fill out the form and we'll be in touch soon!</label>
+                  <label class="text-primary text-uppercase weight-bold" id="labelOne"></label>
                   <div class="input-group">
-                    <input class="form-control py-4 pl-4 border-light-2 rounded mr-sm-3" type="text" placeholder="phone number"/>
-                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="email" placeholder="E-mail address"/>
+                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="text" id="phone" autocomplete="off"/>
+                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="email" id="email" autocomplete="off"/>
                   </div>
+                  <div class="text-light-1 d-flex flex-column flex-sm-row mt-2"><span class="width-50 first-letter" id="messagePhone"></span><span class="width-50 first-letter" id="messageEmail"></span></div>
                 </div>
                 <div class="col mt-4 form-contacts__form-group__two">
-                  <label class="text-primary text-uppercase weight-bold">what are you interested in?</label>
+                  <label class="text-primary text-uppercase weight-bold" id="labelTwo"></label>
                   <div>
-                            <button class="btn py-2 px-4 text-uppercase text-light-1 btn-outline-primary" type="button">website</button>
-                            <button class="btn py-2 px-4 text-uppercase text-light-1 btn-outline-primary" type="button">mobile app</button>
-                            <button class="btn py-2 px-4 text-uppercase text-light-1 btn-outline-primary" type="button">branding</button>
+                            <button class="btn form-select py-2 px-4 text-uppercase text-light-1 btn-outline-primary" data-project="website" type="button">website</button>
+                            <button class="btn form-select py-2 px-4 text-uppercase text-light-1 btn-outline-primary" data-project="mobile app" type="button">mobile app</button>
+                            <button class="btn form-select py-2 px-4 text-uppercase text-light-1 btn-outline-primary" data-project="branding" type="button">branding</button>
                   </div>
+                  <div class="text-light-1 mt-3"><span class="width-50 first-letter" id="messageInterested"></span></div>
                 </div>
                 <div class="col mt-4 form-contacts__form-group__three">
-                  <textarea class="form-control border-light-2 rest-textarea" placeholder="Tell us about the project"></textarea>
+                  <textarea class="form-control border-light-2 rest-textarea" id="textArea"></textarea>
+                  <div class="text-light-1 mt-3"><span class="width-50 first-letter" id="messageTextArea"></span></div>
                 </div>
                 <div class="col mt-4 form-contacts__form-group__four">
-                          <button class="btn py-3 px-5 text-uppercase text-light-1 btn-primary" type="submit">send an application</button>
+                          <button class="btn py-3 px-5 text-uppercase text-light-1 btn-primary submitForm" data-project="" type="submit">send an application</button>
                 </div>
               </form>
             </div>
           </div>
-        </section>
+        </section><!-- Form Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13824.96559965868!2d30.93601402851545!3d29.97249171053464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585658d0ce70c9%3A0xf3e642975b27941f!2sRoyal%20Towers!5e0!3m2!1sen!2seg!4v1609354263941!5m2!1sen!2seg" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
         <footer class="footer bg-fourth text-light" id="contacts">
           <div class="row align-items-start justify-content-around px-4 px-md-0 py-5 border-bottom border-gray">
             <div class="col-md-5 col-lg-3 footer__info"><a class="navbar-brand text-uppercase weight-bolder" href="/"><img class="img-fluid img-object" src="./img/other/logo.png" alt="logo"/></a>

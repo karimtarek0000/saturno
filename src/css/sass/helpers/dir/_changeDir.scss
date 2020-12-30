@@ -231,4 +231,31 @@ html[dir="rtl"] body {
     margin-left: 0;
     margin-right: 20px;
   }
+
+  //
+  .form-contacts {
+    background-image: url(../img/section-3/2.png);
+    background-position: bottom right;
+
+    //
+    @media (max-width: 992px) {
+      background-image: linear-gradient(
+          rgba(map-get($theme-colors, secondary), 0.7),
+          rgba(map-get($theme-colors, secondary), 0.7)
+        ),
+        url(../img/section-3/2.png);
+    }
+  }
+
+  ////////////////////////////////
+  // Contacts
+  .form-contacts__form-group input[type="text"] {
+    margin-left: 10px;
+    margin-right: 0;
+
+    //
+    @media (max-width: 600px) {
+      margin-left: 0;
+    }
+  }
 }

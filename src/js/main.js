@@ -5,8 +5,16 @@ jQuery(function () {
     $(this).parentsUntil("navbar-collapse").removeClass("show");
   });
 
-  //
-  let getDirPage = $("html").attr("dir");
+  // All input
+  const allInput = {
+    phone: "#phone",
+    email: "#email",
+    textArea: "#textArea",
+    selectProject: $(".form-select"),
+    labelOne: $("#labelOne"),
+    labelTwo: $("#labelTwo"),
+    submitForm: $(".submitForm"),
+  };
 
   // Header slider
   $(".header__slider, .testimonial").slick({
@@ -126,9 +134,29 @@ jQuery(function () {
     } else {
       $("html").attr({ dir: "ltr", lang: "en" });
     }
-    //
+    // Change dir slider
     $(".slick-slider").addClass("direction-ltr");
+
+    // Change Placeholder form
+    if (getLang == "ar") {
+      $(allInput.phone).attr("placeholder", "*ادخل رقم التليفون");
+      $(allInput.email).attr("placeholder", "ادخل الآيميل");
+      $(allInput.textArea).attr("placeholder", "*ادخل رسالتك");
+      $(allInput.labelOne).text("قم بملئ النموذج وسنتواصل معك قريبآ");
+      $(allInput.labelTwo).text("ما هو اهتمامك؟");
+      $(allInput.submitForm).text("ارسل الابلكيشن");
+    } else {
+      $(allInput.phone).attr("placeholder", "*Phone number");
+      $(allInput.email).attr("placeholder", "E-mail address");
+      $(allInput.textArea).attr("placeholder", "*Tell us about the project");
+      $(allInput.labelOne).text(`fill out the form and we'll be in touch soon!`);
+      $(allInput.labelTwo).text("what are you interested in?");
+      $(allInput.submitForm).text("send an application");
+    }
   });
+
+  //
+  $(".change_lang").trigger("change");
 
   // Lazy loading image
   // All images
@@ -168,4 +196,133 @@ jQuery(function () {
 
   //
   allImages.each((i, cur) => ImageObServer.observe(cur));
+
+  ////////////////////////////////////
+  //// Validation form
+  // Form
+  const form = $("#form");
+
+  // All fileds message
+  const filedsMessage = {
+    messagePhone: $("#messagePhone"),
+    messageEmail: $("#messageEmail"),
+    messageTextArea: $("#messageTextArea"),
+    messageInterested: $("#messageInterested"),
+  };
+
+  // Data center form
+  const dataForm = {
+    phone: null,
+    email: null,
+    chooseIntersted: [],
+    aboutProject: null,
+  };
+
+  // Regexp
+  const regExp = {
+    phone: /^[\d]{7,11}$/,
+    email: /^([A-z]|[0-9]){3,}@[A-z]{3,7}.{1}[A-z]{2,4}$/g,
+  };
+
+  // All messages errors
+  const messageErrors = {
+    phone: {
+      en: "write between 7 and 11 numbers ❌",
+      ar: "❌ يجب ادخال من ٧ الي ١١ رقم",
+    },
+    email: {
+      en: `write correct email ❌`,
+      ar: "❌ يجب ادخال الايميل بشكل صحيح",
+    },
+    chooseIntersted: {
+      en: `You must choose some one ❌`,
+      ar: "❌ يحب اختيار علي الاقل اختيار واحد",
+    },
+    aboutProject: {
+      en: `You must write message ❌`,
+      ar: "❌ يجب ادخال رسالة",
+    },
+  };
+
+  // 1) Get value from input phone and email
+  $(allInput.phone)
+    .add(allInput.email)
+    .add(allInput.textArea)
+    .on("input", function () {
+      //
+      const getId = $(this).attr("id");
+
+      // 1) Check if get id equal => PHONE
+      if (getId === allInput.phone.replace("#", "")) {
+        // Check if value input equal regular expersion
+        if (regExp.phone.test($(this).val())) {
+          dataForm.phone = +$(this).val();
+          renderMessageErrorUI("messagePhone");
+        } else {
+          renderMessageErrorUI("messagePhone", "phone");
+        }
+      }
+
+      // 2) Check if get id equal => EMAIL
+      if (getId === allInput.email.replace("#", "")) {
+        if (regExp.email.test($(this).val())) {
+          dataForm.email = $(this).val().toLowerCase();
+          renderMessageErrorUI("messageEmail");
+        } else if (!regExp.email.test($(this).val())) {
+          renderMessageErrorUI("messageEmail", "email");
+        }
+      }
+
+      // 3) Check if get id equal => TEXTAREA
+      if (getId === allInput.textArea.replace("#", "")) {
+        if ($(this).val()) {
+          dataForm.aboutProject = $(this).val();
+          renderMessageErrorUI("messageTextArea");
+        } else {
+          renderMessageErrorUI("messageTextArea", "aboutProject");
+        }
+      }
+    });
+
+  // 2) Choose interested project
+  allInput.selectProject.on("click", function () {
+    // 1) Toggle class when select intersted project
+    $(this).toggleClass("active");
+    // 2) Check if name project exsist in array or not
+    allInput.selectProject.each(function (i, cur) {
+      const nameProject = $(cur).data("project");
+      //
+      if ($(cur).hasClass("active") && !dataForm.chooseIntersted.includes(nameProject)) {
+        dataForm.chooseIntersted.push(nameProject);
+      } else if (!$(cur).hasClass("active")) {
+        dataForm.chooseIntersted.splice(i, 1);
+      }
+    });
+  });
+
+  // 3) Render message error ui
+  function renderMessageErrorUI(type, nameKey = "") {
+    const lang = $("html").attr("lang");
+    //
+    nameKey == ""
+      ? filedsMessage[type].text("")
+      : filedsMessage[type].text(messageErrors[nameKey][lang]);
+  }
+
+  // 4) Event submit on form
+  form.on("submit", (e) => {
+    // 1) Disable behover submit
+    e.preventDefault();
+
+    // 2) If all data required exsist will be send data to api
+    if (dataForm.phone && dataForm.chooseIntersted.length > 0 && dataForm.aboutProject) {
+      // 1) to api
+      console.log(dataForm);
+    } else {
+      dataForm.chooseIntersted.length <= 0
+        ? renderMessageErrorUI("messageInterested", "chooseIntersted")
+        : renderMessageErrorUI("messageInterested");
+      $(allInput.phone).add(allInput.textArea).trigger("input");
+    }
+  });
 });
