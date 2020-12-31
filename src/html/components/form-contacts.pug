@@ -1,6 +1,7 @@
 //- 
 include ../mixins/img
 include ../mixins/button-form
+include ../mixins/heading-h2
 
 
 //- 
@@ -9,8 +10,9 @@ section.form-contacts.bg-eighth
     .row.no-gutters.justify-content-center.align-items-center.h-100.container-section
 
         .col-lg-6.form-contacts__heading.d-flex.flex-column.align-items-start.justify-content-center.h-100
-            h2.text-large.text-light-1.weight-bolder.text-uppercase.line-height.width-90 ready to request a quote?
-            p.first-letter.text-xsmall.width-60.text-light-1.mt-4 We would love to work with you to cook up your next idea take the first step by choosing a project type and filing in the form we look forward to hearing from you.
+            +headingH2('ready to request a quote?', '2', 'text-large text-light-1 weight-bolder text-uppercase line-height width-90')
+
+            p(class="first-letter text-xsmall width-60 text-light-1 mt-4" key=titlePage data-lang="par-3") We would love to work with you to cook up your next idea take the first step by choosing a project type and filing in the form we look forward to hearing from you.
 
         .col-lg-6.form-contacts__form-group
 

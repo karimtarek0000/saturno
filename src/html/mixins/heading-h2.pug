@@ -1,2 +1,2 @@
-mixin headingH2(text)
-    h2(class="position-absolute text-large text-light text-right weight-bolder text-uppercase line-height zindex-over") #{text}
+mixin headingH2(text, num, addClass)
+    h2(class=addClass key=titlePage data-lang=`head2-${num}`) #{text}

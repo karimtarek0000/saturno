@@ -8,7 +8,7 @@ section.about-us.row.text-light-1.h-100.mb-lg-5#about-us
     //- 
     .col-lg-6.about-us__heading.position-relative.mb-5.d-flex.justify-content-center.align-items-center
 
-        +headingH2('who are we')
+        +headingH2('who are we', '1', 'position-absolute text-large text-light text-right weight-bolder text-uppercase line-height zindex-over')
 
         div.about-us__heading__img.position-relative
             +getImage('section-2/1.jpg', 1)
@@ -18,4 +18,10 @@ section.about-us.row.text-light-1.h-100.mb-lg-5#about-us
     //-    
     .col-lg-6.about-us__info.d-flex.flex-column.justify-content-center
         
-        +parAboutUs('saturno', 'the company works on the most effective job organizing principles. saturno employees are qualified service specialists, creative and technical designers, PHP, HTML and CSS programmers, content editors and publicists. Responsibilities are professionally divided between specialists.', 'letter-spacing width-80', btnShow = 'true')
+        +parAboutUs({
+            title: 'dd',
+            par: 'the company works on the most effective job organizing principles. saturno employees are qualified service specialists, creative and technical designers, PHP, HTML and CSS programmers, content editors and publicists. Responsibilities are professionally divided between specialists.',
+            addClass: 'letter-spacing width-80',
+            btnShow: true,
+            href: '/about-us'
+        })

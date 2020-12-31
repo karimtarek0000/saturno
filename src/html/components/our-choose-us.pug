@@ -1,5 +1,6 @@
 //- 
 include ../mixins/choose-us-box
+include ../mixins/heading-h2
 
 //- 
 section.choose-us.row.text-light-1.p-4.p-md-0#choose-us
@@ -9,16 +10,9 @@ section.choose-us.row.text-light-1.p-4.p-md-0#choose-us
 
         //- 
         .width-70
-            h2.choose-us__heading__title.text-large.weight-bolder.text-uppercase
-                if changeDir == 'ltr'
-                    span.d-block.line-height why
-                    span.d-block.line-height choose
-                    span.d-block.line-height us?
-                else
-                    span.d-block.line-height لماذا
-                    span.d-block.line-height تختارنا؟
+            +headingH2('why choose us', '2', 'choose-us__heading__title line-height text-large weight-bolder text-uppercase')
             
-            p.choose-us__heading__description.width-70.text-capitalize.mt-5.text-xsmall digital Score offers customers 12 years of experience and knowledge about how to sell more, providing fast and high-quality project management
+            p(class="choose-us__heading__description width-70 text-capitalize mt-5 text-xsmall" key=titlePage data-lang="par-2") digital Score offers customers 12 years of experience and knowledge about how to sell more, providing fast and high-quality project management
 
     //- 
     .col-lg-6.choose-us__features.d-flex.align-items-center.justify-items-center
@@ -27,16 +21,16 @@ section.choose-us.row.text-light-1.p-4.p-md-0#choose-us
         .row.no-gutters.flex-column.align-items-center.justify-content-center.mx-auto.width-60.h-100
             
             //- 
-            +chooseBox('experiance', '12 year sof experience on the market', 'experiance')
+            +chooseBox('experiance', '12 year sof experience on the market', 'experiance', 1, 3)
 
             //- 
-            +chooseBox('professional', 'our system of tasks distribution allows us to offer quick solutions that are necessary for Your business.', 'professional')
+            +chooseBox('professional', 'our system of tasks distribution allows us to offer quick solutions that are necessary for Your business.', 'professional', 2, 4)
 
             //- 
-            +chooseBox('high quality', 'the most qualified specialists will be working with You to ensure high quality on each stage of project.', 'quality')
+            +chooseBox('high quality', 'the most qualified specialists will be working with You to ensure high quality on each stage of project.', 'quality', 3, 5)
 
             //- 
-            +chooseBox('speed', 'you don’t have to wait until someone will be free from another project. Tasks can be done much faster!.', 'speed')
+            +chooseBox('speed', 'you don’t have to wait until someone will be free from another project. Tasks can be done much faster!.', 'speed', 4, 6)
 
             //- 
-            +chooseBox('lower-cost', 'you don’t have to sign long-term contracts. We offer flexible payment terms.', 'lower-cost')
+            +chooseBox('lower-cost', 'you don’t have to sign long-term contracts. We offer flexible payment terms.', 'lower-cost', 5, 7)

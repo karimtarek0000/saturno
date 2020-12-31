@@ -5,15 +5,15 @@ include ../mixins/svg
 section.our-works#works
     //- 
     .our-works__heading.text-center.p-2.p-lg-3
-        h3.text-mid.text-light-1.weight-bolder.text-uppercase our works
-        p.text-xsmall.text-light-2.width-30.mx-auto check out our featured projects, a quick showcase on work in progress and our previous work timeline.
+        h3(class='text-mid text-light-1 weight-bolder text-uppercase' key=titlePage data-lang="head3-2") our works
+        p(class='text-xsmall text-light-2 first-letter width-30 mx-auto' key=titlePage data-lang="par-8") check out our featured projects, a quick showcase on work in progress and our previous work timeline.
     
     //- 
     div(class="btn-group our-works__btn-gallery d-flex justify-content-center" role="group" aria-label="gallery")
-        button(class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase active shrink-0.grow-0" data-select="all") all works
-        button(class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase shrink-0.grow-0" data-select="sites") sites
-        button(class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase shrink-0.grow-0" data-select="logos") logos
-        button(class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase shrink-0.grow-0" data-select="other") other
+        button(class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase active shrink-0 grow-0" key=titlePage data-lang="btn-2" data-select="all") all works
+        button(class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase shrink-0 grow-0" key=titlePage data-lang="btn-3" data-select="sites") sites
+        button(class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase shrink-0 grow-0" key=titlePage data-lang="btn-4" data-select="logos") logos
+        button(class="btn btn-change btn-outline-primary mr-md-3 rounded-0 text-light-1 weight-light text-uppercase shrink-0 grow-0" key=titlePage data-lang="btn-5" data-select="other") other
 
     //- 
     .row.no-gutters.our-works__gallery.mt-5.flex-column.flex-lg-row.h-100

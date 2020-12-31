@@ -32,6 +32,10 @@
 
     @if $type == "xlarge" {
       //
+      @media only screen and (max-width: 992px) {
+        font-size: #{$size - 10}px;
+        line-height: #{$size * 1.5}px;
+      }
       @media only screen and (max-width: 768px) {
         font-size: #{$size - 50}px;
         line-height: #{$size * 1.5}px;

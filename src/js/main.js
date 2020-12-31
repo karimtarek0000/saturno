@@ -156,12 +156,142 @@ jQuery(function () {
         submit: "send an application",
       },
       ar: {
-        phone: "ادخل التليفون",
+        phone: "*ادخل التليفون",
         email: "ادخل الآيميل",
-        textArea: "اخبرنا معلومات عن المشروع",
+        textArea: "*اخبرنا معلومات عن المشروع",
         labelOne: "قم بملئ النموذج وسنتواصل معك قريبآ",
         labelTwo: "ما هو اهتمامك؟",
         submit: "ارسل الابلكيشن",
+      },
+    },
+    pages: {
+      home: {
+        en: {
+          "head2-1": "who are we",
+          "head2-2": "why choose us",
+          "head3-2": "our works",
+          "head3-1": "ark",
+          "head4-1": "experiance",
+          "head4-2": "professional",
+          "head4-3": "high quality",
+          "head4-4": "speed",
+          "head4-5": "lowe cost",
+          "par-1":
+            "the company works on the most effective job organizing principles. saturno employees are qualified service specialists, creative and technical designers, programmers, content editors and publicists. Responsibilities are professionally divided between specialists.",
+          "par-2":
+            "digital score offers customers 12 years of experience and knowledge about how to sell more, providing fast and high quality project management",
+          "par-3": "12 year sof experience On the market",
+          "par-4":
+            "our system of tasks distribution allows us to offer quick solutions that are necessary for your business.",
+          "par-5":
+            "the most qualified specialists will be working with You to ensure high quality on each stage Of project.",
+          "par-6":
+            "you don’t have to wait until someone will be free from another project. tasks can be done much faster!.",
+          "par-7": "you don’t have To sign long-Term contracts. we offer flexible payment terms.",
+          "par-8":
+            "check out our featured projects, a quick showcase on work in progress and our previous work timeline.",
+          "btn-1": "about us",
+          "btn-2": "all works",
+          "btn-3": "sites",
+          "btn-4": "logos",
+          "btn-5": "others",
+        },
+        ar: {
+          "head2-1": "من نحن",
+          "head2-2": "لماذا تختارنآ",
+          "head3-1": "آرك",
+          "head3-2": "آعمالنا",
+          "head4-1": "الخبرات",
+          "head4-2": "الآحترافية",
+          "head4-3": "اعلي جودة",
+          "head4-4": "السرعة",
+          "head4-5": "آقل تكلفة",
+          "par-1":
+            "تعمل الشركة علي اكثر مبادئ تنظيم العمل فاعلية، موظفين ark هم متخصصون مؤهلين لتنفيذ الخدمات ، مصممون مبدعون وتقنيون ومبرمجين ومحرري محتوي ودعاية، يتم تقسيم المسؤوليات مهنيآ بين المتخصصين.",
+          "par-2":
+            "تقديم افضل المهام الرقمية للعملاء، ١٢ عامآ من الخبرة و المعرفة و المزيد ، وتوفير ادارة مشاريع سريعة و عالية الجودة",
+          "par-3": "خبرة ١٢ سنه في السوق",
+          "par-4": "نظام توزيع المهام لدينا يتيح حلول سريعة لعملك.",
+          "par-5":
+            "سيعمل معك أكثر المتخصصين المؤهلين لضمان الجودة العالية في كل مرحلة من مراحل المشروع.",
+          "par-6": "ليس عليك الانتظار حتي ينتهي شخص ما من عمل اخر، سوف يتم انهاء عملك سريعآ",
+          "par-7": "لست ملزمًا بتوقيع عقود طويلة الأجل. نحن نقدم شروط دفع مرنة.",
+          "par-8":
+            "تحقق من مشاريعنا المميزة ، وعرض سريع للعمل الجاري والجدول الزمني السابق لعملنا.",
+          "btn-1": "ماذا عنآ",
+          "btn-2": "كل الآعمال",
+          "btn-3": "المواقع",
+          "btn-4": "اللوجهات",
+          "btn-5": "آخري",
+        },
+      },
+      aboutus: {
+        en: {
+          head: "about us",
+        },
+        ar: {
+          head: "ماذا عنا",
+        },
+      },
+      services: {
+        en: {
+          head: "services",
+        },
+        ar: {
+          head: "الخدمات",
+        },
+      },
+      works: {
+        en: {
+          head: "works",
+        },
+        ar: {
+          head: "الآعمال",
+        },
+      },
+      price: {
+        en: {
+          head: "price",
+        },
+        ar: {
+          head: "الاسعار",
+        },
+      },
+      blog: {
+        en: {
+          head: "blog",
+        },
+        ar: {
+          head: "المقالات",
+        },
+      },
+      contacts: {
+        en: {
+          head: "contacts",
+          "head2-1": "how we can help?",
+          "head2-2": "ready to request a quote?",
+          "head3-1": "let’s work together!",
+          "par-1":
+            "we like to talk and on the strength of that you are invited for a coffee at our head office",
+          "par-2":
+            "Hosary Square - Royal Towers Mall in front of Tabarak Hospital - fourth floor - Office 301",
+          "par-3":
+            "we would love to work with you to cook up your next idea take the first step by choosing a project type and filing in the form we look forward to hearing from you.",
+          clock: "every day 09:00 : 18:00",
+          phone: "+7 495 999 00 99",
+        },
+        ar: {
+          head: "تواصل معنا",
+          "head2-1": "كيف نقوم بمساعدتك؟",
+          "head2-2": "هل انت مستعد؟راسلنا الآن",
+          "head3-1": "فلنبدآ العمل معـــآ!",
+          "par-1": "نحب ان نتحدث معك وبسبب ذلك فآنت مدعو علي قهوة في مكتبنا الرئيسي",
+          "par-2": ` ميدان الحصري - مول رويال تاورز امام مستشفي تبارك - الدور الرابع - مكتب ٣٠١`,
+          "par-3":
+            "نود أن نعمل معك لإعداد فكرتك التي تريدها، اتخذ الخطوة الأولى باختيار نوع المشروع وملئ  النموذج وارسالة الينآ.",
+          clock: "كل يوم من ٠٩:٠٠ - ١٨:٠٠",
+          phone: "٩٩ ٠٠ ٩٩٩ ٥٩٤ ٧+",
+        },
       },
     },
   };
@@ -178,6 +308,7 @@ jQuery(function () {
     $(".slick-slider").addClass("direction-ltr");
 
     // Change Placeholder form
+    // Form
     $("form")
       .find(`[key]`)
       .each(function (i, cur) {
@@ -191,10 +322,16 @@ jQuery(function () {
         }
       });
 
-    //
-    $(".navbar-nav a").each(function (i, cur) {
-      $(cur).text(localizition.navbar[getLang][$(this).attr("key")]);
+    // Heading
+    $("h1, h2, h3, h4, button, p, a").each((i, cur) => {
+      if ($(cur).is(`[key]`))
+        $(cur).text(localizition.pages[$(cur).attr("key")][getLang][$(cur).data("lang")]);
     });
+
+    // Navbar links
+    $(".navbar-nav a").each((i, cur) =>
+      $(cur).text(localizition.navbar[getLang][$(cur).attr("key")])
+    );
   });
 
   //

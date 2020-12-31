@@ -1,7 +1,7 @@
 mixin header(heading, title1 = false, title2 = false)
 
-    .col.grow-0.shrink-0.position-relative
-        h1.text-uppercase.text-xlarge.weight-bolder #{heading}
+    .col.grow-0.shrink-0.position-relative.d-flex.justify-content-center.align-items-center
+        h1(class="text-uppercase text-xlarge weight-bolder" key=titlePage data-lang="head") #{heading}
 
     if title1
         .col.header-section__info.grow-0.shrink-0

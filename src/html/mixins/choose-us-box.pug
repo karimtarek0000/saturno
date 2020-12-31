@@ -2,9 +2,9 @@
 include ../mixins/svg
 
 //- 
-mixin chooseBox(heading, title, iconName)
+mixin chooseBox(heading, title, iconName, numHead=1, numPar=1)
     .col.d-flex.mb-4.align-items-start.grow-0
         +getSvgIcon(iconName, 'choose-us__features__icon resize-svg mt-2 mx-3 grow-0 shrink-0')
         .choose-us__features__content
-            h4.text-uppercase #{heading}
-            p.text-light-2.text-capitalize.weight-bold.text-xsmall #{title}
+            h4(class="text-uppercase" key=titlePage data-lang=`head4-${numHead}`) #{heading}
+            p(class="text-light-2 text-capitalize weight-bold text-xsmall" key=titlePage data-lang=`par-${numPar}`) #{title}
