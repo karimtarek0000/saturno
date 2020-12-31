@@ -21,13 +21,13 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse mt-2 mt-lg-0 text-uppercase" id="navbarSupportedContent">
           <ul class="navbar-nav changeDir">
-            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" href="/">home</a></li>
-            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" href="about-us">about us</a></li>
-            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" href="services">services</a></li>
-            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" href="works">works</a></li>
-            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" href="price">price</a></li>
-            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" href="blog">blog</a></li>
-            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3 active-link" href="contacts">contacts</a></li>
+            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" key="home" href="/">home</a></li>
+            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" key="aboutus" href="about-us">about us</a></li>
+            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" key="services" href="services">services</a></li>
+            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" key="works" href="works">works</a></li>
+            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" key="price" href="price">price</a></li>
+            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3" key="blog" href="blog">blog</a></li>
+            <li class="nav-item cursor mr-0 mr-xl-2"><a class="nav-link w-100 p-2 p-md-3 active-link" key="contacts" href="contacts">contacts</a></li>
             <div>
               <div class="form-group change-lang m-0 h-100 cursor mt-3 mt-lg-0 mx-0 mx-md-2 position-relative">
                 <div class="change-lang__icon position-absolute">
@@ -114,15 +114,15 @@
             <div class="col-lg-6 form-contacts__form-group">
               <form class="row no-gutters flex-column h-100 py-5" id="form">
                 <div class="col form-contacts__form-group__one">
-                  <label class="text-primary text-uppercase weight-bold" id="labelOne"></label>
+                  <label class="text-primary text-uppercase weight-bold" key="labelOne" id="labelOne"></label>
                   <div class="input-group">
-                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="text" id="phone" autocomplete="off"/>
-                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="email" id="email" autocomplete="off"/>
+                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="text" id="phone" key="phone" autocomplete="off"/>
+                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="email" id="email" key="email" autocomplete="off"/>
                   </div>
                   <div class="text-light-1 d-flex flex-column flex-sm-row mt-2"><span class="width-50 first-letter" id="messagePhone"></span><span class="width-50 first-letter" id="messageEmail"></span></div>
                 </div>
                 <div class="col mt-4 form-contacts__form-group__two">
-                  <label class="text-primary text-uppercase weight-bold" id="labelTwo"></label>
+                  <label class="text-primary text-uppercase weight-bold" key="labelTwo" id="labelTwo"></label>
                   <div>
                             <button class="btn form-select py-2 px-4 text-uppercase text-light-1 btn-outline-primary" data-project="website" type="button">website</button>
                             <button class="btn form-select py-2 px-4 text-uppercase text-light-1 btn-outline-primary" data-project="mobile app" type="button">mobile app</button>
@@ -131,11 +131,11 @@
                   <div class="text-light-1 mt-3"><span class="width-50 first-letter" id="messageInterested"></span></div>
                 </div>
                 <div class="col mt-4 form-contacts__form-group__three">
-                  <textarea class="form-control border-light-2 rest-textarea" id="textArea"></textarea>
+                  <textarea class="form-control border-light-2 rest-textarea" key="textArea" id="textArea"></textarea>
                   <div class="text-light-1 mt-3"><span class="width-50 first-letter" id="messageTextArea"></span></div>
                 </div>
                 <div class="col mt-4 form-contacts__form-group__four">
-                          <button class="btn py-3 px-5 text-uppercase text-light-1 btn-primary submitForm" data-project="" type="submit">send an application</button>
+                          <button class="btn py-3 px-5 text-uppercase text-light-1 btn-primary submitForm" key="submit" data-project="" type="submit">send an application</button>
                 </div>
               </form>
             </div>

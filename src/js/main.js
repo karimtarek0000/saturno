@@ -125,6 +125,46 @@ jQuery(function () {
   });
 
   // Change direction page
+  const localizition = {
+    navbar: {
+      en: {
+        home: "home",
+        aboutus: "about us",
+        services: "services",
+        works: "works",
+        price: "price",
+        blog: "blog",
+        contacts: "contacts",
+      },
+      ar: {
+        home: "الرئيسية",
+        aboutus: "ماذا عنا",
+        services: "الخدمات",
+        works: "الآعمال",
+        price: "الاسعار",
+        blog: "مقالات",
+        contacts: "التواصل",
+      },
+    },
+    form: {
+      en: {
+        phone: "*Phone number",
+        email: "E-mail address",
+        textArea: "*Tell us about the project",
+        labelOne: `fill out the form and we'll be in touch soon!`,
+        labelTwo: "what are you interested in?",
+        submit: "send an application",
+      },
+      ar: {
+        phone: "ادخل التليفون",
+        email: "ادخل الآيميل",
+        textArea: "اخبرنا معلومات عن المشروع",
+        labelOne: "قم بملئ النموذج وسنتواصل معك قريبآ",
+        labelTwo: "ما هو اهتمامك؟",
+        submit: "ارسل الابلكيشن",
+      },
+    },
+  };
   $(".change_lang").on("change", function () {
     // 1) Get lang when change lang
     const getLang = $(this).val().replace("#", "");
@@ -138,21 +178,23 @@ jQuery(function () {
     $(".slick-slider").addClass("direction-ltr");
 
     // Change Placeholder form
-    if (getLang == "ar") {
-      $(allInput.phone).attr("placeholder", "*ادخل رقم التليفون");
-      $(allInput.email).attr("placeholder", "ادخل الآيميل");
-      $(allInput.textArea).attr("placeholder", "*ادخل رسالتك");
-      $(allInput.labelOne).text("قم بملئ النموذج وسنتواصل معك قريبآ");
-      $(allInput.labelTwo).text("ما هو اهتمامك؟");
-      $(allInput.submitForm).text("ارسل الابلكيشن");
-    } else {
-      $(allInput.phone).attr("placeholder", "*Phone number");
-      $(allInput.email).attr("placeholder", "E-mail address");
-      $(allInput.textArea).attr("placeholder", "*Tell us about the project");
-      $(allInput.labelOne).text(`fill out the form and we'll be in touch soon!`);
-      $(allInput.labelTwo).text("what are you interested in?");
-      $(allInput.submitForm).text("send an application");
-    }
+    $("form")
+      .find(`[key]`)
+      .each(function (i, cur) {
+        //
+        if ($(cur).is("input, textarea")) {
+          $(cur).attr("placeholder", localizition.form[getLang][$(this).attr("key")]);
+        }
+        //
+        if ($(cur).is("label, button")) {
+          $(cur).text(localizition.form[getLang][$(this).attr("key")]);
+        }
+      });
+
+    //
+    $(".navbar-nav a").each(function (i, cur) {
+      $(cur).text(localizition.navbar[getLang][$(this).attr("key")]);
+    });
   });
 
   //
