@@ -18,4 +18,9 @@ section.how-help
 
 
         .col-lg-7.how-help__box.d-flex.flex-column.justify-content-center
-            +parAboutUs('let’s work together!', 'We like to talk and on the strength of that you are invited for a coffee at our head office', 'mx-auto how-help__info', 'letter-spacing text-center', btnShow=false)
+            +parAboutUs({
+                title: 'let’s work together!',
+                par: 'we like to talk and on the strength of that you are invited for a coffee at our head office',
+                addClass: 'mx-auto how-help__info',
+                addClassTitle: 'letter-spacing text-center',
+            })
