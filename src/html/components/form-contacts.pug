@@ -19,16 +19,16 @@ section.form-contacts.bg-eighth
             form.row.no-gutters.flex-column.h-100.py-5#form
 
                 .col.form-contacts__form-group__one
-                    label(class="text-primary text-uppercase weight-bold" key="labelOne" id="labelOne")
+                    label(class="text-primary text-uppercase weight-bold" key=titlePage data-lang="labelOne" id="labelOne")
                     div.input-group
-                        input(class="form-control py-4 pl-4 border-light-2 rounded" type="text"  id="phone" key="phone" autocomplete="off")
-                        input(class="form-control py-4 pl-4 border-light-2 rounded" type="email" id="email" key="email" autocomplete="off")
+                        input(class="form-control py-4 pl-4 border-light-2 rounded" type="tel" id="phone" key=titlePage data-lang="phone" autocomplete="off")
+                        input(class="form-control py-4 pl-4 border-light-2 rounded" type="email" id="email" key=titlePage data-lang="email" autocomplete="off")
                     div.text-light-1.d-flex.flex-column.flex-sm-row.mt-2
                         span.width-50.first-letter#messagePhone
                         span.width-50.first-letter#messageEmail
 
                 .col.mt-4.form-contacts__form-group__two
-                    label(class="text-primary text-uppercase weight-bold" key="labelTwo" id="labelTwo")
+                    label(class="text-primary text-uppercase weight-bold" key=titlePage data-lang="labelTwo" id="labelTwo")
                     div
                         +btnForm('button', 'website', 'website','form-select py-2 px-4 text-uppercase text-light-1 btn-outline-primary')
 
@@ -39,11 +39,13 @@ section.form-contacts.bg-eighth
                         span.width-50.first-letter#messageInterested
 
                 .col.mt-4.form-contacts__form-group__three
-                    textarea(class='form-control border-light-2 rest-textarea' key="textArea" id="textArea")
+                    textarea(class='form-control border-light-2 rest-textarea' key=titlePage data-lang="textArea" id="textArea")
                     div.text-light-1.mt-3
                         span.width-50.first-letter#messageTextArea
 
                 .col.mt-4.form-contacts__form-group__four
-                    +btnForm('submit', 'send an application', '', 'py-3 px-5 text-uppercase text-light-1 btn-primary submitForm', 'submit')
+                    //- +btnForm('submit', 'send an application', '', 'py-3 px-5 text-uppercase text-light-1 btn-primary submitForm', 'submit')
+
+                    +btnForm('submit', 'send an application', '', 'py-3 px-5 text-uppercase text-light-1 btn-primary submitForm', 'submit')(key=titlePage data-lang="submit")
 
 

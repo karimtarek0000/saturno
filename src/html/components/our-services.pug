@@ -1,5 +1,6 @@
 //- 
 include ../mixins/services-box
+include ../mixins/heading-h2
 
 //- 
 section.services.services--home.row.no-gutters#services
@@ -7,24 +8,26 @@ section.services.services--home.row.no-gutters#services
     .col-lg-5.services__heading.d-flex.flex-column.align-items-end.justify-content-center
 
         .position-relative.px-3
-            h2.text-large.text-light-1.weight-bolder.text-uppercase.text-right
-                span.d-block.line-height our
-                span.d-block.line-height services
-            p.text-xsmall.width-30.text-light-1.ml-auto Or human resources allow us to finish tasks quickly and in time.
+            //- h2.text-large.text-light-1.weight-bolder.text-uppercase.text-right
+            //-     span.d-block.line-height our
+            //-     span.d-block.line-height services
+            +headingH2('our services', '3', 'text-large line-height text-light-1 weight-bolder text-uppercase text-right')
+            p(class='text-xsmall width-30 text-light-1 ml-auto' key=titlePage data-lang="par-9") Or human resources allow us to finish tasks quickly and in time.
+
 
     .col-lg-6.services__all-services.p-3.p-md-5
 
         .row.no-gutters.flex-wrap.flex-row.align-content-center.justify-content-between.h-100
 
             //- 
-            +servicesBox('solutions', 'internet solution development')
+            +servicesBox('solutions', 'internet solution development', 10)
             //- 
-            +servicesBox('commercial', 'internet commercial and marketing')
+            +servicesBox('commercial', 'internet commercial and marketing', 11)
             //- 
-            +servicesBox('seo', 'seo services')
+            +servicesBox('seo', 'seo services', 12)
             //- 
-            +servicesBox('content', 'web sites content preparation')
+            +servicesBox('content', 'web sites content preparation', 13)
             //- 
-            +servicesBox('design', 'design and polygraphy')
+            +servicesBox('design', 'design and polygraphy', 14)
             //- 
-            +servicesBox('outside', 'outside adverts')
+            +servicesBox('outside', 'outside adverts', 15)

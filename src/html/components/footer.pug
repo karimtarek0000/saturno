@@ -1,6 +1,7 @@
 //- 
 include ../mixins/svg
 include ../mixins/logo
+include ../mixins/generate-links
 
 //- 
 footer.footer.bg-fourth.text-light#contacts
@@ -11,53 +12,44 @@ footer.footer.bg-fourth.text-light#contacts
         
             +logo('./img/other/logo.png')
 
-            p.mt-4 &copy; copyright 2017 saturno development and implementation of sites of any complexity
+            div.mt-4.d-flex 
+                span &copy;
+                p(key="footer" data-lang="par-1") copyright 2017 company development and implementation of sites of any complexity
 
+        //- 1
         .col-md-5.col-lg-2.footer__home.mb-3.mb-lg-0
-            p.text-uppercase.weight-bold home
+            h4(class='text-uppercase text-xsmall weight-bold' key="footer" data-lang="head4-1") home
             ul.list-unstyled.text-capitalize
-                li
-                    a(class="text-decoration-none text-light-2" href="#") about us
-                li
-                    a(class="text-decoration-none text-light-2" href="#") price
-                li
-                    a(class="text-decoration-none text-light-2" href="#") blog
-                li
-                    a(class="text-decoration-none text-light-2" href="#") contact us
+                -var items = [{ title: 'about us', link: "about-us", num: 'par-2'}, { title: "price", link: "price", num: 'par-3'}, { title: "blog", link: "blog", num: 'par-4'}, { title: "contacts", link: 'contacts', num: "par-5"}];
+                +generateLinks(items)
 
+        //- 2
         .col-md-5.col-lg-2.footer__services.mb-3.mb-lg-0
-            p.text-uppercase.weight-bold services
+            h4(class='text-uppercase text-xsmall weight-bold' key="footer" data-lang="head4-2") services
             ul.list-unstyled.text-capitalize
-                li
-                    a(class="text-decoration-none text-light-2" href="#") internet solution development
-                li
-                    a(class="text-decoration-none text-light-2" href="#") internet commercials
-                li
-                    a(class="text-decoration-none text-light-2" href="#") seo
-                li
-                    a(class="text-decoration-none text-light-2" href="#") website content
-                li
-                    a(class="text-decoration-none text-light-2" href="#") design and polygraphy
+                -var items = [{title: 'internet solution development', num: 'par-6'}, {title: 'internet commercials', num: 'par-7'}, {title: 'seo', num: 'par-8'}, {title: 'website content', num: 'par-9'}, {title: 'design and polygraphy', num: 'par-10'}];
+                +generateLinks(items)
 
+        //- 3
         .col-md-5.col-lg-3.footer__contacts.mb-3.mb-lg-0
-            p.text-uppercase.weight-bold contacts
+            h4(class='text-uppercase text-xsmall weight-bold' key="footer" data-lang="head4-3") contacts
             ul.list-unstyled.text-light-2
                 li.d-flex.align-items-start
                     +getSvgIcon('map-marker', 'fill-svg-white resize-footer-svg grow-0 shrink-0')
-                    p.first-letter Kr. Barona iela 130 / K10 Rīga, LV,  LV-1012
+                    p(class='first-letter' key="footer" data-lang="par-11") Kr. Barona iela 130 / K10 Rīga, LV,  LV-1012
                 li.d-flex.align-items-start
                     +getSvgIcon('ic-phone-24px', 'fill-svg-white resize-footer-svg grow-0 shrink-0')
-                    p.first-letter +7 495 999 00 99
+                    p(class='first-letter' key="footer" data-lang="par-12") +7 495 999 00 99
                 li.d-flex.align-items-start
                     +getSvgIcon('ic-email-24px', 'fill-svg-white resize-footer-svg grow-0 shrink-0')
-                    p.first-letter info@domain.com
+                    p(class='first-letter' key="footer" data-lang="par-13") info@domain.com
                 li.d-flex.align-items-start
-                    +getSvgIcon('clock', 'fill-svg-white resize-footer-svg grow-0 shrink-0')
-                    p.first-letter every day from 10:00 to 18:00
-        
+                    +getSvgIcon('clock1', 'fill-svg-white resize-footer-svg grow-0 shrink-0')
+                    p(class='first-letter' key="footer" data-lang="par-14") every day from 10:00 to 18:00
+    //- 4
     .row.py-3.justify-content-center.align-items-center.text-uppercase.weight-bold.text-center
         .col-md-2.col-lg-2.d-flex.justify-content-center.justify-content-lg-end
-            p.mb-2.mb-md-0 follow us
+            p(class="mb-2 mb-md-0" key="footer" data-lang="par-15") follow us
         .col-lg-2.d-flex.d-flex.justify-content-center.justify-content-lg-start
             a(href="https://www.google.com", target="_blank")
                 +getSvgIcon('Facebook', 'text-decoration-none text-light resize-footer-svg grow-0 shrink-0')

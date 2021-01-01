@@ -1,0 +1,7 @@
+mixin generateLinks(items)
+    each item in items
+        if item.link
+            li.my-2
+                a(class="text-decoration-none text-light-2" key='footer' data-lang=item.num href=`/${item.link}`) #{item.title}
+        else
+            li(class='text-light-2 my-2' key='footer' data-lang=item.num) #{item.title}

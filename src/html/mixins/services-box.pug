@@ -2,7 +2,7 @@
 include ../mixins/svg
 
 //- 
-mixin servicesBox(iconName, text)
+mixin servicesBox(iconName, text, num)
     .col.services__all-services__item.text.basis-3.py-2.px-2.d-flex.flex-column.justify-content-around.align-items-center.text-center.grow-0.shrink-0.mb-3.text-uppercase
                 +getSvgIcon(iconName, 'grow-0 shrink-0')
-                p.text-light-1.m-0 #{text}
+                p(class='text-light-1 m-0' key=titlePage data-lang=`par-${num}`) #{text}

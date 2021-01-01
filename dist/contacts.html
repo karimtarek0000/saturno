@@ -43,8 +43,8 @@
                                 </svg>
                 </div>
                 <select class="form-control change_lang h-100 rounded-0 border-0 bg-primary text-light-1 text-capitalize" id="exampleFormControlSelect1">
-                  <option class="change_lang" selected="selected" value="#en">en</option>
-                  <option class="change_lang" value="#ar">عربي</option>
+                  <option class="change_lang" selected="selected" value="en">en</option>
+                  <option class="change_lang" value="ar">عربي</option>
                 </select>
               </div>
             </div>
@@ -114,15 +114,15 @@
             <div class="col-lg-6 form-contacts__form-group">
               <form class="row no-gutters flex-column h-100 py-5" id="form">
                 <div class="col form-contacts__form-group__one">
-                  <label class="text-primary text-uppercase weight-bold" key="labelOne" id="labelOne"></label>
+                  <label class="text-primary text-uppercase weight-bold" key="contacts" data-lang="labelOne" id="labelOne"></label>
                   <div class="input-group">
-                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="text" id="phone" key="phone" autocomplete="off"/>
-                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="email" id="email" key="email" autocomplete="off"/>
+                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="tel" id="phone" key="contacts" data-lang="phone" autocomplete="off"/>
+                    <input class="form-control py-4 pl-4 border-light-2 rounded" type="email" id="email" key="contacts" data-lang="email" autocomplete="off"/>
                   </div>
                   <div class="text-light-1 d-flex flex-column flex-sm-row mt-2"><span class="width-50 first-letter" id="messagePhone"></span><span class="width-50 first-letter" id="messageEmail"></span></div>
                 </div>
                 <div class="col mt-4 form-contacts__form-group__two">
-                  <label class="text-primary text-uppercase weight-bold" key="labelTwo" id="labelTwo"></label>
+                  <label class="text-primary text-uppercase weight-bold" key="contacts" data-lang="labelTwo" id="labelTwo"></label>
                   <div>
                             <button class="btn form-select py-2 px-4 text-uppercase text-light-1 btn-outline-primary" data-project="website" type="button">website</button>
                             <button class="btn form-select py-2 px-4 text-uppercase text-light-1 btn-outline-primary" data-project="mobile app" type="button">mobile app</button>
@@ -131,11 +131,11 @@
                   <div class="text-light-1 mt-3"><span class="width-50 first-letter" id="messageInterested"></span></div>
                 </div>
                 <div class="col mt-4 form-contacts__form-group__three">
-                  <textarea class="form-control border-light-2 rest-textarea" key="textArea" id="textArea"></textarea>
+                  <textarea class="form-control border-light-2 rest-textarea" key="contacts" data-lang="textArea" id="textArea"></textarea>
                   <div class="text-light-1 mt-3"><span class="width-50 first-letter" id="messageTextArea"></span></div>
                 </div>
                 <div class="col mt-4 form-contacts__form-group__four">
-                          <button class="btn py-3 px-5 text-uppercase text-light-1 btn-primary submitForm" key="submit" data-project="" type="submit">send an application</button>
+                          <button class="btn py-3 px-5 text-uppercase text-light-1 btn-primary submitForm" key="contacts" data-project="" type="submit" data-lang="submit">send an application</button>
                 </div>
               </form>
             </div>
@@ -145,29 +145,31 @@
         <footer class="footer bg-fourth text-light" id="contacts">
           <div class="row align-items-start justify-content-around px-4 px-md-0 py-5 border-bottom border-gray container-section">
             <div class="col-md-5 col-lg-3 footer__info"><a class="navbar-brand text-uppercase weight-bolder" href="/"><img class="img-fluid img-object" src="./img/other/logo.png" alt="logo"/></a>
-              <p class="mt-4">&copy; copyright 2017 saturno development and implementation of sites of any complexity</p>
+              <div class="mt-4 d-flex"> <span>&copy;</span>
+                <p key="footer" data-lang="par-1">copyright 2017 company development and implementation of sites of any complexity</p>
+              </div>
             </div>
             <div class="col-md-5 col-lg-2 footer__home mb-3 mb-lg-0">
-              <p class="text-uppercase weight-bold">home</p>
+              <h4 class="text-uppercase text-xsmall weight-bold" key="footer" data-lang="head4-1">home</h4>
               <ul class="list-unstyled text-capitalize">
-                <li><a class="text-decoration-none text-light-2" href="#">about us</a></li>
-                <li><a class="text-decoration-none text-light-2" href="#">price</a></li>
-                <li><a class="text-decoration-none text-light-2" href="#">blog</a></li>
-                <li><a class="text-decoration-none text-light-2" href="#">contact us</a></li>
+                        <li class="my-2"><a class="text-decoration-none text-light-2" key="footer" data-lang="par-2" href="/about-us">about us</a></li>
+                        <li class="my-2"><a class="text-decoration-none text-light-2" key="footer" data-lang="par-3" href="/price">price</a></li>
+                        <li class="my-2"><a class="text-decoration-none text-light-2" key="footer" data-lang="par-4" href="/blog">blog</a></li>
+                        <li class="my-2"><a class="text-decoration-none text-light-2" key="footer" data-lang="par-5" href="/contacts">contacts</a></li>
               </ul>
             </div>
             <div class="col-md-5 col-lg-2 footer__services mb-3 mb-lg-0">
-              <p class="text-uppercase weight-bold">services</p>
+              <h4 class="text-uppercase text-xsmall weight-bold" key="footer" data-lang="head4-2">services</h4>
               <ul class="list-unstyled text-capitalize">
-                <li><a class="text-decoration-none text-light-2" href="#">internet solution development</a></li>
-                <li><a class="text-decoration-none text-light-2" href="#">internet commercials</a></li>
-                <li><a class="text-decoration-none text-light-2" href="#">seo</a></li>
-                <li><a class="text-decoration-none text-light-2" href="#">website content</a></li>
-                <li><a class="text-decoration-none text-light-2" href="#">design and polygraphy</a></li>
+                        <li class="text-light-2 my-2" key="footer" data-lang="par-6">internet solution development</li>
+                        <li class="text-light-2 my-2" key="footer" data-lang="par-7">internet commercials</li>
+                        <li class="text-light-2 my-2" key="footer" data-lang="par-8">seo</li>
+                        <li class="text-light-2 my-2" key="footer" data-lang="par-9">website content</li>
+                        <li class="text-light-2 my-2" key="footer" data-lang="par-10">design and polygraphy</li>
               </ul>
             </div>
             <div class="col-md-5 col-lg-3 footer__contacts mb-3 mb-lg-0">
-              <p class="text-uppercase weight-bold">contacts</p>
+              <h4 class="text-uppercase text-xsmall weight-bold" key="footer" data-lang="head4-3">contacts</h4>
               <ul class="list-unstyled text-light-2">
                 <li class="d-flex align-items-start">
                           <svg class="fill-svg-white resize-footer-svg grow-0 shrink-0">
@@ -175,7 +177,7 @@
                               <title>map-marker</title>
                             </use>
                           </svg>
-                  <p class="first-letter">Kr. Barona iela 130 / K10 Rīga, LV,  LV-1012</p>
+                  <p class="first-letter" key="footer" data-lang="par-11">Kr. Barona iela 130 / K10 Rīga, LV,  LV-1012</p>
                 </li>
                 <li class="d-flex align-items-start">
                           <svg class="fill-svg-white resize-footer-svg grow-0 shrink-0">
@@ -183,7 +185,7 @@
                               <title>ic-phone-24px</title>
                             </use>
                           </svg>
-                  <p class="first-letter">+7 495 999 00 99</p>
+                  <p class="first-letter" key="footer" data-lang="par-12">+7 495 999 00 99</p>
                 </li>
                 <li class="d-flex align-items-start">
                           <svg class="fill-svg-white resize-footer-svg grow-0 shrink-0">
@@ -191,22 +193,22 @@
                               <title>ic-email-24px</title>
                             </use>
                           </svg>
-                  <p class="first-letter">info@domain.com</p>
+                  <p class="first-letter" key="footer" data-lang="par-13">info@domain.com</p>
                 </li>
                 <li class="d-flex align-items-start">
                           <svg class="fill-svg-white resize-footer-svg grow-0 shrink-0">
-                            <use xlink:href="./icons/sprite.svg#icon-clock">
-                              <title>clock</title>
+                            <use xlink:href="./icons/sprite.svg#icon-clock1">
+                              <title>clock1</title>
                             </use>
                           </svg>
-                  <p class="first-letter">every day from 10:00 to 18:00</p>
+                  <p class="first-letter" key="footer" data-lang="par-14">every day from 10:00 to 18:00</p>
                 </li>
               </ul>
             </div>
           </div>
           <div class="row py-3 justify-content-center align-items-center text-uppercase weight-bold text-center">
             <div class="col-md-2 col-lg-2 d-flex justify-content-center justify-content-lg-end">
-              <p class="mb-2 mb-md-0">follow us</p>
+              <p class="mb-2 mb-md-0" key="footer" data-lang="par-15">follow us</p>
             </div>
             <div class="col-lg-2 d-flex d-flex justify-content-center justify-content-lg-start"><a href="https://www.google.com" target="_blank">
                         <svg class="text-decoration-none text-light resize-footer-svg grow-0 shrink-0">
