@@ -193,6 +193,12 @@ html[dir="rtl"] body {
   }
 
   //
+  .blogs .blog__description {
+    margin-inline-end: 130px;
+    margin-inline-start: 0;
+  }
+
+  //
   .blog__heading {
     //
     @media (min-width: 992px) {

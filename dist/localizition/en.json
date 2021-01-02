@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "home": "home",
+    "aboutus": "about us",
+    "services": "services",
+    "works": "works",
+    "price": "price",
+    "blog": "blog",
+    "contacts": "contacts"
+  },
+  "pages": {
+    "home": {
+      "head2-1": "who are we",
+      "head2-2": "why choose us",
+      "head2-3": "our services",
+      "head3-1": "ark",
+      "head3-2": "our works",
+      "head3-3": "blog",
+      "head4-1": "experiance",
+      "head4-2": "professional",
+      "head4-3": "high quality",
+      "head4-4": "speed",
+      "head4-5": "lowe cost",
+
+      "par-1": "the company works on the most effective job organizing principles. saturno employees are qualified service specialists, creative and technical designers, programmers, content editors and publicists. Responsibilities are professionally divided between specialists.",
+      "par-2": "digital score offers customers 12 years of experience and knowledge about how to sell more, providing fast and high quality project management",
+      "par-3": "12 year sof experience On the market",
+      "par-4": "our system of tasks distribution allows us to offer quick solutions that are necessary for your business.",
+      "par-5": "the most qualified specialists will be working with You to ensure high quality on each stage Of project.",
+      "par-6": "you don’t have to wait until someone will be free from another project. tasks can be done much faster!.",
+      "par-7": "you don’t have To sign long-Term contracts. we offer flexible payment terms.",
+      "par-8": "check out our featured projects, a quick showcase on work in progress and our previous work timeline.",
+      "par-9": "or human resources allow us to finish tasks quickly and in time.",
+      "par-10": "internet solution development",
+      "par-11": "internet commercial and marketing",
+      "par-12": "seo services",
+      "par-13": "web sites content preparation",
+      "par-14": "design and polygraphy",
+      "par-15": "outside adverts",
+
+      "btn-1": "about us",
+      "btn-2": "all works",
+      "btn-3": "sites",
+      "btn-4": "logos",
+      "btn-5": "others",
+      "btn-6": "all articles"
+    },
+    "aboutus": {
+      "head": "about us"
+    },
+    "services": {
+      "head": "services"
+    },
+    "works": {
+      "head": "works"
+    },
+    "price": {
+      "head": "price"
+    },
+    "blog": {
+      "head": "blog"
+    },
+    "contacts": {
+      "head": "contacts",
+      "head2-1": "how we can help?",
+      "head2-2": "ready to request a quote?",
+      "head3-1": "let’s work together!",
+      "par-1": "we like to talk and on the strength of that you are invited for a coffee at our head office",
+      "par-2": "Hosary Square - Royal Towers Mall in front of Tabarak Hospital - fourth floor - Office 301",
+      "par-3": "we would love to work with you to cook up your next idea take the first step by choosing a project type and filing in the form we look forward to hearing from you.",
+      "clock": "every day 09:00 : 18:00",
+      "phone": "+7 495 999 00 99",
+      "form": {
+        "phone": "*Phone number",
+        "email": "E-mail address",
+        "textArea": "*Tell us about the project",
+        "labelOne": "fill out the form and we'll be in touch soon!",
+        "labelTwo": "what are you interested in?",
+        "submit": "send an application"
+      }
+    },
+    "footer": {
+      "head4-1": "home",
+      "head4-2": "services",
+      "head4-3": "contacts",
+
+      "par-1": "copyright company development and implementation of sites of any complexity",
+      "par-2": "about us",
+      "par-3": "price",
+      "par-4": "blog",
+      "par-5": "contacts",
+      "par-6": "internet solution development",
+      "par-7": "internet commercials",
+      "par-8": "seo",
+      "par-9": "website content",
+      "par-10": "design and polygraphy",
+      "par-11": "Hosary Square - Royal Towers Mall in front of Tabarak Hospital - fourth floor - Office 301",
+      "par-12": "+7 495 999 00 99",
+      "par-13": "info@domain.com",
+      "par-14": "every day 09:00 : 18:00",
+      "par-15": "follow us"
+    }
+  }
+}
