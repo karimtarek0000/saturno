@@ -21,14 +21,15 @@
   //
   &::before {
     background-image: url("../img/other/2.png");
-    background-size: 30vw;
-    top: 500px;
+    background-size: 50vh;
+    top: 70vh;
     background-position: 48% center;
     z-index: -1;
 
     //
-    @media (max-width: 817px) {
-      top: 300px;
+    @media (max-width: 600px) {
+      top: 30vh;
+      background-size: 30vh;
     }
   }
 }
