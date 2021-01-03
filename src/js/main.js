@@ -130,7 +130,7 @@ jQuery(function () {
   // 1) Render language
   async function renderLanguage(getLang) {
     // 2) Get data
-    // const localizition = await $.get(`../localizition/${getLang}.json`);
+    const localizition = await $.get(`../localizition/${getLang}.json`);
     // 3) Change language
     if (getLang === "ar") {
       $("html").attr({ dir: "rtl", lang: "ar" });
@@ -139,30 +139,24 @@ jQuery(function () {
     }
 
     // Form
-    // $("form")
-    //   .find(`[key]`)
-    //   .each(function (i, cur) {
-    //     //
-    //     if ($(cur).is("input, textarea")) {
-    //       $(cur).attr(
-    //         "placeholder",
-    //         localizition.pages[$(this).attr("key")]["form"][$(this).data("lang")]
-    //       );
-    //     }
-    //     //
-    //     if ($(cur).is("label, button")) {
-    //       $(cur).text(localizition.pages[$(this).attr("key")]["form"][$(this).data("lang")]);
-    //     }
-    //   });
+    $("form")
+      .find(`[key]`)
+      .each(function (i, cur) {
+        //
+        if ($(cur).is("input, textarea")) {
+          $(cur).attr(
+            "placeholder",
+            localizition.pages[$(this).attr("key")]["form"][$(this).data("lang")]
+          );
+        }
+        //
+        if ($(cur).is("label, button")) {
+          $(cur).text(localizition.pages[$(this).attr("key")]["form"][$(this).data("lang")]);
+        }
+      });
 
-    // // Pages
-    // $("h1, h2, h3, h4, button, p, a, li").each((i, cur) => {
-    //   if ($(cur).is(`[key]`))
-    //     $(cur).text(localizition.pages[$(cur).attr("key")][$(cur).data("lang")]);
-    // });
-
-    // // Navbar links
-    // $(".navbar-nav a").each((i, cur) => $(cur).text(localizition.navbar[$(cur).attr("key")]));
+    // Navbar links
+    $(".navbar-nav a").each((i, cur) => $(cur).text(localizition.navbar[$(cur).attr("key")]));
   }
 
   // 2) When change lang
